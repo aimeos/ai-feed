@@ -1,0 +1,22 @@
+{
+	"projectName": "ai-feed",
+	"licenseText": "proprietary",
+	"pkgs": [{
+		"name": "ai-feed CSS",
+		"file": "index-css",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.css",
+			"path": "themes/admin/jqadm/"
+		}]
+	}, {
+		"name": "ai-feed JS",
+		"file": "index-js",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.js",
+			"path": "themes/admin/jqadm/"
+		}]
+	}],
+	"resources" : []
+}
