@@ -66,6 +66,7 @@ class FeedAddTestData extends BaseAddTestData
 		foreach( $testdata['feed'] as $entry )
 		{
 			$item = $manager->create()->fromArray( $entry );
+			$item = $this->addListData( $manager, $item, $entry );
 			$manager->save( $item );
 		}
 	}

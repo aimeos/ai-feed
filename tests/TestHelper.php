@@ -17,7 +17,7 @@ class TestHelper
 	}
 
 
-	private static function getAimeos()
+	public static function getAimeos()
 	{
 		if( !isset( self::$aimeos ) )
 		{
@@ -102,7 +102,12 @@ class TestHelper
 		$paths = $aimeos->getConfigPaths();
 		$paths[] = __DIR__ . DIRECTORY_SEPARATOR . 'config';
 		$file = __DIR__ . DIRECTORY_SEPARATOR . 'confdoc.ser';
-		$local = array( 'resource' => array( 'fs' => array( 'adapter' => 'Standard', 'basedir' => __DIR__ . '/tmp' ) ) );
+		$local = [
+			'resource' => [
+				'fs' => ['adapter' => 'Standard', 'basedir' => __DIR__ . '/tmp'],
+				'fs-export' => ['adapter' => 'Standard', 'basedir' => __DIR__ . '/tmp'],
+			],
+		];
 
 		$conf = new \Aimeos\Base\Config\PHPArray( $local, $paths );
 		$conf = new \Aimeos\Base\Config\Decorator\Memory( $conf );
@@ -131,7 +136,7 @@ class TestHelper
 
 
 		$i18n = new \Aimeos\Base\Translation\None( 'de' );
-		$ctx->setI18n( array( 'de' => $i18n ) );
+		$ctx->setI18n( array( 'de' => $i18n, 'en' => $i18n ) );
 
 
 		$passwd = new \Aimeos\Base\Password\Standard();
@@ -142,11 +147,52 @@ class TestHelper
 		$ctx->setSession( $session );
 
 
+		$mail = new \Aimeos\Base\Mail\Manager\None();
+		$ctx->setMail( $mail );
+
+
+		$process = new \Aimeos\Base\Process\None();
+		$ctx->setProcess( $process );
+
+
 		$localeManager = \Aimeos\MShop::create( $ctx, 'locale' );
 		$locale = $localeManager->bootstrap( $site, '', '', false );
 		$ctx->setLocale( $locale );
 
 
+		$view = self::createView( $conf );
+		$ctx->setView( $view );
+
+
 		return $ctx->setEditor( 'ai-feed' );
+	}
+
+
+	protected static function createView( \Aimeos\Base\Config\Iface $config )
+	{
+		$view = new \Aimeos\Base\View\Standard( self::getAimeos()->getTemplatePaths( 'controller/jobs/templates' ) );
+
+		$trans = new \Aimeos\Base\Translation\None( 'de_DE' );
+		$helper = new \Aimeos\Base\View\Helper\Translate\Standard( $view, $trans );
+		$view->addHelper( 'translate', $helper );
+
+		$helper = new \Aimeos\Base\View\Helper\Url\Standard( $view, 'http://baseurl' );
+		$view->addHelper( 'url', $helper );
+
+		$helper = new \Aimeos\Base\View\Helper\Number\Standard( $view, '.', '' );
+		$view->addHelper( 'number', $helper );
+
+		$helper = new \Aimeos\Base\View\Helper\Date\Standard( $view, 'Y-m-d' );
+		$view->addHelper( 'date', $helper );
+
+		$paths = ['version', 'controller/jobs', 'client/html', 'resource/fs/baseurl', 'resource/fs-media/baseurl'];
+		$config = new \Aimeos\Base\Config\Decorator\Protect( $config, $paths );
+		$helper = new \Aimeos\Base\View\Helper\Config\Standard( $view, $config );
+		$view->addHelper( 'config', $helper );
+
+		$helper = new \Aimeos\Base\View\Helper\Content\Standard( $view, 'http://baseurl/' );
+		$view->addHelper( 'content', $helper );
+
+		return $view;
 	}
 }

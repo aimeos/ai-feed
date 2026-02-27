@@ -9,28 +9,122 @@
 return [
 	'feed' => [
 		[
-			'feed.label' => 'google-en',
+			'feed.label' => 'google-exclude',
+			'feed.type' => 'google',
+			'feed.languageid' => 'en',
+			'feed.currencyid' => 'EUR',
+			'feed.stock' => false,
+			'feed.status' => 1,
+			'feed.config' => [
+				'attribute' => [
+					'colour' => 'color',
+					'size' => 'size',
+				]
+			],
+			'lists' => [
+				'catalog' => [[
+					'feed.lists.type' => 'exclude',
+					'feed.lists.domain' => 'catalog',
+					'ref' => 'Kaffee',
+				], [
+					'feed.lists.type' => 'exclude',
+					'feed.lists.domain' => 'catalog',
+					'ref' => 'Neu',
+				]],
+				'product' => [[
+					'feed.lists.type' => 'exclude',
+					'feed.lists.domain' => 'product',
+					'ref' => 'ABCD/16 discs',
+				]],
+			],
+		],
+		[
+			'feed.label' => 'google-include',
 			'feed.type' => 'google',
 			'feed.languageid' => 'en',
 			'feed.currencyid' => 'EUR',
 			'feed.stock' => true,
 			'feed.status' => 1,
-			'feed.config' => ['format' => 'csv'],
+			'feed.config' => [
+				'attribute' => [
+					'colour' => 'color',
+					'size' => 'size',
+				]
+			],
+			'lists' => [
+				'catalog' => [[
+					'feed.lists.type' => 'include',
+					'feed.lists.domain' => 'catalog',
+					'ref' => 'Kaffee',
+				]],
+				'product' => [[
+					'feed.lists.type' => 'include',
+					'feed.lists.domain' => 'product',
+					'ref' => 'ABCD/16 discs',
+				]],
+			],
 		],
 		[
-			'feed.label' => 'idealo-de',
+			'feed.label' => 'idealo-exclude',
 			'feed.type' => 'idealo',
-			'feed.languageid' => 'de',
+			'feed.languageid' => 'en',
 			'feed.currencyid' => 'EUR',
 			'feed.stock' => false,
 			'feed.status' => 1,
-			'feed.config' => [],
+			'feed.config' => [
+				'attribute' => [
+					'colour' => 'color',
+					'size' => 'size',
+				]
+			],
+			'lists' => [
+				'catalog' => [[
+					'feed.lists.type' => 'exclude',
+					'feed.lists.domain' => 'catalog',
+					'ref' => 'Kaffee',
+				], [
+					'feed.lists.type' => 'exclude',
+					'feed.lists.domain' => 'catalog',
+					'ref' => 'Neu',
+				]],
+				'product' => [[
+					'feed.lists.type' => 'exclude',
+					'feed.lists.domain' => 'product',
+					'ref' => 'ABCD/16 discs',
+				]],
+			],
 		],
 		[
-			'feed.label' => 'google-all',
+			'feed.label' => 'idealo-include',
+			'feed.type' => 'idealo',
+			'feed.languageid' => 'en',
+			'feed.currencyid' => 'EUR',
+			'feed.stock' => true,
+			'feed.status' => 1,
+			'feed.config' => [
+				'attribute' => [
+					'colour' => 'color',
+					'size' => 'size',
+				]
+			],
+			'lists' => [
+				'catalog' => [[
+					'feed.lists.type' => 'include',
+					'feed.lists.domain' => 'catalog',
+					'ref' => 'Kaffee',
+				]],
+				'product' => [[
+					'feed.lists.type' => 'include',
+					'feed.lists.domain' => 'product',
+					'ref' => 'ABCD/16 discs',
+				]],
+			],
+		],
+		[
+			'feed.label' => 'google-disabled',
 			'feed.type' => 'google',
-			'feed.languageid' => null,
-			'feed.currencyid' => null,
+			'feed.languageid' => 'en',
+			'feed.currencyid' => 'EUR',
 			'feed.stock' => false,
 			'feed.status' => 0,
 			'feed.config' => [],

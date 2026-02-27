@@ -92,7 +92,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 	public function testSave()
 	{
 		$search = $this->object->filter();
-		$search->setConditions( $search->compare( '==', 'feed.label', 'google-en' ) );
+		$search->setConditions( $search->compare( '==', 'feed.label', 'google-exclude' ) );
 		$items = $this->object->search( $search )->toArray();
 
 		$this->assertTrue( is_map( $this->object->save( $items ) ) );
@@ -101,7 +101,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 
 	public function testSaveUpdateDelete()
 	{
-		$item = $this->object->search( $this->object->filter()->add( 'feed.label', '==', 'google-en' ) )->first();
+		$item = $this->object->search( $this->object->filter()->add( 'feed.label', '==', 'google-exclude' ) )->first();
 
 		$item->setId( null );
 		$item->setLabel( 'google-test' );
@@ -148,7 +148,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 	{
 		$manager = \Aimeos\MShop::create( $this->context, 'feed' );
 
-		$item = $manager->create()->setLabel( 'feed-listtest' )->setType( 'google' );
+		$item = $manager->create()->setLabel( 'feed-listtest' )->setType( 'google-exclude' );
 
 		$listManager = $manager->getSubManager( 'lists' );
 		$listItem = $listManager->create()->setType( 'default' );
@@ -182,11 +182,11 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$expr = [];
 		$expr[] = $search->compare( '!=', 'feed.id', null );
 		$expr[] = $search->compare( '!=', 'feed.siteid', null );
-		$expr[] = $search->compare( '==', 'feed.label', 'google-en' );
+		$expr[] = $search->compare( '==', 'feed.label', 'google-exclude' );
 		$expr[] = $search->compare( '==', 'feed.type', 'google' );
 		$expr[] = $search->compare( '==', 'feed.languageid', 'en' );
 		$expr[] = $search->compare( '==', 'feed.currencyid', 'EUR' );
-		$expr[] = $search->compare( '==', 'feed.stock', true );
+		$expr[] = $search->compare( '==', 'feed.stock', false );
 		$expr[] = $search->compare( '==', 'feed.status', 1 );
 		$expr[] = $search->compare( '>=', 'feed.ctime', '1970-01-01 00:00:00' );
 		$expr[] = $search->compare( '-', 'feed.mtime', '1970-01-01 00:00 - 2100-01-01 00:00' );
@@ -199,28 +199,28 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$this->assertEquals( 1, $total );
 
 		if( ( $item = $results->first() ) === null ) {
-			throw new \RuntimeException( 'No feed item "google-en" found' );
+			throw new \RuntimeException( 'No feed item "google-exclude" found' );
 		}
 
 		$this->assertEquals( $results->firstKey(), $item->getId() );
-		$this->assertEquals( 'google-en', $item->getLabel() );
+		$this->assertEquals( 'google-exclude', $item->getLabel() );
 		$this->assertEquals( 'google', $item->getType() );
 		$this->assertEquals( 'en', $item->getLanguageId() );
 		$this->assertEquals( 'EUR', $item->getCurrencyId() );
-		$this->assertTrue( $item->getStock() );
+		$this->assertFalse( $item->getStock() );
 		$this->assertEquals( 1, $item->getStatus() );
-		$this->assertEquals( ['format' => 'csv'], $item->getConfig() );
+		$this->assertEquals( ['attribute' => ['colour' => 'color', 'size' => 'size']], $item->getConfig() );
 	}
 
 
 	public function testSearchAll()
 	{
 		$total = 0;
-		$search = $this->object->filter()->slice( 0, 10 );
+		$search = $this->object->filter()->slice( 0, 3 );
 		$results = $this->object->search( $search, [], $total );
 
 		$this->assertEquals( 3, count( $results ) );
-		$this->assertEquals( 3, $total );
+		$this->assertEquals( 5, $total );
 	}
 
 
@@ -228,7 +228,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 	{
 		$search = $this->object->filter( true );
 		$expr = [
-			$search->compare( '==', 'feed.label', ['google-en', 'idealo-de'] ),
+			$search->compare( '==', 'feed.label', ['google-exclude', 'idealo-exclude'] ),
 			$search->getConditions(),
 		];
 		$search->setConditions( $search->and( $expr ) );
