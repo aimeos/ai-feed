@@ -25,6 +25,21 @@ return [
 						'product_weight',
 					],
 				],
+				'idealo' => [
+					'types' => [
+						'hans',
+						'eans',
+						'material',
+						'colour',
+						'size',
+						'gender',
+						'delivery',
+						'eec_efficiencyClass',
+						'eec_labelUrl',
+						'eec_dataSheetUrl',
+						'eec_version',
+					],
+				]
 			]
 		]
 	],
