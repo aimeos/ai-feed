@@ -1,5 +1,5 @@
 {
-	"name": "aimeos-extensions/ai-feed",
+	"name": "aimeos/ai-feed",
 	"description": "Aimeos ai-feed extension",
 	"keywords": ["aimeos", "extension"],
 	"type": "aimeos-extension",
