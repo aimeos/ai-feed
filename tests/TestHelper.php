@@ -47,6 +47,62 @@ class TestHelper
 	}
 
 
+	public static function getTemplatePaths()
+	{
+		return self::getAimeos()->getTemplatePaths( 'admin/jqadm/templates' );
+	}
+
+
+	public static function jqadmView( $site = 'unittest', ?\Aimeos\Base\Config\Iface $config = null )
+	{
+		if( $config === null ) {
+			$config = self::context( $site )->config();
+		}
+
+		$view = new \Aimeos\Base\View\Standard( self::getTemplatePaths() );
+
+		$helper = new \Aimeos\Base\View\Helper\Param\Standard( $view, ['site' => $site] );
+		$view->addHelper( 'param', $helper );
+
+		$trans = new \Aimeos\Base\Translation\None( 'de_DE' );
+		$helper = new \Aimeos\Base\View\Helper\Translate\Standard( $view, $trans );
+		$view->addHelper( 'translate', $helper );
+
+		$helper = new \Aimeos\Base\View\Helper\Url\Standard( $view, 'http://baseurl' );
+		$view->addHelper( 'url', $helper );
+
+		$helper = new \Aimeos\Base\View\Helper\Number\Standard( $view, '.', '' );
+		$view->addHelper( 'number', $helper );
+
+		$helper = new \Aimeos\Base\View\Helper\Date\Standard( $view, 'Y-m-d' );
+		$view->addHelper( 'date', $helper );
+
+		$config = new \Aimeos\Base\Config\Decorator\Protect( $config, ['version', 'admin', 'resource/fs/baseurl', 'resource/fs-media/baseurl'] );
+		$helper = new \Aimeos\Base\View\Helper\Config\Standard( $view, $config );
+		$view->addHelper( 'config', $helper );
+
+		$helper = new \Aimeos\Base\View\Helper\Session\Standard( $view, new \Aimeos\Base\Session\None() );
+		$view->addHelper( 'session', $helper );
+
+		$psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
+		$helper = new \Aimeos\Base\View\Helper\Request\Standard( $view, $psr17Factory->createServerRequest( 'GET', 'https://aimeos.org' ) );
+		$view->addHelper( 'request', $helper );
+
+		$helper = new \Aimeos\Base\View\Helper\Response\Standard( $view, $psr17Factory->createResponse() );
+		$view->addHelper( 'response', $helper );
+
+		$helper = new \Aimeos\Base\View\Helper\Csrf\Standard( $view, '_csrf_token', '_csrf_value' );
+		$view->addHelper( 'csrf', $helper );
+
+		$helper = new \Aimeos\Base\View\Helper\Access\All( $view );
+		$view->addHelper( 'access', $helper );
+
+		$view->pageSitePath = [];
+
+		return $view;
+	}
+
+
 	public static function view( $site = 'unittest', ?\Aimeos\Base\Config\Iface $config = null )
 	{
 		if( $config === null ) {

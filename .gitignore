@@ -1,0 +1,4 @@
+tests/tmp
+.phpunit.result.cache
+confdoc.ser
+unittest.log
