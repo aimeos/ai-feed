@@ -10,10 +10,11 @@
 		"php": "^8.0.11",
 		"aimeos/aimeos-core": "dev-master",
 		"aimeos/ai-admin-jqadm": "dev-master",
+		"aimeos/ai-admin-graphql": "dev-master",
 		"aimeos/ai-controller-jobs": "dev-master"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "~10.0||~11.0"
+		"phpunit/phpunit": "~10.0||~11.0||~12.0"
 	},
 	"autoload": {
 		"psr-4": {
