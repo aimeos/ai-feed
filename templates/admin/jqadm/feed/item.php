@@ -147,7 +147,7 @@ $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.l
 							</div>
 
 							<div class="form-group row mandatory">
-								<label class="col-sm-4 form-control-label help"><?= $enc->html( $this->translate( 'admin', 'Export type' ) ) ?></label>
+								<label class="col-sm-4 form-control-label help"><?= $enc->html( $this->translate( 'admin', 'Type' ) ) ?></label>
 								<div class="col-sm-8">
 									<select class="form-select item-type" required="required" tabindex="1"
 										name="<?= $enc->attr( $this->formparam( ['item', 'feed.type'] ) ) ?>"
@@ -225,7 +225,7 @@ $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.l
 							</div>
 
 							<div class="form-group row optional">
-								<label class="col-sm-4 form-control-label help"><?= $enc->html( $this->translate( 'admin', 'In-stock only' ) ) ?></label>
+								<label class="col-sm-4 form-control-label help"><?= $enc->html( $this->translate( 'admin', 'In-stock' ) ) ?></label>
 								<div class="col-sm-8">
 									<div class="form-check">
 										<input class="form-check-input item-stock" type="checkbox" tabindex="1"

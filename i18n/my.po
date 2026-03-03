@@ -1,0 +1,242 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Burmese (https://app.transifex.com/aimeos/teams/39015/my/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: my\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Add"
+msgstr "ထည့်ပါ"
+
+msgid "Attribute type"
+msgstr "အင်္ဂါရပ်အမျိုးအစား"
+
+msgid "Attributes"
+msgstr "အင်္ဂါရပ်များ"
+
+msgid "Basic"
+msgstr "အခြေခံ"
+
+msgid "Bulk edit"
+msgstr "အစုလိုက် တည်းဖြတ်ခြင်း"
+
+msgid "Categories"
+msgstr "အမျိုးအစားများ"
+
+msgid "Close"
+msgstr "ပိတ်ပါ"
+
+msgid "Columns"
+msgstr "ကော်လံများ"
+
+msgid "Copy"
+msgstr "ကူးယူ"
+
+msgid "Copy this entry"
+msgstr "ဤစာကြောင်းကို မိတ္တူကူးပါ။"
+
+msgid "Created"
+msgstr "ဖန်တီးခဲ့သည်"
+
+msgid "Currency"
+msgstr "ငွေကြေး"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "ဤဖက်ဒ်တွင် ထုတ်ပို့မည့် စျေးနှုန်းများ၏ ငွေကြေးအမျိုးအစား"
+
+msgid "Delete"
+msgstr "ဖျက်"
+
+msgid "Delete this entry"
+msgstr "ဤ မှတ်တမ်းကို ဖျက်ပါ"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "ဤဖိဒ်ဖွဲ့စည်းမှုအတွက် ဖော်ပြချက်အမည်"
+
+msgid "Edit"
+msgstr "ပြင်ဆင်ပါ"
+
+msgid "Editor"
+msgstr "အယ်ဒီတာ"
+
+msgid "Enter category ID, code or label"
+msgstr "အမျိုးအစား ID၊ ကုဒ် သို့မဟုတ် အမည်ကို ထည့်ပါ။"
+
+msgid "Enter product ID, code or label"
+msgstr "ထုတ်ကုန် ID၊ ကုဒ် သို့မဟုတ် တံဆိပ်ကို ထည့်ပါ။"
+
+msgid "Excluded categories"
+msgstr "ထည့်သွင်းမထားသော အမျိုးအစားများ"
+
+msgid "Excluded products"
+msgstr "ထည့်သွင်းမထားသော ထုတ်ကုန်များ"
+
+msgid "Export only in-stock products"
+msgstr "လက်ကျန်ရှိသော ကုန်ပစ္စည်းများကိုသာ တင်ပို့ပါ။"
+
+msgid "Exports products for Google Shopping"
+msgstr "Google Shopping အတွက် ထုတ်ကုန်များကို တင်ပို့ခြင်း"
+
+msgid "Exports products for Idealo"
+msgstr "Idealo အတွက် ထုတ်ကုန်များ တင်ပို့ခြင်း"
+
+msgid "Feed"
+msgstr "အစာပေး"
+
+msgid "Feed field"
+msgstr "အစားထိုးကွင်း"
+
+msgid "Feeds"
+msgstr "အစားအစာများ"
+
+msgid "Google shopping export"
+msgstr "Google Shopping ထုတ်ပို့ခြင်း"
+
+msgid "ID"
+msgstr "အိုင်ဒီ"
+
+msgid "Idealo product export"
+msgstr "Idealo ထုတ်ကုန် တင်ပို့ခြင်း"
+
+msgid "In-stock"
+msgstr "လက်ကျန်ရှိသည်"
+
+msgid "In-stock only"
+msgstr "လက်ကျန်ရှိသောပစ္စည်းများသာ"
+
+msgid "Included categories"
+msgstr "ပါဝင်သော အမျိုးအစားများ"
+
+msgid "Included products"
+msgstr "ပါဝင်သော ထုတ်ကုန်များ"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "အသစ်ထည့်ပါ (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "အတွင်းအမည် (လိုအပ်သည်)"
+
+msgid "Label"
+msgstr "အမှတ်တံဆိပ်"
+
+msgid "Language"
+msgstr "ဘာသာစကား"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "ဤဖီးဒ်တွင် ထုတ်ပို့မည့် ထုတ်ကုန်ဒေတာ၏ ဘာသာစကား"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Feed ကွက်အမည်ကို တန်ဖိုးပါဝင်သည့် Aimeos ထုတ်ကုန်အင်္ဂါရပ်အမျိုးအစားနှင့် "
+"ချိတ်ဆက်ပါ။"
+
+msgid "Menu"
+msgstr "စာရင်း"
+
+msgid "Modified"
+msgstr "ပြင်ဆင်ထားသော"
+
+msgid "New"
+msgstr "အသစ်"
+
+msgid "No"
+msgstr "မဟုတ်ဘူး"
+
+msgid "No entries found"
+msgstr "မတွေ့ရှိပါ"
+
+msgid "Please select"
+msgstr "ကျေးဇူးပြု၍ ရွေးချယ်ပါ။"
+
+msgid "Products"
+msgstr "ထုတ်ကုန်များ"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "လိုအပ်သော ပါရာမီတာ \"%1$s\" မတွေ့ပါ။"
+
+msgid "Save"
+msgstr "သိမ်းဆည်း"
+
+msgid "Show search form"
+msgstr "ရှာဖွေဖောင် ပြသပါ"
+
+msgid "Status"
+msgstr "အခြေအနေ"
+
+msgid "The export format used to generate this product feed"
+msgstr "ဤထုတ်ကုန်ဖက်ဒ်ကို ဖန်တီးရာတွင် အသုံးပြုသော တင်ပို့ဖော်မတ်"
+
+msgid "Type"
+msgstr "အမျိုးအစား"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Google Shopping ထုတ်ပို့ရန် ယာယီဖိုင် မဖန်တီးနိုင်ပါ။"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Idealo ထုတ်ပို့မှုအတွက် ယာယီဖိုင် မဖန်တီးနိုင်ပါ။"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr "Google Shopping ထုတ်ပို့ရန် ယာယီဖိုင်အတွက် ခေါင်းစီး မရေးနိုင်ပါ။"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Idealo ထုတ်ပို့ရန် ယာယီဖိုင်အတွက် ခေါင်းစီး မရေးနိုင်ပါ။"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+"Google Shopping ထုတ်ပို့ရန် ယာယီဖိုင်သို့ ထုတ်ကုန်များ မရေးသားနိုင်ပါ။"
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Idealo ထုတ်ပို့ရန် ယာယီဖိုင်သို့ ထုတ်ကုန်များ မရေးသားနိုင်ပါ။"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"ဖွင့်ထားပါက ရရှိနိုင်သော စတော့ရှိသည့် ထုတ်ကုန်များကိုသာ ဖက်ဒ်တွင် "
+"ထည့်သွင်းပါမည်။"
+
+msgid "Yes"
+msgstr "ဟုတ်ကဲ့"
+
+#, php-format
+msgid "feed"
+msgstr "အစာကျွေး၊ ထည့်သွင်း၊ ထည့်ထည့်၊ ထည့်ထည့်ခြင်း၊ ထည့်ထ"
+
+msgid "selected"
+msgstr "ရွေးချယ်ထားသော"
+
+msgid "status:-1"
+msgstr "အခြေအနေ:-1"
+
+msgid "status:-2"
+msgstr "အခြေအနေ:-2"
+
+msgid "status:0"
+msgstr "အခြေအနေ:0"
+
+msgid "status:1"
+msgstr "အခြေအနေ:၁"

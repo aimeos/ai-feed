@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Slovak (https://app.transifex.com/aimeos/teams/39015/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+
+msgid "Add"
+msgstr "Pridať"
+
+msgid "Attribute type"
+msgstr "Typ atribútu"
+
+msgid "Attributes"
+msgstr "Atribúty"
+
+msgid "Basic"
+msgstr "Základný"
+
+msgid "Bulk edit"
+msgstr "Hromadná úprava"
+
+msgid "Categories"
+msgstr "Kategórie"
+
+msgid "Close"
+msgstr "Zatvoriť"
+
+msgid "Columns"
+msgstr "Stĺpce"
+
+msgid "Copy"
+msgstr "Kopírovať"
+
+msgid "Copy this entry"
+msgstr "Kopírovať tento záznam"
+
+msgid "Created"
+msgstr "Vytvorené"
+
+msgid "Currency"
+msgstr "Mena"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "Mena cien, ktoré sa majú exportovať v tomto kanáli"
+
+msgid "Delete"
+msgstr "Odstrániť"
+
+msgid "Delete this entry"
+msgstr "Odstrániť tento záznam"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "Popisný názov pre túto konfiguráciu zdroja"
+
+msgid "Edit"
+msgstr "Upraviť"
+
+msgid "Editor"
+msgstr "Redaktor"
+
+msgid "Enter category ID, code or label"
+msgstr "Zadajte ID kategórie, kód alebo označenie"
+
+msgid "Enter product ID, code or label"
+msgstr "Zadajte identifikačný kód produktu, kód alebo označenie"
+
+msgid "Excluded categories"
+msgstr "Vylúčené kategórie"
+
+msgid "Excluded products"
+msgstr "Vylúčené produkty"
+
+msgid "Export only in-stock products"
+msgstr "Exportovať len produkty, ktoré sú na sklade"
+
+msgid "Exports products for Google Shopping"
+msgstr "Exportuje produkty pre Google Shopping"
+
+msgid "Exports products for Idealo"
+msgstr "Exportuje produkty pre Idealo"
+
+msgid "Feed"
+msgstr "Krmivo"
+
+msgid "Feed field"
+msgstr "Pole krmiva"
+
+msgid "Feeds"
+msgstr "Krmivá"
+
+msgid "Google shopping export"
+msgstr "Export z Google Shopping"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idealo product export"
+msgstr "Export produktov Idealo"
+
+msgid "In-stock"
+msgstr "Skladom"
+
+msgid "In-stock only"
+msgstr "Iba skladom"
+
+msgid "Included categories"
+msgstr "Zahrnuté kategórie"
+
+msgid "Included products"
+msgstr "Zahrnuté produkty"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "Vložiť nový záznam (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "Interné meno (povinné)"
+
+msgid "Label"
+msgstr "Štítok"
+
+msgid "Language"
+msgstr "Jazyk"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "Jazyk údajov o produkte, ktoré sa majú exportovať v tomto kanáli"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Priraďte názov poľa zdroja k typu atribútu produktu Aimeos, ktorý obsahuje "
+"hodnotu."
+
+msgid "Menu"
+msgstr "Ponuka"
+
+msgid "Modified"
+msgstr "Upravené"
+
+msgid "New"
+msgstr "Nový"
+
+msgid "No"
+msgstr "Nie"
+
+msgid "No entries found"
+msgstr "Nenašli sa žiadne záznamy"
+
+msgid "Please select"
+msgstr "Vyberte prosím"
+
+msgid "Products"
+msgstr "Produkty"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "Chýba požadovaný parameter „%1$s“"
+
+msgid "Save"
+msgstr "Uložiť"
+
+msgid "Show search form"
+msgstr "Zobraziť vyhľadávací formulár"
+
+msgid "Status"
+msgstr "Stav"
+
+msgid "The export format used to generate this product feed"
+msgstr "Exportný formát použitý na vytvorenie tohto produktového feedu"
+
+msgid "Type"
+msgstr "Typ"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Nie je možné vytvoriť dočasný súbor pre export Google Shopping"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Nie je možné vytvoriť dočasný súbor pre export Idealo"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr ""
+"Nie je možné zapísať hlavičku pre export Google Shopping do dočasného súboru"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Nie je možné zapísať hlavičku pre export Idealo do dočasného súboru"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+"Nie je možné zapísať produkty pre export do Google Shopping do dočasného "
+"súboru."
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Nie je možné zapísať produkty pre export Idealo do dočasného súboru"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Ak je táto funkcia povolená, do zdroja sa zahrnú len produkty, ktoré sú na "
+"sklade."
+
+msgid "Yes"
+msgstr "Áno"
+
+#, php-format
+msgid "feed"
+msgstr "krmivo"
+
+msgid "selected"
+msgstr "vybraný"
+
+msgid "status:-1"
+msgstr "stav: -1"
+
+msgid "status:-2"
+msgstr "stav: -2"
+
+msgid "status:0"
+msgstr "stav: 0"
+
+msgid "status:1"
+msgstr "stav:1"

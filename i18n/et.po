@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Estonian (https://app.transifex.com/aimeos/teams/39015/et/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: et\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Add"
+msgstr "Lisa"
+
+msgid "Attribute type"
+msgstr "Atribuudi tüüp"
+
+msgid "Attributes"
+msgstr "Omadused"
+
+msgid "Basic"
+msgstr "Basic"
+
+msgid "Bulk edit"
+msgstr "Bulk edit"
+
+msgid "Categories"
+msgstr "Kategooriad"
+
+msgid "Close"
+msgstr "Sulge"
+
+msgid "Columns"
+msgstr "Veerud"
+
+msgid "Copy"
+msgstr "Koopia"
+
+msgid "Copy this entry"
+msgstr "Kopeeri see kanne"
+
+msgid "Created"
+msgstr "Loodud"
+
+msgid "Currency"
+msgstr "Valuuta"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "Selles feedis eksporditavate hindade valuuta"
+
+msgid "Delete"
+msgstr "Kustuta"
+
+msgid "Delete this entry"
+msgstr "Kustuta see kanne"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "Selle sööda konfiguratsiooni kirjeldav nimi"
+
+msgid "Edit"
+msgstr "Muuda"
+
+msgid "Editor"
+msgstr "Toimetaja"
+
+msgid "Enter category ID, code or label"
+msgstr "Sisesta kategooria ID, kood või silt"
+
+msgid "Enter product ID, code or label"
+msgstr "Sisestage toote ID, kood või silt"
+
+msgid "Excluded categories"
+msgstr "Välja jäetud kategooriad"
+
+msgid "Excluded products"
+msgstr "Välja jäetud tooted"
+
+msgid "Export only in-stock products"
+msgstr "Ekspordi ainult laos olevaid tooteid"
+
+msgid "Exports products for Google Shopping"
+msgstr "Ekspordib tooteid Google Shoppingusse"
+
+msgid "Exports products for Idealo"
+msgstr "Ekspordib tooteid Idealo jaoks"
+
+msgid "Feed"
+msgstr "Sööda"
+
+msgid "Feed field"
+msgstr "Sööda väli"
+
+msgid "Feeds"
+msgstr "Söödad"
+
+msgid "Google shopping export"
+msgstr "Google'i ostude eksport"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idealo product export"
+msgstr "Idealo toote eksport"
+
+msgid "In-stock"
+msgstr "Laos"
+
+msgid "In-stock only"
+msgstr "Ainult laos olevad tooted"
+
+msgid "Included categories"
+msgstr "Kaasatud kategooriad"
+
+msgid "Included products"
+msgstr "Kaasasolevad tooted"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "Sisesta uus kirje (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "Sisemine nimi (nõutav)"
+
+msgid "Label"
+msgstr "Silt"
+
+msgid "Language"
+msgstr "Keel"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "Selles feedis eksporditavate tooteandmete keel"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Kaardista söödavälja nimi Aimeos toote atribuudi tüübile, mis sisaldab "
+"väärtust"
+
+msgid "Menu"
+msgstr "Menüü"
+
+msgid "Modified"
+msgstr "Muudetud"
+
+msgid "New"
+msgstr "Uus"
+
+msgid "No"
+msgstr "Ei"
+
+msgid "No entries found"
+msgstr "Leitud kirjeid pole"
+
+msgid "Please select"
+msgstr "Palun valige"
+
+msgid "Products"
+msgstr "Tooted"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "Nõutav parameeter \"%1$s\" puudub"
+
+msgid "Save"
+msgstr "Salvesta"
+
+msgid "Show search form"
+msgstr "Näita otsinguvormi"
+
+msgid "Status"
+msgstr "Staatus"
+
+msgid "The export format used to generate this product feed"
+msgstr "Selle tootevoo genereerimiseks kasutatud ekspordivorming"
+
+msgid "Type"
+msgstr "Tüüp"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Google Shoppingi ekspordi jaoks ei ole võimalik luua ajutist faili"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Idealo ekspordi jaoks ei ole võimalik luua ajutist faili"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr ""
+"Google Shoppingi ekspordi ajutisse faili pealkirja kirjutamine ei õnnestu"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Idealo ekspordi jaoks ajutisse faili pealkirja kirjutamine ei õnnestu"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+"Ei ole võimalik kirjutada Google Shoppingi ekspordiks mõeldud tooteid "
+"ajutisse faili"
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Idealo ekspordi jaoks tooteid ajutisse faili kirjutada ei õnnestu"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Kui see on aktiveeritud, lisatakse feed'i ainult tooted, mille varud on "
+"saadaval."
+
+msgid "Yes"
+msgstr "Jah"
+
+#, php-format
+msgid "feed"
+msgstr "sööda"
+
+msgid "selected"
+msgstr "valitud"
+
+msgid "status:-1"
+msgstr "staatus:-1"
+
+msgid "status:-2"
+msgstr "staatus:-2"
+
+msgid "status:0"
+msgstr "staatus:0"
+
+msgid "status:1"
+msgstr "staatus:1"

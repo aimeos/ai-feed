@@ -1,0 +1,242 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Metal <meteoramic@yahoo.com>, 2026
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Turkish (https://app.transifex.com/aimeos/teams/39015/tr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Add"
+msgstr "Ekle"
+
+msgid "Attribute type"
+msgstr "Özellik türü"
+
+msgid "Attributes"
+msgstr "Özellikler"
+
+msgid "Basic"
+msgstr "Temel"
+
+msgid "Bulk edit"
+msgstr "Toplu düzenleme"
+
+msgid "Categories"
+msgstr "Kategoriler"
+
+msgid "Close"
+msgstr "Kapat"
+
+msgid "Columns"
+msgstr "Sütunlar"
+
+msgid "Copy"
+msgstr "Kopyala"
+
+msgid "Copy this entry"
+msgstr "Bu girişi kopyala"
+
+msgid "Created"
+msgstr "Oluşturdu"
+
+msgid "Currency"
+msgstr "Para birimi"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "Bu beslemede dışa aktarılacak fiyatların para birimi"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Delete this entry"
+msgstr "Bu girişi sil"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "Bu besleme yapılandırması için açıklayıcı ad"
+
+msgid "Edit"
+msgstr "Düzenle"
+
+msgid "Editor"
+msgstr "Editör"
+
+msgid "Enter category ID, code or label"
+msgstr "Kategori kimliği, kodu veya etiketi girin"
+
+msgid "Enter product ID, code or label"
+msgstr "Ürün kimliğini, kodunu veya etiketini girin"
+
+msgid "Excluded categories"
+msgstr "Hariç tutulan kategoriler"
+
+msgid "Excluded products"
+msgstr "Hariç tutulan ürünler"
+
+msgid "Export only in-stock products"
+msgstr "Yalnızca stokta bulunan ürünleri ihraç et"
+
+msgid "Exports products for Google Shopping"
+msgstr "Google Alışveriş için ürünleri ihraç eder"
+
+msgid "Exports products for Idealo"
+msgstr "Idealo için ürün ihracatı"
+
+msgid "Feed"
+msgstr "Yem"
+
+msgid "Feed field"
+msgstr "Yem alanı"
+
+msgid "Feeds"
+msgstr "Beslemeler"
+
+msgid "Google shopping export"
+msgstr "Google alışveriş ihracatı"
+
+msgid "ID"
+msgstr "Kimlik numarası"
+
+msgid "Idealo product export"
+msgstr "Idealo ürün ihracatı"
+
+msgid "In-stock"
+msgstr "Stokta var"
+
+msgid "In-stock only"
+msgstr "Sadece stokta bulunan ürünler"
+
+msgid "Included categories"
+msgstr "Dahil edilen kategoriler"
+
+msgid "Included products"
+msgstr "Dahil olan ürünler"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "Yeni giriş ekle (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "Dahili isim (gerekli)"
+
+msgid "Label"
+msgstr "Etiket"
+
+msgid "Language"
+msgstr "Dil"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "Bu beslemede dışa aktarılacak ürün verilerinin dili"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Bir besleme alanı adını, değeri içeren Aimeos ürün öznitelik türüne "
+"eşleştirin."
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Modified"
+msgstr "Düzenlendi"
+
+msgid "New"
+msgstr "Yeni"
+
+msgid "No"
+msgstr "Hayır"
+
+msgid "No entries found"
+msgstr "Hiçbir giriş bulunamadı"
+
+msgid "Please select"
+msgstr "Lütfen seçin"
+
+msgid "Products"
+msgstr "Ürünler"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "Gerekli parametre \"%1$s\" eksik"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Show search form"
+msgstr "Arama formunu göster"
+
+msgid "Status"
+msgstr "Durum"
+
+msgid "The export format used to generate this product feed"
+msgstr "Bu ürün beslemesini oluşturmak için kullanılan dışa aktarım biçimi"
+
+msgid "Type"
+msgstr "Tür"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Google alışveriş dışa aktarımı için geçici dosya oluşturulamıyor"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Idealo dışa aktarımı için geçici dosya oluşturulamıyor"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr "Google alışveriş dışa aktarımı için geçici dosyaya başlık yazılamıyor"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Idealo dışa aktarımı için geçici dosyaya başlık yazılamıyor"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr "Google alışveriş ihracatı için ürünleri geçici dosyaya yazamıyor"
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Idealo dışa aktarımı için geçici dosyaya ürün yazamıyor"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Etkinleştirildiğinde, yalnızca mevcut stoğu olan ürünler beslemeye dahil "
+"edilir."
+
+msgid "Yes"
+msgstr "Evet"
+
+#, php-format
+msgid "feed"
+msgstr "besleme"
+
+msgid "selected"
+msgstr "Seçili"
+
+msgid "status:-1"
+msgstr "Durum:-1"
+
+msgid "status:-2"
+msgstr "Durum:-2"
+
+msgid "status:0"
+msgstr "Durum:0"
+
+msgid "status:1"
+msgstr "Durum:1"

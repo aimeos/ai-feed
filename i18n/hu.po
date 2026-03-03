@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Patrik Szakos <szakos0208@gmail.com>, 2026
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Hungarian (https://app.transifex.com/aimeos/teams/39015/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Add"
+msgstr "Hozzáad"
+
+msgid "Attribute type"
+msgstr "Attribútum típus"
+
+msgid "Attributes"
+msgstr "Tulajdonságok"
+
+msgid "Basic"
+msgstr "Alapvető"
+
+msgid "Bulk edit"
+msgstr "Tömeges szerkesztés"
+
+msgid "Categories"
+msgstr "Kategóriák"
+
+msgid "Close"
+msgstr "Zárja be a"
+
+msgid "Columns"
+msgstr "Oszlopok"
+
+msgid "Copy"
+msgstr "Másolás"
+
+msgid "Copy this entry"
+msgstr "Bejegyzés másolása"
+
+msgid "Created"
+msgstr "Létrehozva"
+
+msgid "Currency"
+msgstr "Pénznem"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "A feedben exportálandó árak pénzneme"
+
+msgid "Delete"
+msgstr "Törölje a  címet."
+
+msgid "Delete this entry"
+msgstr "Bejegyzés törlése"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "A feed konfiguráció leíró neve"
+
+msgid "Edit"
+msgstr "Szerkesztés"
+
+msgid "Editor"
+msgstr "Szerkesztő"
+
+msgid "Enter category ID, code or label"
+msgstr "Adja meg a kategória azonosítóját, kódját vagy címkéjét"
+
+msgid "Enter product ID, code or label"
+msgstr "Adja meg a termék azonosítóját, kódját vagy címkéjét"
+
+msgid "Excluded categories"
+msgstr "Kizárt kategóriák"
+
+msgid "Excluded products"
+msgstr "Kizárt termékek"
+
+msgid "Export only in-stock products"
+msgstr "Csak raktáron lévő termékek exportálása"
+
+msgid "Exports products for Google Shopping"
+msgstr "Exportálja a termékeket a Google Shopping számára"
+
+msgid "Exports products for Idealo"
+msgstr "Exportálja az Idealo termékeit"
+
+msgid "Feed"
+msgstr "Takarmány"
+
+msgid "Feed field"
+msgstr "Takarmánymező"
+
+msgid "Feeds"
+msgstr "Hírcsatornák"
+
+msgid "Google shopping export"
+msgstr "Google Shopping export"
+
+msgid "ID"
+msgstr "Azonosító"
+
+msgid "Idealo product export"
+msgstr "Idealo termék export"
+
+msgid "In-stock"
+msgstr "Raktáron"
+
+msgid "In-stock only"
+msgstr "Csak raktáron lévő termékek"
+
+msgid "Included categories"
+msgstr "Tartalmazott kategóriák"
+
+msgid "Included products"
+msgstr "Tartalmazott termékek"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "Új bejegyzés beiktatása (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "Belső név (kötelező)"
+
+msgid "Label"
+msgstr "Címke"
+
+msgid "Language"
+msgstr "Nyelv"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "A feedben exportálandó termékadatok nyelve"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Térképezze fel a feed mező nevét az Aimeos termékattribútum típusra, amely "
+"tartalmazza az értéket."
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Modified"
+msgstr "Módosított"
+
+msgid "New"
+msgstr "Új"
+
+msgid "No"
+msgstr "Nem"
+
+msgid "No entries found"
+msgstr "Nincs találat"
+
+msgid "Please select"
+msgstr "Kérem válasszon"
+
+msgid "Products"
+msgstr "Termékek"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "A \"%1$s\" szükséges paraméter hiányzik"
+
+msgid "Save"
+msgstr "Mentés"
+
+msgid "Show search form"
+msgstr "Keresési űrlap megjelenítése"
+
+msgid "Status"
+msgstr "Állapot"
+
+msgid "The export format used to generate this product feed"
+msgstr "A termékadat-feed létrehozásához használt exportformátum"
+
+msgid "Type"
+msgstr "Típus"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr ""
+"Nem lehet ideiglenes fájlt létrehozni a Google Shopping exportálásához"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Idealo exportáláshoz ideiglenes fájl létrehozása nem lehetséges"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr ""
+"Nem lehet fejléceket írni a Google Shopping export ideiglenes fájljába"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Nem lehet fejléceket írni az Idealo export ideiglenes fájlba"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+"Nem lehet termékeket írni a Google Shopping exportjához ideiglenes fájlba"
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Nem lehet termékeket írni az Idealo exportálásához ideiglenes fájlba"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Ha engedélyezve van, csak a rendelkezésre álló készletű termékek kerülnek be"
+" a feedbe."
+
+msgid "Yes"
+msgstr "Igen"
+
+#, php-format
+msgid "feed"
+msgstr "takarmány"
+
+msgid "selected"
+msgstr "kiválasztott"
+
+msgid "status:-1"
+msgstr "állapot:-1"
+
+msgid "status:-2"
+msgstr "állapot:-2"
+
+msgid "status:0"
+msgstr "állapot:0"
+
+msgid "status:1"
+msgstr "status:1"

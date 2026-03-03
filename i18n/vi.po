@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Vietnamese (https://app.transifex.com/aimeos/teams/39015/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Add"
+msgstr "Thêm"
+
+msgid "Attribute type"
+msgstr "Loại thuộc tính"
+
+msgid "Attributes"
+msgstr "Thuộc tính"
+
+msgid "Basic"
+msgstr "Cơ bản"
+
+msgid "Bulk edit"
+msgstr "Chỉnh sửa hàng loạt"
+
+msgid "Categories"
+msgstr "Các danh mục"
+
+msgid "Close"
+msgstr "Đóng"
+
+msgid "Columns"
+msgstr "Cột"
+
+msgid "Copy"
+msgstr "Sao chép"
+
+msgid "Copy this entry"
+msgstr "Sao chép mục này"
+
+msgid "Created"
+msgstr "Được tạo ra"
+
+msgid "Currency"
+msgstr "Tiền tệ"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "Đơn vị tiền tệ của các giá được xuất khẩu trong nguồn cấp dữ liệu này"
+
+msgid "Delete"
+msgstr "Xóa"
+
+msgid "Delete this entry"
+msgstr "Xóa mục này"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "Tên mô tả cho cấu hình nguồn cấp dữ liệu này"
+
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+msgid "Editor"
+msgstr "Biên tập viên"
+
+msgid "Enter category ID, code or label"
+msgstr "Nhập ID danh mục, mã hoặc nhãn"
+
+msgid "Enter product ID, code or label"
+msgstr "Nhập mã sản phẩm, mã hoặc nhãn."
+
+msgid "Excluded categories"
+msgstr "Các danh mục bị loại trừ"
+
+msgid "Excluded products"
+msgstr "Sản phẩm bị loại trừ"
+
+msgid "Export only in-stock products"
+msgstr "Chỉ xuất khẩu các sản phẩm có sẵn trong kho."
+
+msgid "Exports products for Google Shopping"
+msgstr "Xuất khẩu sản phẩm cho Google Shopping"
+
+msgid "Exports products for Idealo"
+msgstr "Xuất khẩu sản phẩm cho Idealo"
+
+msgid "Feed"
+msgstr "Thức ăn"
+
+msgid "Feed field"
+msgstr "Trường dữ liệu"
+
+msgid "Feeds"
+msgstr "Dòng tin"
+
+msgid "Google shopping export"
+msgstr "Xuất khẩu Google Shopping"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idealo product export"
+msgstr "Xuất khẩu sản phẩm Idealo"
+
+msgid "In-stock"
+msgstr "Có sẵn"
+
+msgid "In-stock only"
+msgstr "Chỉ có hàng sẵn có"
+
+msgid "Included categories"
+msgstr "Các danh mục được bao gồm"
+
+msgid "Included products"
+msgstr "Các sản phẩm được bao gồm"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "Thêm mục mới (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "Tên nội bộ (bắt buộc)"
+
+msgid "Label"
+msgstr "Nhãn"
+
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr ""
+"Ngôn ngữ của dữ liệu sản phẩm sẽ được xuất trong nguồn cấp dữ liệu này."
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Gán tên trường dữ liệu nguồn với loại thuộc tính sản phẩm Aimeos chứa giá "
+"trị."
+
+msgid "Menu"
+msgstr "Thực đơn"
+
+msgid "Modified"
+msgstr "Đã sửa đổi"
+
+msgid "New"
+msgstr "Mới"
+
+msgid "No"
+msgstr "Không"
+
+msgid "No entries found"
+msgstr "Không tìm thấy kết quả nào."
+
+msgid "Please select"
+msgstr "Vui lòng chọn"
+
+msgid "Products"
+msgstr "Sản phẩm"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "Tham số bắt buộc \"%1$s\" bị thiếu."
+
+msgid "Save"
+msgstr "Lưu"
+
+msgid "Show search form"
+msgstr "Hiển thị biểu mẫu tìm kiếm"
+
+msgid "Status"
+msgstr "Trạng thái"
+
+msgid "The export format used to generate this product feed"
+msgstr ""
+"Định dạng xuất khẩu được sử dụng để tạo ra nguồn cấp dữ liệu sản phẩm này."
+
+msgid "Type"
+msgstr "Loại"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Không thể tạo tệp tạm thời cho việc xuất dữ liệu Google Shopping."
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Không thể tạo tệp tạm thời cho việc xuất dữ liệu Idealo."
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr "Không thể ghi tiêu đề cho tệp xuất Google Shopping vào tệp tạm thời."
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Không thể ghi tiêu đề cho tệp xuất Idealo vào tệp tạm thời."
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+"Không thể ghi sản phẩm cho việc xuất khẩu Google Shopping vào tệp tạm thời."
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Không thể ghi sản phẩm cho việc xuất sang tệp tạm thời của Idealo."
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Khi được kích hoạt, chỉ các sản phẩm có sẵn hàng sẽ được bao gồm trong nguồn"
+" cấp dữ liệu."
+
+msgid "Yes"
+msgstr "Có"
+
+#, php-format
+msgid "feed"
+msgstr "thức ăn"
+
+msgid "selected"
+msgstr "được chọn"
+
+msgid "status:-1"
+msgstr "trạng thái:-1"
+
+msgid "status:-2"
+msgstr "trạng thái:-2"
+
+msgid "status:0"
+msgstr "trạng thái:0"
+
+msgid "status:1"
+msgstr "Trạng thái: 1"

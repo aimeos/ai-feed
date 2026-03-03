@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: German (https://app.transifex.com/aimeos/teams/39015/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Add"
+msgstr "Hinzufügen"
+
+msgid "Attribute type"
+msgstr "Attributtyp"
+
+msgid "Attributes"
+msgstr "Attribute"
+
+msgid "Basic"
+msgstr "Basis"
+
+msgid "Bulk edit"
+msgstr "Mehrfachänderungen"
+
+msgid "Categories"
+msgstr "Kategorien"
+
+msgid "Close"
+msgstr "Schließen"
+
+msgid "Columns"
+msgstr "Spalten"
+
+msgid "Copy"
+msgstr "Kopieren"
+
+msgid "Copy this entry"
+msgstr "Eintrag kopieren"
+
+msgid "Created"
+msgstr "Erstellt am"
+
+msgid "Currency"
+msgstr "Währung"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "Währung der Preise, die in diesem Feed exportiert werden sollen"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "Delete this entry"
+msgstr "Eintrag löschen"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "Beschreibender Name für diese Feed-Konfiguration"
+
+msgid "Edit"
+msgstr "Ändern"
+
+msgid "Editor"
+msgstr "Bearbeiter"
+
+msgid "Enter category ID, code or label"
+msgstr "Kategorie-ID, Code oder Bezeichnung eingeben"
+
+msgid "Enter product ID, code or label"
+msgstr "Produkt-ID, Code oder Etikett eingeben"
+
+msgid "Excluded categories"
+msgstr "Ausgeschlossene Kategorien"
+
+msgid "Excluded products"
+msgstr "Ausgeschlossene Produkte"
+
+msgid "Export only in-stock products"
+msgstr "Nur vorrätige Produkte exportieren"
+
+msgid "Exports products for Google Shopping"
+msgstr "Exportiert Produkte für Google Shopping"
+
+msgid "Exports products for Idealo"
+msgstr "Exportiert Produkte für Idealo"
+
+msgid "Feed"
+msgstr "Futter"
+
+msgid "Feed field"
+msgstr "Futterfeld"
+
+msgid "Feeds"
+msgstr "Feeds"
+
+msgid "Google shopping export"
+msgstr "Google Shopping Export"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idealo product export"
+msgstr "Idealo-Produktexport"
+
+msgid "In-stock"
+msgstr "Auf Lager"
+
+msgid "In-stock only"
+msgstr "Nur auf Lager"
+
+msgid "Included categories"
+msgstr "Enthaltene Kategorien"
+
+msgid "Included products"
+msgstr "Enthaltene Produkte"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "Eintrag hinzufügen (Strg+I)"
+
+msgid "Internal name (required)"
+msgstr "Interner Name (benötigt)"
+
+msgid "Label"
+msgstr "Bezeichnung"
+
+msgid "Language"
+msgstr "Sprache"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "Sprache der Produktdaten, die in diesem Feed exportiert werden sollen"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Ordnen Sie einen Feed-Feldnamen dem Aimeos-Produktattributtyp zu, der den "
+"Wert enthält."
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Modified"
+msgstr "Geändert"
+
+msgid "New"
+msgstr "Neu"
+
+msgid "No"
+msgstr "Nein"
+
+msgid "No entries found"
+msgstr "Keine Einträge gefunden"
+
+msgid "Please select"
+msgstr "Bitte wählen"
+
+msgid "Products"
+msgstr "Produkte"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "Notwendiger Parameter \"%1$s\" fehlt"
+
+msgid "Save"
+msgstr "Speichern Sie"
+
+msgid "Show search form"
+msgstr "Suchformular anzeigen"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "The export format used to generate this product feed"
+msgstr ""
+"Das Exportformat, das zur Erstellung dieses Produkt-Feeds verwendet wurde"
+
+msgid "Type"
+msgstr "Typ"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr ""
+"Es kann keine temporäre Datei für den Google Shopping-Export erstellt "
+"werden."
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Es kann keine temporäre Datei für den Idealo-Export erstellt werden."
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr ""
+"Es ist nicht möglich, den Header für den Google Shopping-Export in eine "
+"temporäre Datei zu schreiben."
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Unable to write header for Idealo export to temporary file"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+"Produkte für Google Shopping-Export können nicht in temporäre Datei "
+"geschrieben werden"
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr ""
+"Produkte für den Idealo-Export können nicht in eine temporäre Datei "
+"geschrieben werden."
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Wenn diese Option aktiviert ist, werden nur Produkte mit verfügbarem "
+"Lagerbestand in den Feed aufgenommen."
+
+msgid "Yes"
+msgstr "Ja"
+
+#, php-format
+msgid "feed"
+msgstr "Futter"
+
+msgid "selected"
+msgstr "ausgewählt"
+
+msgid "status:-1"
+msgstr "Zur Prüfung"
+
+msgid "status:-2"
+msgstr "Archiviert"
+
+msgid "status:0"
+msgstr "Deaktviert"
+
+msgid "status:1"
+msgstr "Verfügbar"

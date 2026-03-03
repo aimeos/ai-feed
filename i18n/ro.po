@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# George Cojocaru, 2026
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Romanian (https://app.transifex.com/aimeos/teams/39015/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+msgid "Add"
+msgstr "Adaugă"
+
+msgid "Attribute type"
+msgstr "Tipul atributului"
+
+msgid "Attributes"
+msgstr "Atribute"
+
+msgid "Basic"
+msgstr "Bază"
+
+msgid "Bulk edit"
+msgstr "Editare în bloc"
+
+msgid "Categories"
+msgstr "Categorii"
+
+msgid "Close"
+msgstr "Închidere"
+
+msgid "Columns"
+msgstr "Coloane"
+
+msgid "Copy"
+msgstr "Copiați"
+
+msgid "Copy this entry"
+msgstr "Copiați această intrare"
+
+msgid "Created"
+msgstr "Creat"
+
+msgid "Currency"
+msgstr "Valută"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "Moneda prețurilor care urmează să fie exportate în acest flux"
+
+msgid "Delete"
+msgstr "Ștergeți"
+
+msgid "Delete this entry"
+msgstr "Șterge această intrare"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "Denumire descriptivă pentru această configurație de flux"
+
+msgid "Edit"
+msgstr "Editare"
+
+msgid "Editor"
+msgstr "Editor"
+
+msgid "Enter category ID, code or label"
+msgstr "Introduceți ID-ul categoriei, codul sau eticheta"
+
+msgid "Enter product ID, code or label"
+msgstr "Introduceți ID-ul produsului, codul sau eticheta"
+
+msgid "Excluded categories"
+msgstr "Categorii excluse"
+
+msgid "Excluded products"
+msgstr "Produse excluse"
+
+msgid "Export only in-stock products"
+msgstr "Exportați numai produsele disponibile în stoc"
+
+msgid "Exports products for Google Shopping"
+msgstr "Exportă produse pentru Google Shopping"
+
+msgid "Exports products for Idealo"
+msgstr "Exporturi de produse pentru Idealo"
+
+msgid "Feed"
+msgstr "Hrană"
+
+msgid "Feed field"
+msgstr "Câmpul de alimentare"
+
+msgid "Feeds"
+msgstr "Fluxuri"
+
+msgid "Google shopping export"
+msgstr "Export Google Shopping"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idealo product export"
+msgstr "Exportul produselor Idealo"
+
+msgid "In-stock"
+msgstr "În stoc"
+
+msgid "In-stock only"
+msgstr "Numai în stoc"
+
+msgid "Included categories"
+msgstr "Categorii incluse"
+
+msgid "Included products"
+msgstr "Produse incluse"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "Introduceți o nouă înregistrare (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "Nume intern (necesar)"
+
+msgid "Label"
+msgstr "Etichetă"
+
+msgid "Language"
+msgstr "Limba"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr ""
+"Limba datelor despre produs care urmează să fie exportate în acest flux"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Asociați un nume de câmp din fluxul de date cu tipul de atribut al "
+"produsului Aimeos care conține valoarea respectivă."
+
+msgid "Menu"
+msgstr "Meniu"
+
+msgid "Modified"
+msgstr "Modificat"
+
+msgid "New"
+msgstr "Nou"
+
+msgid "No"
+msgstr "Nu"
+
+msgid "No entries found"
+msgstr "Nu s-au găsit intrări"
+
+msgid "Please select"
+msgstr "Vă rugăm să selectați"
+
+msgid "Products"
+msgstr "Produse"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "Parametrul obligatoriu \"%1$s\" lipsește"
+
+msgid "Save"
+msgstr "Salvați"
+
+msgid "Show search form"
+msgstr "Afișați formularul de căutare"
+
+msgid "Status"
+msgstr "Statut"
+
+msgid "The export format used to generate this product feed"
+msgstr "Formatul de export utilizat pentru generarea acestui feed de produse"
+
+msgid "Type"
+msgstr "Tip"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Imposibil de creat fișier temporar pentru exportul Google Shopping"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Imposibil de creat fișier temporar pentru exportul Idealo"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr ""
+"Imposibil de scris antetul pentru exportul Google Shopping în fișierul "
+"temporar"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr ""
+"Imposibil de scris antetul pentru exportul Idealo în fișierul temporar"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+"Imposibilitatea de a scrie produse pentru exportul Google Shopping în "
+"fișierul temporar"
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr ""
+"Imposibilitatea de a scrie produse pentru exportul Idealo în fișierul "
+"temporar"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Când această opțiune este activată, numai produsele cu stoc disponibil sunt "
+"incluse în feed."
+
+msgid "Yes"
+msgstr "Da"
+
+#, php-format
+msgid "feed"
+msgstr "hrănire"
+
+msgid "selected"
+msgstr "selectat"
+
+msgid "status:-1"
+msgstr "stare:-1"
+
+msgid "status:-2"
+msgstr "stare:-2"
+
+msgid "status:0"
+msgstr "stare:0"
+
+msgid "status:1"
+msgstr "stare:1"

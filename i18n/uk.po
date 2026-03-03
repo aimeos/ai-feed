@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Федір Вільгота <fredy31415@gmail.com>, 2026
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Ukrainian (https://app.transifex.com/aimeos/teams/39015/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+msgid "Add"
+msgstr "Додати"
+
+msgid "Attribute type"
+msgstr "Тип атрибуту"
+
+msgid "Attributes"
+msgstr "Атрибути"
+
+msgid "Basic"
+msgstr "Основний"
+
+msgid "Bulk edit"
+msgstr "Масове редагування"
+
+msgid "Categories"
+msgstr "Категорії"
+
+msgid "Close"
+msgstr "Закрити"
+
+msgid "Columns"
+msgstr "Колонки"
+
+msgid "Copy"
+msgstr "Прийнято."
+
+msgid "Copy this entry"
+msgstr "Скопіюйте цей запис"
+
+msgid "Created"
+msgstr "Створено"
+
+msgid "Currency"
+msgstr "Валюта"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "Валюта цін, що експортуються в цьому каналі"
+
+msgid "Delete"
+msgstr "Видалити"
+
+msgid "Delete this entry"
+msgstr "Видалити цей запис"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "Описова назва для цієї конфігурації каналу"
+
+msgid "Edit"
+msgstr "Редагувати"
+
+msgid "Editor"
+msgstr "Редактор"
+
+msgid "Enter category ID, code or label"
+msgstr "Введіть ідентифікатор категорії, код або мітку"
+
+msgid "Enter product ID, code or label"
+msgstr "Введіть ідентифікатор продукту, код або етикетку"
+
+msgid "Excluded categories"
+msgstr "Виключені категорії"
+
+msgid "Excluded products"
+msgstr "Виключені продукти"
+
+msgid "Export only in-stock products"
+msgstr "Експортувати тільки товари, що є в наявності"
+
+msgid "Exports products for Google Shopping"
+msgstr "Експорт продуктів для Google Shopping"
+
+msgid "Exports products for Idealo"
+msgstr "Експорт продуктів для Idealo"
+
+msgid "Feed"
+msgstr "Корм"
+
+msgid "Feed field"
+msgstr "Поле корму"
+
+msgid "Feeds"
+msgstr "Канали"
+
+msgid "Google shopping export"
+msgstr "Експорт з Google Shopping"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idealo product export"
+msgstr "Експорт продуктів Idealo"
+
+msgid "In-stock"
+msgstr "В наявності"
+
+msgid "In-stock only"
+msgstr "Тільки в наявності"
+
+msgid "Included categories"
+msgstr "Включені категорії"
+
+msgid "Included products"
+msgstr "Включені продукти"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "Вставити новий запис (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "Внутрішня назва (обов'язково)"
+
+msgid "Label"
+msgstr "Мітка"
+
+msgid "Language"
+msgstr "Мова"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "Мова даних про продукт, які будуть експортовані в цьому каналі"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Прив'яжіть ім'я поля каналу до типу атрибута продукту Aimeos, що містить "
+"значення"
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Modified"
+msgstr "Змінено"
+
+msgid "New"
+msgstr "Новий"
+
+msgid "No"
+msgstr "Ні"
+
+msgid "No entries found"
+msgstr "Не знайдено записів"
+
+msgid "Please select"
+msgstr "Виберіть будь ласка"
+
+msgid "Products"
+msgstr "Продукти"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "Відсутній необхідний параметр \"%1$s\""
+
+msgid "Save"
+msgstr "Зберегти"
+
+msgid "Show search form"
+msgstr "Показати форму пошуку"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "The export format used to generate this product feed"
+msgstr "Формат експорту, використаний для створення цього продуктового фіду"
+
+msgid "Type"
+msgstr "Тип"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Неможливо створити тимчасовий файл для експорту Google Shopping"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Неможливо створити тимчасовий файл для експорту Idealo"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr ""
+"Неможливо записати заголовок для експорту Google Shopping у тимчасовий файл"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Неможливо записати заголовок для експорту Idealo у тимчасовий файл"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+"Неможливо записати продукти для експорту в Google Shopping у тимчасовий файл"
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Неможливо записати продукти для експорту Idealo у тимчасовий файл"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Якщо ця опція увімкнена, у фід включені лише товари, які є в наявності."
+
+msgid "Yes"
+msgstr "Так"
+
+#, php-format
+msgid "feed"
+msgstr "корм"
+
+msgid "selected"
+msgstr "вибрано"
+
+msgid "status:-1"
+msgstr "статус:-1"
+
+msgid "status:-2"
+msgstr "статус:-2"
+
+msgid "status:0"
+msgstr "status:0"
+
+msgid "status:1"
+msgstr "статус:1"

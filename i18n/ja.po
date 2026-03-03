@@ -1,0 +1,237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Japanese (https://app.transifex.com/aimeos/teams/39015/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Add"
+msgstr "追加"
+
+msgid "Attribute type"
+msgstr "属性タイプ"
+
+msgid "Attributes"
+msgstr "属性"
+
+msgid "Basic"
+msgstr "ベーシック"
+
+msgid "Bulk edit"
+msgstr "一括編集"
+
+msgid "Categories"
+msgstr "カテゴリ"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Columns"
+msgstr "コラム"
+
+msgid "Copy"
+msgstr "コピー"
+
+msgid "Copy this entry"
+msgstr "このエントリーをコピーする"
+
+msgid "Created"
+msgstr "作成"
+
+msgid "Currency"
+msgstr "通貨"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "このフィードでエクスポートされる価格の通貨"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Delete this entry"
+msgstr "このエントリーを削除する"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "このフィード設定の説明名"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "Editor"
+msgstr "エディター"
+
+msgid "Enter category ID, code or label"
+msgstr "カテゴリID、コード、またはラベルを入力してください"
+
+msgid "Enter product ID, code or label"
+msgstr "製品ID、コード、またはラベルを入力してください"
+
+msgid "Excluded categories"
+msgstr "除外カテゴリー"
+
+msgid "Excluded products"
+msgstr "除外製品"
+
+msgid "Export only in-stock products"
+msgstr "在庫品のみを輸出する"
+
+msgid "Exports products for Google Shopping"
+msgstr "Googleショッピング向けの製品を輸出する"
+
+msgid "Exports products for Idealo"
+msgstr "Idealo向け製品を輸出する"
+
+msgid "Feed"
+msgstr "フィード"
+
+msgid "Feed field"
+msgstr "フィードフィールド"
+
+msgid "Feeds"
+msgstr "フィード"
+
+msgid "Google shopping export"
+msgstr "Googleショッピングエクスポート"
+
+msgid "ID"
+msgstr "身分証明書"
+
+msgid "Idealo product export"
+msgstr "Idealo商品エクスポート"
+
+msgid "In-stock"
+msgstr "在庫あり"
+
+msgid "In-stock only"
+msgstr "在庫品のみ"
+
+msgid "Included categories"
+msgstr "含まれるカテゴリ"
+
+msgid "Included products"
+msgstr "含まれる製品"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "新規エントリーの挿入 (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "社名（必須）"
+
+msgid "Label"
+msgstr "ラベル"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "このフィードでエクスポートされる製品データの言語"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr "フィードフィールド名を、値を含むAimeos製品属性タイプにマッピングする"
+
+msgid "Menu"
+msgstr "メニュー"
+
+msgid "Modified"
+msgstr "変形"
+
+msgid "New"
+msgstr "新しい"
+
+msgid "No"
+msgstr "いいえ"
+
+msgid "No entries found"
+msgstr "該当する項目が見つかりませんでした"
+
+msgid "Please select"
+msgstr "選択してください"
+
+msgid "Products"
+msgstr "製品"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "必須パラメータ \"%1$s\" が見つかりません。"
+
+msgid "Save"
+msgstr "セーブ"
+
+msgid "Show search form"
+msgstr "検索フォームを表示"
+
+msgid "Status"
+msgstr "ステータス"
+
+msgid "The export format used to generate this product feed"
+msgstr "この商品フィードを生成するために使用されたエクスポート形式"
+
+msgid "Type"
+msgstr "タイプ"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Googleショッピングエクスポート用の一時ファイルを作成できません"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Idealoエクスポート用の一時ファイルを作成できませんでした"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr "Googleショッピングエクスポート用の一時ファイルへのヘッダー書き込みができません"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Idealoエクスポート用ヘッダーを一時ファイルに書き込めません"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr "Googleショッピングエクスポート用の商品を一時ファイルに書き込めません"
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Idealoエクスポート用の商品を一時ファイルに書き込めません"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr "有効にすると、在庫がある商品のみがフィードに含まれます"
+
+msgid "Yes"
+msgstr "はい"
+
+#, php-format
+msgid "feed"
+msgstr "フィード"
+
+msgid "selected"
+msgstr "選ばれた"
+
+msgid "status:-1"
+msgstr "ステータス:-1"
+
+msgid "status:-2"
+msgstr "ステータス：-2"
+
+msgid "status:0"
+msgstr "ステータス:0"
+
+msgid "status:1"
+msgstr "ステータス:1"

@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Polish (https://app.transifex.com/aimeos/teams/39015/pl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+msgid "Add"
+msgstr "Dodaj"
+
+msgid "Attribute type"
+msgstr "Typ atrybutu"
+
+msgid "Attributes"
+msgstr "Atrybuty"
+
+msgid "Basic"
+msgstr "Podstawowy"
+
+msgid "Bulk edit"
+msgstr "Edycja zbiorcza"
+
+msgid "Categories"
+msgstr "Kategorie"
+
+msgid "Close"
+msgstr "Zamknij"
+
+msgid "Columns"
+msgstr "Kolumny"
+
+msgid "Copy"
+msgstr "Kopia"
+
+msgid "Copy this entry"
+msgstr "Kopiuj ten wpis"
+
+msgid "Created"
+msgstr "Utworzony"
+
+msgid "Currency"
+msgstr "Waluta"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "Waluta cen, które mają być eksportowane w tym pliku"
+
+msgid "Delete"
+msgstr "Usuń"
+
+msgid "Delete this entry"
+msgstr "Usuń ten wpis"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "Nazwa opisowa dla tej konfiguracji kanału"
+
+msgid "Edit"
+msgstr "Edytuj"
+
+msgid "Editor"
+msgstr "Edytor"
+
+msgid "Enter category ID, code or label"
+msgstr "Wprowadź identyfikator kategorii, kod lub etykietę"
+
+msgid "Enter product ID, code or label"
+msgstr "Wprowadź identyfikator produktu, kod lub etykietę"
+
+msgid "Excluded categories"
+msgstr "Wyłączone kategorie"
+
+msgid "Excluded products"
+msgstr "Produkty wyłączone"
+
+msgid "Export only in-stock products"
+msgstr "Eksportuj tylko produkty dostępne w magazynie"
+
+msgid "Exports products for Google Shopping"
+msgstr "Eksportuje produkty do Google Shopping"
+
+msgid "Exports products for Idealo"
+msgstr "Eksportuje produkty dla Idealo"
+
+msgid "Feed"
+msgstr "Pasza"
+
+msgid "Feed field"
+msgstr "Pole paszowe"
+
+msgid "Feeds"
+msgstr "Kanały"
+
+msgid "Google shopping export"
+msgstr "Eksport do Google Shopping"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idealo product export"
+msgstr "Eksport produktów Idealo"
+
+msgid "In-stock"
+msgstr "W magazynie"
+
+msgid "In-stock only"
+msgstr "Tylko produkty dostępne w magazynie"
+
+msgid "Included categories"
+msgstr "Zawarte kategorie"
+
+msgid "Included products"
+msgstr "Produkty w zestawie"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "Wstaw nowy wpis (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "Nazwa wewnętrzna (wymagana)"
+
+msgid "Label"
+msgstr "Etykieta"
+
+msgid "Language"
+msgstr "Język"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "Język danych produktu, które mają być eksportowane w tym kanale"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Przypisz nazwę pola kanału do typu atrybutu produktu Aimeos zawierającego tę"
+" wartość."
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Modified"
+msgstr "Zmodyfikowany"
+
+msgid "New"
+msgstr "Nowość"
+
+msgid "No"
+msgstr "Nie"
+
+msgid "No entries found"
+msgstr "Nie znaleziono żadnych wpisów."
+
+msgid "Please select"
+msgstr "Wybierz"
+
+msgid "Products"
+msgstr "Produkty"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "Brak wymaganego parametru \"%1$s\""
+
+msgid "Save"
+msgstr "Zapisz"
+
+msgid "Show search form"
+msgstr "Pokaż formularz wyszukiwania"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "The export format used to generate this product feed"
+msgstr "Format eksportu użyty do wygenerowania tego pliku produktowego"
+
+msgid "Type"
+msgstr "Typ"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Nie można utworzyć pliku tymczasowego do eksportu do Google Shopping."
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Nie można utworzyć pliku tymczasowego do eksportu Idealo."
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr ""
+"Nie można zapisać nagłówka dla eksportu Google Shopping do pliku "
+"tymczasowego."
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Nie można zapisać nagłówka dla eksportu Idealo do pliku tymczasowego."
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+"Nie można zapisać produktów do eksportu do Google Shopping do pliku "
+"tymczasowego."
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Nie można zapisać produktów do eksportu Idealo do pliku tymczasowego."
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Po włączeniu tej opcji w pliku danych uwzględniane są wyłącznie produkty "
+"dostępne w magazynie."
+
+msgid "Yes"
+msgstr "Tak"
+
+#, php-format
+msgid "feed"
+msgstr "pasza"
+
+msgid "selected"
+msgstr "wybrany"
+
+msgid "status:-1"
+msgstr "status:-1"
+
+msgid "status:-2"
+msgstr "status:-2"
+
+msgid "status:0"
+msgstr "status:0"
+
+msgid "status:1"
+msgstr "status:1"

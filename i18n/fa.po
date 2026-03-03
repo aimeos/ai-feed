@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# hasan hojjati <hojjati64@gmail.com>, 2026
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Persian (https://app.transifex.com/aimeos/teams/39015/fa/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Add"
+msgstr "افزودن"
+
+msgid "Attribute type"
+msgstr "نوع ویژگی"
+
+msgid "Attributes"
+msgstr "ویژگی‌ها"
+
+msgid "Basic"
+msgstr "پایه"
+
+msgid "Bulk edit"
+msgstr "ویرایش دسته‌ای"
+
+msgid "Categories"
+msgstr "دسته‌بندی‌ها"
+
+msgid "Close"
+msgstr "بستن"
+
+msgid "Columns"
+msgstr "ستون‌ها"
+
+msgid "Copy"
+msgstr "کپی"
+
+msgid "Copy this entry"
+msgstr "این ورودی را کپی کنید"
+
+msgid "Created"
+msgstr "ایجاد شده"
+
+msgid "Currency"
+msgstr "ارز"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "واحد پول قیمت‌هایی که در این فید صادر می‌شوند"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Delete this entry"
+msgstr "این ورودی را حذف کن"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "نام توصیفی برای این پیکربندی فید"
+
+msgid "Edit"
+msgstr "ویرایش"
+
+msgid "Editor"
+msgstr "ویرایشگر"
+
+msgid "Enter category ID, code or label"
+msgstr "شناسهٔ دسته‌بندی، کد یا برچسب را وارد کنید"
+
+msgid "Enter product ID, code or label"
+msgstr "شناسه محصول، کد یا برچسب را وارد کنید"
+
+msgid "Excluded categories"
+msgstr "دسته‌بندی‌های مستثنی"
+
+msgid "Excluded products"
+msgstr "محصولات مستثنی"
+
+msgid "Export only in-stock products"
+msgstr "فقط محصولات موجود در انبار را صادر کنید"
+
+msgid "Exports products for Google Shopping"
+msgstr "صادرات محصولات برای گوگل شاپینگ"
+
+msgid "Exports products for Idealo"
+msgstr "محصولات صادراتی برای ایدئالو"
+
+msgid "Feed"
+msgstr "خوراک"
+
+msgid "Feed field"
+msgstr "میدان خوراک"
+
+msgid "Feeds"
+msgstr "خوراک‌ها"
+
+msgid "Google shopping export"
+msgstr "صادرات گوگل شاپینگ"
+
+msgid "ID"
+msgstr "شناسه"
+
+msgid "Idealo product export"
+msgstr "صادرات محصول ایدئالو"
+
+msgid "In-stock"
+msgstr "موجود"
+
+msgid "In-stock only"
+msgstr "فقط موجود"
+
+msgid "Included categories"
+msgstr "دسته‌بندی‌های گنجانده‌شده"
+
+msgid "Included products"
+msgstr "محصولات گنجانده‌شده"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "قرار دادن ورودی جدید (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "نام داخلی (الزامی)"
+
+msgid "Label"
+msgstr "برچسب"
+
+msgid "Language"
+msgstr "زبان"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "زبان داده‌های محصولی که در این فید صادر می‌شوند"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"نام فیلد فید را به نوع ویژگی محصول Aimeos که حاوی مقدار است، نگاشت کنید."
+
+msgid "Menu"
+msgstr "منو"
+
+msgid "Modified"
+msgstr "تغییر یافته"
+
+msgid "New"
+msgstr "جدید"
+
+msgid "No"
+msgstr "خیر"
+
+msgid "No entries found"
+msgstr "هیچ ورودی یافت نشد"
+
+msgid "Please select"
+msgstr "لطفا انتخاب کنید"
+
+msgid "Products"
+msgstr "محصولات"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "پارامتر مورد نیاز \"%1$s\" وجود ندارد"
+
+msgid "Save"
+msgstr "ذخیره"
+
+msgid "Show search form"
+msgstr "نمایش فرم جستجو"
+
+msgid "Status"
+msgstr "وضعیت"
+
+msgid "The export format used to generate this product feed"
+msgstr "فرمت صادراتی مورد استفاده برای تولید این فید محصول"
+
+msgid "Type"
+msgstr "نوع"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "نمی‌توان فایل موقت برای خروجی گوگل شاپینگ ایجاد کرد"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "نمی‌توان فایل موقت برای خروجی Idealo ایجاد کرد"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr "نمی‌تواند سربرگ خروجی گوگل شاپینگ را به فایل موقت بنویسد"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "نمی‌تواند هدر را برای خروجی Idealo به فایل موقت بنویسد"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr "نمی‌توان محصولات را برای صادرات به گوگل شاپینگ در فایل موقت نوشت."
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "نمی‌توان محصولات را برای خروجی Idealo به فایل موقت نوشت."
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr "وقتی فعال باشد، تنها محصولاتی که موجودی دارند در فید گنجانده می‌شوند."
+
+msgid "Yes"
+msgstr "بله"
+
+#, php-format
+msgid "feed"
+msgstr "خوراک/غذای حیوانات"
+
+msgid "selected"
+msgstr "انتخاب‌شده"
+
+msgid "status:-1"
+msgstr "وضعیت:-۱"
+
+msgid "status:-2"
+msgstr "وضعیت:-۲"
+
+msgid "status:0"
+msgstr "وضعیت:۰"
+
+msgid "status:1"
+msgstr "وضعیت:۱"

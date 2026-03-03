@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Latvian (https://app.transifex.com/aimeos/teams/39015/lv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+
+msgid "Add"
+msgstr "Pievienot"
+
+msgid "Attribute type"
+msgstr "Atribūta tips"
+
+msgid "Attributes"
+msgstr "Atribūti"
+
+msgid "Basic"
+msgstr "Pamati"
+
+msgid "Bulk edit"
+msgstr "Lielgabarīta rediģēšana"
+
+msgid "Categories"
+msgstr "Kategorijas"
+
+msgid "Close"
+msgstr "Aizvērt"
+
+msgid "Columns"
+msgstr "Kolonnas"
+
+msgid "Copy"
+msgstr "Kopēt"
+
+msgid "Copy this entry"
+msgstr "Kopēt šo ierakstu"
+
+msgid "Created"
+msgstr "Izveidots"
+
+msgid "Currency"
+msgstr "Valūta"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "Šajā plūsmā eksportējamo cenu valūta"
+
+msgid "Delete"
+msgstr "Dzēst"
+
+msgid "Delete this entry"
+msgstr "Dzēst šo ierakstu"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "Šīs plūsmas konfigurācijas aprakstošais nosaukums"
+
+msgid "Edit"
+msgstr "Rediģēt"
+
+msgid "Editor"
+msgstr "Redaktors"
+
+msgid "Enter category ID, code or label"
+msgstr "Ievadiet kategorijas ID, kodu vai etiķeti"
+
+msgid "Enter product ID, code or label"
+msgstr "Ievadiet produkta identifikācijas numuru, kodu vai etiķeti"
+
+msgid "Excluded categories"
+msgstr "Izslēgtās kategorijas"
+
+msgid "Excluded products"
+msgstr "Izslēgtie produkti"
+
+msgid "Export only in-stock products"
+msgstr "Eksportēt tikai noliktavā esošos produktus"
+
+msgid "Exports products for Google Shopping"
+msgstr "Eksportē produktus Google Shopping"
+
+msgid "Exports products for Idealo"
+msgstr "Eksportē produktus Idealo"
+
+msgid "Feed"
+msgstr "Barība"
+
+msgid "Feed field"
+msgstr "Barības lauks"
+
+msgid "Feeds"
+msgstr "Barības"
+
+msgid "Google shopping export"
+msgstr "Google iepirkšanās eksports"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idealo product export"
+msgstr "Idealo produktu eksports"
+
+msgid "In-stock"
+msgstr "Noliktavā"
+
+msgid "In-stock only"
+msgstr "Tikai noliktavā"
+
+msgid "Included categories"
+msgstr "Iekļautās kategorijas"
+
+msgid "Included products"
+msgstr "Iekļautie produkti"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "Ievietot jaunu ierakstu (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "Iekšējais nosaukums (obligāts)"
+
+msgid "Label"
+msgstr "Etiķete"
+
+msgid "Language"
+msgstr "Valoda"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "Šajā plūsmā eksportējamo produktu datu valoda"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Saistiet barošanas lauka nosaukumu ar Aimeos produkta atribūta tipu, kas "
+"satur vērtību"
+
+msgid "Menu"
+msgstr "Izvēlne"
+
+msgid "Modified"
+msgstr "Modificēts"
+
+msgid "New"
+msgstr "Jauns"
+
+msgid "No"
+msgstr "Nē"
+
+msgid "No entries found"
+msgstr "Nekādi ieraksti nav atrasti"
+
+msgid "Please select"
+msgstr "Lūdzu, izvēlieties"
+
+msgid "Products"
+msgstr "Produkti"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "Trūkst obligātā parametra \"%1$s\"."
+
+msgid "Save"
+msgstr "Saglabāt"
+
+msgid "Show search form"
+msgstr "Rādīt meklēšanas veidlapu"
+
+msgid "Status"
+msgstr "Statuss"
+
+msgid "The export format used to generate this product feed"
+msgstr "Eksporta formāts, kas izmantots šī produkta plūsmas ģenerēšanai"
+
+msgid "Type"
+msgstr "Tips"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Nav iespējams izveidot pagaidu failu Google iepirkšanās eksportam"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Nav iespējams izveidot pagaidu failu Idealo eksportam"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr ""
+"Nav iespējams rakstīt galvenes Google iepirkšanās eksportam uz pagaidu failu"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Nav iespējams rakstīt galvenes Idealo eksportam uz pagaidu failu"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+"Nav iespējams rakstīt produktus Google iepirkšanās eksportam uz pagaidu "
+"failu"
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Nevar rakstīt produktus Idealo eksportam uz pagaidu failu"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Ja šī funkcija ir ieslēgta, plūsmā tiek iekļauti tikai produkti, kas ir "
+"pieejami noliktavā."
+
+msgid "Yes"
+msgstr "Jā"
+
+#, php-format
+msgid "feed"
+msgstr "barība"
+
+msgid "selected"
+msgstr "atlasīts"
+
+msgid "status:-1"
+msgstr "statuss:-1"
+
+msgid "status:-2"
+msgstr "statuss:-2"
+
+msgid "status:0"
+msgstr "statuss:0"
+
+msgid "status:1"
+msgstr "statuss:1"

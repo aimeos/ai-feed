@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# stevechen <steve.stevechen@gmail.com>, 2026
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Chinese (https://app.transifex.com/aimeos/teams/39015/zh/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Add"
+msgstr "添加"
+
+msgid "Attribute type"
+msgstr "属性类型"
+
+msgid "Attributes"
+msgstr "属性"
+
+msgid "Basic"
+msgstr "基础"
+
+msgid "Bulk edit"
+msgstr "批量编辑"
+
+msgid "Categories"
+msgstr "分类"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Columns"
+msgstr "专栏"
+
+msgid "Copy"
+msgstr "复制"
+
+msgid "Copy this entry"
+msgstr "复制此条目"
+
+msgid "Created"
+msgstr "創建日期"
+
+msgid "Currency"
+msgstr "货币"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "本数据源中要导出的价格所采用的货币"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Delete this entry"
+msgstr "刪除此紀錄"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "此源配置的描述性名称"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Editor"
+msgstr "編輯器"
+
+msgid "Enter category ID, code or label"
+msgstr "输入类别ID、代码或标签"
+
+msgid "Enter product ID, code or label"
+msgstr "输入产品ID、代码或标签"
+
+msgid "Excluded categories"
+msgstr "排除类别"
+
+msgid "Excluded products"
+msgstr "排除产品"
+
+msgid "Export only in-stock products"
+msgstr "仅导出有库存的产品"
+
+msgid "Exports products for Google Shopping"
+msgstr "为谷歌购物导出产品"
+
+msgid "Exports products for Idealo"
+msgstr "为Idealo出口产品"
+
+msgid "Feed"
+msgstr "饲料"
+
+msgid "Feed field"
+msgstr "饲料田"
+
+msgid "Feeds"
+msgstr "订阅源"
+
+msgid "Google shopping export"
+msgstr "谷歌购物导出"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idealo product export"
+msgstr "Idealo产品导出"
+
+msgid "In-stock"
+msgstr "现货"
+
+msgid "In-stock only"
+msgstr "仅限现货"
+
+msgid "Included categories"
+msgstr "包含的类别"
+
+msgid "Included products"
+msgstr "包含的产品"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "插入新紀錄（Ctrl+I）"
+
+msgid "Internal name (required)"
+msgstr "内部名称（必填）"
+
+msgid "Label"
+msgstr "標籤"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "本数据源中要导出的产品数据的语言"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr "将源字段名称映射到包含该值的Aimeos产品属性类型"
+
+msgid "Menu"
+msgstr "菜单"
+
+msgid "Modified"
+msgstr "改装"
+
+msgid "New"
+msgstr "新"
+
+msgid "No"
+msgstr "不"
+
+msgid "No entries found"
+msgstr "未找到任何条目"
+
+msgid "Please select"
+msgstr "請選擇"
+
+msgid "Products"
+msgstr "产品"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "缺少必填参数\"%1$s"
+
+msgid "Save"
+msgstr "节省"
+
+msgid "Show search form"
+msgstr "显示搜索表单"
+
+msgid "Status"
+msgstr "狀態"
+
+msgid "The export format used to generate this product feed"
+msgstr "用于生成此产品数据源的导出格式"
+
+msgid "Type"
+msgstr "类型"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "无法为Google购物导出创建临时文件"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "无法为Idealo导出创建临时文件"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr "无法为Google购物导出写入临时文件的头部信息"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "无法为Idealo导出写入临时文件的头部"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr "无法将Google购物导出产品写入临时文件"
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "无法将Idealo导出产品写入临时文件"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr "启用后，仅包含有库存的产品将被纳入数据源"
+
+msgid "Yes"
+msgstr "是的"
+
+#, php-format
+msgid "feed"
+msgstr "饲料"
+
+msgid "selected"
+msgstr "选定的"
+
+msgid "status:-1"
+msgstr "状态：-1"
+
+msgid "status:-2"
+msgstr "状态：-2"
+
+msgid "status:0"
+msgstr "状态：0"
+
+msgid "status:1"
+msgstr "状态：1"

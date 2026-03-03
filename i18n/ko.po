@@ -1,0 +1,237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Korean (https://app.transifex.com/aimeos/teams/39015/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Add"
+msgstr "추가"
+
+msgid "Attribute type"
+msgstr "속성 유형"
+
+msgid "Attributes"
+msgstr "속성"
+
+msgid "Basic"
+msgstr "기본"
+
+msgid "Bulk edit"
+msgstr "대량 편집"
+
+msgid "Categories"
+msgstr "카테고리"
+
+msgid "Close"
+msgstr "닫기"
+
+msgid "Columns"
+msgstr "열"
+
+msgid "Copy"
+msgstr "복사"
+
+msgid "Copy this entry"
+msgstr "이 항목 복사"
+
+msgid "Created"
+msgstr "생성됨"
+
+msgid "Currency"
+msgstr "통화"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "이 피드에 내보낼 가격의 통화"
+
+msgid "Delete"
+msgstr "삭제"
+
+msgid "Delete this entry"
+msgstr "이 항목 삭제"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "이 피드 구성에 대한 설명적 이름"
+
+msgid "Edit"
+msgstr "편집"
+
+msgid "Editor"
+msgstr "편집기"
+
+msgid "Enter category ID, code or label"
+msgstr "카테고리 ID, 코드 또는 레이블을 입력하세요"
+
+msgid "Enter product ID, code or label"
+msgstr "제품 ID, 코드 또는 라벨을 입력하세요"
+
+msgid "Excluded categories"
+msgstr "제외된 범주"
+
+msgid "Excluded products"
+msgstr "제외된 제품"
+
+msgid "Export only in-stock products"
+msgstr "재고가 있는 제품만 수출"
+
+msgid "Exports products for Google Shopping"
+msgstr "Google 쇼핑용 제품 내보내기"
+
+msgid "Exports products for Idealo"
+msgstr "Idealo용 제품 수출"
+
+msgid "Feed"
+msgstr "사료"
+
+msgid "Feed field"
+msgstr "사료 공급장"
+
+msgid "Feeds"
+msgstr "피드"
+
+msgid "Google shopping export"
+msgstr "Google 쇼핑 내보내기"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idealo product export"
+msgstr "Idealo 제품 내보내기"
+
+msgid "In-stock"
+msgstr "재고 있음"
+
+msgid "In-stock only"
+msgstr "재고 상품만"
+
+msgid "Included categories"
+msgstr "포함된 카테고리"
+
+msgid "Included products"
+msgstr "포함된 제품"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "새 항목 삽입(Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "내부 이름(필수)"
+
+msgid "Label"
+msgstr "라벨"
+
+msgid "Language"
+msgstr "언어"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "이 피드에서 내보낼 제품 데이터의 언어"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr "피드 필드 이름을 해당 값을 포함하는 Aimeos 제품 속성 유형에 매핑합니다."
+
+msgid "Menu"
+msgstr "메뉴"
+
+msgid "Modified"
+msgstr "수정됨"
+
+msgid "New"
+msgstr "신규"
+
+msgid "No"
+msgstr "아니"
+
+msgid "No entries found"
+msgstr "찾을 항목이 없습니다"
+
+msgid "Please select"
+msgstr "선택하세요"
+
+msgid "Products"
+msgstr "제품"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "필수 매개 변수 \"%1$s\"가 없습니다."
+
+msgid "Save"
+msgstr "저장"
+
+msgid "Show search form"
+msgstr "검색 양식 표시"
+
+msgid "Status"
+msgstr "상태"
+
+msgid "The export format used to generate this product feed"
+msgstr "이 제품 피드를 생성하는 데 사용된 내보내기 형식"
+
+msgid "Type"
+msgstr "유형"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Google 쇼핑 내보내기를 위한 임시 파일을 생성할 수 없습니다."
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Idealo 내보내기를 위한 임시 파일을 생성할 수 없습니다."
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr "Google 쇼핑 내보내기를 위한 헤더를 임시 파일에 작성할 수 없음"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "임시 파일에 Idealo 내보내기 헤더를 작성할 수 없습니다"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr "Google 쇼핑 내보내기를 위한 상품 데이터를 임시 파일에 작성할 수 없습니다."
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Idealo 수출용 제품 데이터를 임시 파일에 작성할 수 없습니다"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr "활성화 시 재고가 있는 제품만 피드에 포함됩니다"
+
+msgid "Yes"
+msgstr "네"
+
+#, php-format
+msgid "feed"
+msgstr "사료"
+
+msgid "selected"
+msgstr "선택"
+
+msgid "status:-1"
+msgstr "상태:-1"
+
+msgid "status:-2"
+msgstr "상태:-2"
+
+msgid "status:0"
+msgstr "상태:0"
+
+msgid "status:1"
+msgstr "상태:1"

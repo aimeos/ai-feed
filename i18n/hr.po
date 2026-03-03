@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Miro Sertić <miro.sertic0606@gmail.com>, 2026
+# Aimeos, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Croatian (https://app.transifex.com/aimeos/teams/39015/hr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+msgid "Add"
+msgstr "Dodaj"
+
+msgid "Attribute type"
+msgstr "Tip atributa"
+
+msgid "Attributes"
+msgstr "Atributi"
+
+msgid "Basic"
+msgstr "Osnovno"
+
+msgid "Bulk edit"
+msgstr "Masovna izmjena"
+
+msgid "Categories"
+msgstr "Kategorije"
+
+msgid "Close"
+msgstr "Zatvori"
+
+msgid "Columns"
+msgstr "Kolumne"
+
+msgid "Copy"
+msgstr "Kopiraj"
+
+msgid "Copy this entry"
+msgstr "Kopiraj ovaj unos"
+
+msgid "Created"
+msgstr "Kreirano"
+
+msgid "Currency"
+msgstr "Valuta"
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr "Valuta cijena koje se izvoze u ovom feedu"
+
+msgid "Delete"
+msgstr "Izbriši"
+
+msgid "Delete this entry"
+msgstr "Obrišite zapis"
+
+msgid "Descriptive name for this feed configuration"
+msgstr "Opisni naziv za ovu konfiguraciju napajanja"
+
+msgid "Edit"
+msgstr "Uredi"
+
+msgid "Editor"
+msgstr "Urednik"
+
+msgid "Enter category ID, code or label"
+msgstr "Unesite ID kategorije, kod ili oznaku"
+
+msgid "Enter product ID, code or label"
+msgstr "Unesite ID proizvoda, šifru ili oznaku"
+
+msgid "Excluded categories"
+msgstr "Isključene kategorije"
+
+msgid "Excluded products"
+msgstr "Isključeni proizvodi"
+
+msgid "Export only in-stock products"
+msgstr "Izvozite samo proizvode na zalihi"
+
+msgid "Exports products for Google Shopping"
+msgstr "Izvoz proizvoda za Google Shopping"
+
+msgid "Exports products for Idealo"
+msgstr "Izvoz proizvoda za Idealo"
+
+msgid "Feed"
+msgstr "Hrana"
+
+msgid "Feed field"
+msgstr "Polje za unos"
+
+msgid "Feeds"
+msgstr "Prehrane"
+
+msgid "Google shopping export"
+msgstr "Izvoz Google kupovine"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idealo product export"
+msgstr "Idealo izvoz proizvoda"
+
+msgid "In-stock"
+msgstr "Na zalihi"
+
+msgid "In-stock only"
+msgstr "Samo na zalihi"
+
+msgid "Included categories"
+msgstr "Uključene kategorije"
+
+msgid "Included products"
+msgstr "Uključeni proizvodi"
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr "Dodajte novi zapis (Ctrl+I)"
+
+msgid "Internal name (required)"
+msgstr "Interni naziv (obavezno)"
+
+msgid "Label"
+msgstr "Oznaka"
+
+msgid "Language"
+msgstr "Jezik"
+
+msgid "Language of the product data to be exported in this feed"
+msgstr "Jezik podataka o proizvodu koji se izvoze u ovom feedu"
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Mapirajte naziv polja za feed na tip atributa Aimeos proizvoda koji sadrži "
+"vrijednost"
+
+msgid "Menu"
+msgstr "Izbornik"
+
+msgid "Modified"
+msgstr "Promijenjeno"
+
+msgid "New"
+msgstr "Novo"
+
+msgid "No"
+msgstr "Ne"
+
+msgid "No entries found"
+msgstr "Nije pronađen nijedan unos"
+
+msgid "Please select"
+msgstr "Odaberi"
+
+msgid "Products"
+msgstr "Proizvodi"
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr "Potrebni parametar \"%1$s\" nedostaje"
+
+msgid "Save"
+msgstr "Spremi"
+
+msgid "Show search form"
+msgstr "Prikaži obrazac za pretraživanje"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "The export format used to generate this product feed"
+msgstr "Izvozni format koji se koristi za generiranje ovog proizvoda"
+
+msgid "Type"
+msgstr "vrsta"
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr "Nije moguće stvoriti privremenu datoteku za izvoz za Google Shopping"
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr "Nije moguće stvoriti privremenu datoteku za Idealo izvoz"
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr ""
+"Ne može se napisati zaglavlje za izvoz u Google Shopping privremenu datoteku"
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr "Ne može se napisati zaglavlje za Idealo izvoz u privremenu datoteku"
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+"Ne može se zapisati proizvode za izvoz u Google Shopping u privremenu "
+"datoteku"
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr "Ne može se zapisati proizvode za Idealo izvoz u privremenu datoteku"
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Kada je omogućeno, u feed se uključuju samo proizvodi s raspoloživom "
+"zalihom."
+
+msgid "Yes"
+msgstr "Da"
+
+#, php-format
+msgid "feed"
+msgstr "hrana"
+
+msgid "selected"
+msgstr "odabrano"
+
+msgid "status:-1"
+msgstr "status:-1"
+
+msgid "status:-2"
+msgstr "stanje:-2"
+
+msgid "status:0"
+msgstr "status:0"
+
+msgid "status:1"
+msgstr "status:1"

@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-03 15:05+0100\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Language-Team: Norwegian (https://app.transifex.com/aimeos/teams/39015/no/)\n"
+"Language: no\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Add"
+msgstr ""
+
+msgid "Attribute type"
+msgstr ""
+
+msgid "Attributes"
+msgstr ""
+
+msgid "Basic"
+msgstr ""
+
+msgid "Bulk edit"
+msgstr ""
+
+msgid "Categories"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Columns"
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Copy this entry"
+msgstr ""
+
+msgid "Created"
+msgstr ""
+
+msgid "Currency"
+msgstr ""
+
+msgid "Currency of the prices to be exported in this feed"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete this entry"
+msgstr ""
+
+msgid "Descriptive name for this feed configuration"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Editor"
+msgstr ""
+
+msgid "Enter category ID, code or label"
+msgstr ""
+
+msgid "Enter product ID, code or label"
+msgstr ""
+
+msgid "Excluded categories"
+msgstr ""
+
+msgid "Excluded products"
+msgstr ""
+
+msgid "Export only in-stock products"
+msgstr ""
+
+msgid "Exports products for Google Shopping"
+msgstr ""
+
+msgid "Exports products for Idealo"
+msgstr ""
+
+msgid "Feed"
+msgstr ""
+
+msgid "Feed field"
+msgstr ""
+
+msgid "Feeds"
+msgstr ""
+
+msgid "Google shopping export"
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+msgid "Idealo product export"
+msgstr ""
+
+msgid "In-stock"
+msgstr ""
+
+msgid "In-stock only"
+msgstr ""
+
+msgid "Included categories"
+msgstr ""
+
+msgid "Included products"
+msgstr ""
+
+msgid "Insert new entry (Ctrl+I)"
+msgstr ""
+
+msgid "Internal name (required)"
+msgstr ""
+
+msgid "Label"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "Language of the product data to be exported in this feed"
+msgstr ""
+
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Modified"
+msgstr ""
+
+msgid "New"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "No entries found"
+msgstr ""
+
+msgid "Please select"
+msgstr ""
+
+msgid "Products"
+msgstr ""
+
+#, php-format
+msgid "Required parameter \"%1$s\" is missing"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Show search form"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "The export format used to generate this product feed"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+#, php-format
+msgid "Unable to create temporary file for Google shopping export"
+msgstr ""
+
+#, php-format
+msgid "Unable to create temporary file for Idealo export"
+msgstr ""
+
+#, php-format
+msgid "Unable to write header for Google shopping export to temporary file"
+msgstr ""
+
+#, php-format
+msgid "Unable to write header for Idealo export to temporary file"
+msgstr ""
+
+#, php-format
+msgid "Unable to write products for Google shopping export to temporary file"
+msgstr ""
+
+#, php-format
+msgid "Unable to write products for Idealo export to temporary file"
+msgstr ""
+
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+#, php-format
+msgid "feed"
+msgstr ""
+
+msgid "selected"
+msgstr ""
+
+msgid "status:-1"
+msgstr ""
+
+msgid "status:-2"
+msgstr ""
+
+msgid "status:0"
+msgstr ""
+
+msgid "status:1"
+msgstr ""
