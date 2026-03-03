@@ -342,7 +342,7 @@ class Standard
 	protected function header() : string
 	{
 		/** controller/jobs/product/export/google/template-header
-         * Relative path to the CSV header template of the product export job controller.
+		 * Relative path to the CSV header template of the product export job controller.
 		 *
 		 * The template file contains the CSV code and processing instructions
 		 * to generate the export files. The configuration string is the path
