@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"POT-Creation-Date: 2026-03-03 15:15+0100\n"
 "PO-Revision-Date: 2026-03-03 13:26+0000\n"
 "Last-Translator: Aimeos, 2026\n"
 "Language-Team: Indonesian (https://app.transifex.com/aimeos/teams/39015/id/)\n"
@@ -89,8 +89,17 @@ msgstr "Kategori yang dikecualikan"
 msgid "Excluded products"
 msgstr "Produk yang dikecualikan"
 
+msgid "Export"
+msgstr "Ekspor"
+
+msgid "Export field"
+msgstr "Bidang ekspor"
+
 msgid "Export only in-stock products"
 msgstr "Ekspor hanya produk yang tersedia di stok."
+
+msgid "Exports"
+msgstr "Ekspor"
 
 msgid "Exports products for Google Shopping"
 msgstr "Ekspor produk untuk Google Shopping"

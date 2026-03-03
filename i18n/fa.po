@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"POT-Creation-Date: 2026-03-03 15:15+0100\n"
 "PO-Revision-Date: 2026-03-03 13:26+0000\n"
 "Last-Translator: Aimeos, 2026\n"
 "Language-Team: Persian (https://app.transifex.com/aimeos/teams/39015/fa/)\n"
@@ -88,8 +88,17 @@ msgstr "دسته‌بندی‌های مستثنی"
 msgid "Excluded products"
 msgstr "محصولات مستثنی"
 
+msgid "Export"
+msgstr "صادرات"
+
+msgid "Export field"
+msgstr "میدان صادرات"
+
 msgid "Export only in-stock products"
 msgstr "فقط محصولات موجود در انبار را صادر کنید"
+
+msgid "Exports"
+msgstr "صادرات"
 
 msgid "Exports products for Google Shopping"
 msgstr "صادرات محصولات برای گوگل شاپینگ"

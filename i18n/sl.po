@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"POT-Creation-Date: 2026-03-03 15:15+0100\n"
 "PO-Revision-Date: 2026-03-03 13:26+0000\n"
 "Last-Translator: Aimeos, 2026\n"
 "Language-Team: Slovenian (https://app.transifex.com/aimeos/teams/39015/sl/)\n"
@@ -87,8 +87,17 @@ msgstr "Izključene kategorije"
 msgid "Excluded products"
 msgstr "Izključeni izdelki"
 
+msgid "Export"
+msgstr "Izvoz"
+
+msgid "Export field"
+msgstr "Izvozno polje"
+
 msgid "Export only in-stock products"
 msgstr "Izvoz samo izdelkov, ki so na zalogi"
+
+msgid "Exports"
+msgstr "Izvoz"
 
 msgid "Exports products for Google Shopping"
 msgstr "Izvoz izdelkov za Google Shopping"

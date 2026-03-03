@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"POT-Creation-Date: 2026-03-03 15:15+0100\n"
 "PO-Revision-Date: 2026-03-03 13:26+0000\n"
 "Last-Translator: Aimeos, 2026\n"
 "Language-Team: French (https://app.transifex.com/aimeos/teams/39015/fr/)\n"
@@ -88,8 +88,17 @@ msgstr "Catégories exclues"
 msgid "Excluded products"
 msgstr "Produits exclus"
 
+msgid "Export"
+msgstr "Exportation"
+
+msgid "Export field"
+msgstr "Champ d'exportation"
+
 msgid "Export only in-stock products"
 msgstr "Exporter uniquement les produits en stock"
+
+msgid "Exports"
+msgstr "Exportations"
 
 msgid "Exports products for Google Shopping"
 msgstr "Exporte des produits pour Google Shopping"

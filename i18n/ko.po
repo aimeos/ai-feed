@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"POT-Creation-Date: 2026-03-03 15:15+0100\n"
 "PO-Revision-Date: 2026-03-03 13:26+0000\n"
 "Last-Translator: Aimeos, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/aimeos/teams/39015/ko/)\n"
@@ -87,8 +87,17 @@ msgstr "제외된 범주"
 msgid "Excluded products"
 msgstr "제외된 제품"
 
+msgid "Export"
+msgstr "수출"
+
+msgid "Export field"
+msgstr "수출 필드"
+
 msgid "Export only in-stock products"
 msgstr "재고가 있는 제품만 수출"
+
+msgid "Exports"
+msgstr "수출"
 
 msgid "Exports products for Google Shopping"
 msgstr "Google 쇼핑용 제품 내보내기"

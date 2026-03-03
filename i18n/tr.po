@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"POT-Creation-Date: 2026-03-03 15:15+0100\n"
 "PO-Revision-Date: 2026-03-03 13:26+0000\n"
 "Last-Translator: Aimeos, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/aimeos/teams/39015/tr/)\n"
@@ -88,8 +88,17 @@ msgstr "Hariç tutulan kategoriler"
 msgid "Excluded products"
 msgstr "Hariç tutulan ürünler"
 
+msgid "Export"
+msgstr "Dışa aktar"
+
+msgid "Export field"
+msgstr "Dışa aktarma alanı"
+
 msgid "Export only in-stock products"
 msgstr "Yalnızca stokta bulunan ürünleri ihraç et"
+
+msgid "Exports"
+msgstr "İhracat"
 
 msgid "Exports products for Google Shopping"
 msgstr "Google Alışveriş için ürünleri ihraç eder"

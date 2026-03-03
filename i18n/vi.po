@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"POT-Creation-Date: 2026-03-03 15:15+0100\n"
 "PO-Revision-Date: 2026-03-03 13:26+0000\n"
 "Last-Translator: Aimeos, 2026\n"
 "Language-Team: Vietnamese (https://app.transifex.com/aimeos/teams/39015/vi/)\n"
@@ -87,8 +87,17 @@ msgstr "Các danh mục bị loại trừ"
 msgid "Excluded products"
 msgstr "Sản phẩm bị loại trừ"
 
+msgid "Export"
+msgstr "Xuất khẩu"
+
+msgid "Export field"
+msgstr "Trường xuất khẩu"
+
 msgid "Export only in-stock products"
 msgstr "Chỉ xuất khẩu các sản phẩm có sẵn trong kho."
+
+msgid "Exports"
+msgstr "Xuất khẩu"
 
 msgid "Exports products for Google Shopping"
 msgstr "Xuất khẩu sản phẩm cho Google Shopping"

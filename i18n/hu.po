@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:07+0100\n"
+"POT-Creation-Date: 2026-03-03 15:15+0100\n"
 "PO-Revision-Date: 2026-03-03 13:26+0000\n"
 "Last-Translator: Aimeos, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/aimeos/teams/39015/hu/)\n"
@@ -88,8 +88,17 @@ msgstr "Kizárt kategóriák"
 msgid "Excluded products"
 msgstr "Kizárt termékek"
 
+msgid "Export"
+msgstr "Export"
+
+msgid "Export field"
+msgstr "Export mező"
+
 msgid "Export only in-stock products"
 msgstr "Csak raktáron lévő termékek exportálása"
+
+msgid "Exports"
+msgstr "Export"
 
 msgid "Exports products for Google Shopping"
 msgstr "Exportálja a termékeket a Google Shopping számára"

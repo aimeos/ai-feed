@@ -41,7 +41,7 @@ $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.l
 
 	<nav class="main-navbar">
 		<h1 class="navbar-brand">
-			<span class="navbar-title"><?= $enc->html( $this->translate( 'admin', 'Feed' ) ) ?></span>
+			<span class="navbar-title"><?= $enc->html( $this->translate( 'admin', 'Export' ) ) ?></span>
 			<span class="navbar-id"><?= $enc->html( $this->get( 'itemData/feed.id' ) ) ?></span>
 			<span class="navbar-label"><?= $enc->html( $this->get( 'itemData/feed.label' ) ?: $this->translate( 'admin', 'New' ) ) ?></span>
 			<span class="navbar-site"><?= $enc->html( $this->site()->match( $this->get( 'itemData/feed.siteid' ) ) ) ?></span>
@@ -587,7 +587,7 @@ $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.l
 								v-bind:readonly="!can('change')"
 								v-bind:i18n="{
 									value: `<?= $enc->js( $this->translate( 'admin', 'Attribute type' ) ) ?>`,
-									option: `<?= $enc->js( $this->translate( 'admin', 'Feed field' ) ) ?>`,
+									option: `<?= $enc->js( $this->translate( 'admin', 'Export field' ) ) ?>`,
 									help: `<?= $enc->js( $this->translate( 'admin', 'Map a feed field name to the Aimeos product attribute type containing the value' ) ) ?>`,
 									insert: `<?= $enc->js( $this->translate( 'admin', 'Insert new entry (Ctrl+I)' ) ) ?>`,
 									delete: `<?= $enc->js( $this->translate( 'admin', 'Delete this entry' ) ) ?>`,
@@ -595,7 +595,7 @@ $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.l
 								<table class="item-config table">
 									<thead>
 										<tr>
-											<th class="config-row-key"><span class="help"><?= $enc->html( $this->translate( 'admin', 'Feed field' ) ) ?></span></th>
+											<th class="config-row-key"><span class="help"><?= $enc->html( $this->translate( 'admin', 'Export field' ) ) ?></span></th>
 											<th class="config-row-value"><?= $enc->html( $this->translate( 'admin', 'Attribute type' ) ) ?></th>
 											<th class="actions"><div class="btn act-add icon"></div></th>
 										</tr>
