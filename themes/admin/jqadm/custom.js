@@ -112,6 +112,14 @@ Aimeos.Feed.Attributes = {
 			},
 			mounted() {
 				document.addEventListener('feed-type-change', (ev) => {
+					const validKeys = JSON.parse(this.attrtypes)[ev.detail] || [];
+					const attrs = (this.item['config'] || {})['attributes'] || [];
+
+					if(!this.item['config']) {
+						this.item['config'] = {};
+					}
+
+					this.item['config']['attributes'] = attrs.filter(entry => validKeys.includes(entry.key));
 					this.item['feed.type'] = ev.detail;
 				});
 			},
