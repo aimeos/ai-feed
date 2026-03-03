@@ -77,7 +77,7 @@ $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.l
 					<li class="nav-item attributes">
 						<a class="nav-link" href="#attributes" v-on:click="url(`attributes`)"
 							data-bs-toggle="tab" role="tab" tabindex="4">
-							<?= $enc->html( $this->translate( 'admin', 'Attribute mapping' ) ) ?>
+							<?= $enc->html( $this->translate( 'admin', 'Attributes' ) ) ?>
 						</a>
 					</li>
 
@@ -578,10 +578,6 @@ $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.l
 				<div class="box <?= $this->site()->mismatch( $this->get( 'itemData/feed.siteid' ) ) ?>">
 					<div class="row">
 						<div class="col-xl-12 block">
-
-							<div class="form-text text-muted mb-3">
-								<?= $enc->html( $this->translate( 'admin', 'Map feed attribute fields to Aimeos product attribute types. The key is the feed field name (e.g. "gtin"), the value is the Aimeos attribute type code.' ) ) ?>
-							</div>
 
 							<config-table tabindex="1"
 								v-bind:keys="JSON.parse(attrtypes)[item['feed.type']] || []"

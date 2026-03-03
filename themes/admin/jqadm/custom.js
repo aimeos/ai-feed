@@ -76,6 +76,11 @@ Aimeos.Feed.Basic = {
 				this.Aimeos = Aimeos;
 				this.item = JSON.parse(this.data);
 			},
+			mounted() {
+				this.$watch(() => this.item['feed.type'], (val) => {
+					document.dispatchEvent(new CustomEvent('feed-type-change', {detail: val}));
+				});
+			},
 			methods: {
 				can(action) {
 					return Aimeos.can(action, this.item['feed.siteid'] || null, this.siteid)
@@ -104,6 +109,11 @@ Aimeos.Feed.Attributes = {
 			beforeMount() {
 				this.Aimeos = Aimeos;
 				this.item = JSON.parse(this.data);
+			},
+			mounted() {
+				document.addEventListener('feed-type-change', (ev) => {
+					this.item['feed.type'] = ev.detail;
+				});
 			},
 			methods: {
 				can(action) {

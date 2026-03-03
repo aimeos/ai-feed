@@ -1,6 +1,6 @@
 {
 	"projectName": "ai-feed",
-	"licenseText": "proprietary",
+	"licenseText": "LGPL-3.0",
 	"pkgs": [{
 		"name": "ai-feed CSS",
 		"file": "index-css",
