@@ -170,7 +170,7 @@ class Standard
 			->add( 'feed.type', '==', 'idealo' )
 			->order( 'feed.id' );
 
-		$items = $manager->search( $filter, ['catalog', 'product'] );
+		$items = $manager->search( $filter, ['catalog', 'product', 'supplier'] );
 
 		foreach( $items as $item )
 		{
@@ -208,7 +208,7 @@ class Standard
 		 * @see controller/jobs/product/export/idealo/filename
 		 * @see controller/jobs/product/export/idealo/max-items
 		 */
-		$default = ['attribute', 'catalog', 'media', 'price', 'product', 'text'];
+		$default = ['attribute', 'catalog', 'media', 'price', 'product', 'supplier', 'text'];
 
 		return $this->context()->config()->get( 'controller/jobs/product/export/idealo/domains', $default );
 	}
@@ -226,7 +226,8 @@ class Standard
 		$context = ( clone $this->context() )->setLocale( $locale );
 		$manager = \Aimeos\MShop::create( $context, 'index' );
 		$filter = $this->filter( $manager->filter( true ), $feedItem );
-		$excludes = $feedItem->getListItems( 'catalog', 'exclude' )->getRefId();
+		$excludeCats = $feedItem->getListItems( 'catalog', 'exclude' )->getRefId();
+		$excludeSupps = $feedItem->getListItems( 'supplier', 'exclude' )->getRefId();
 
 		$cursor = $manager->cursor( $filter );
 		$domains = $this->domains();
@@ -243,7 +244,8 @@ class Standard
 
 			while( $items = $manager->iterate( $cursor, $domains ) )
 			{
-				$items = $items->filter( fn( $item ) => $item->getListItems( 'catalog' )->getRefId()->intersect( $excludes )->isEmpty() );
+				$items = $items->filter( fn( $item ) => $item->getListItems( 'catalog' )->getRefId()->intersect( $excludeCats )->isEmpty() );
+				$items = $items->filter( fn( $item ) => $item->getListItems( 'supplier' )->getRefId()->intersect( $excludeSupps )->isEmpty() );
 				$items = $this->call( 'hydrate', $items );
 
 				if( fwrite( $fh, $this->render( $items ) ) === false ) {
@@ -314,6 +316,10 @@ class Standard
 
 		if( !( $ids = $item->getListItems( 'product', 'include' )->getRefId()->values() )->isEmpty() ) {
 			$includes[] = $filter->is( 'product.id', '==', $ids );
+		}
+
+		if( !( $ids = $item->getListItems( 'supplier', 'include' )->getRefId()->values() )->isEmpty() ) {
+			$includes[] = $filter->is( 'index.supplier.id', '==', $ids );
 		}
 
 		return $filter->add( $filter->and( [

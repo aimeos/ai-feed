@@ -21,7 +21,7 @@ class FeedAddTestData extends BaseAddTestData
 	 */
 	public function after() : array
 	{
-		return ['Feed', 'TypeAddTestData'];
+		return ['Feed', 'TypeAddTestData', 'SupplierAddTestData'];
 	}
 
 

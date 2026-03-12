@@ -213,6 +213,38 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 	}
 
 
+	public function testSearchWithSupplierListItems()
+	{
+		$search = $this->object->filter()->add( 'feed.label', '==', 'google-include' );
+		$items = $this->object->search( $search, ['supplier'] );
+
+		$this->assertEquals( 1, count( $items ) );
+
+		$item = $items->first();
+		$listItems = $item->getListItems( 'supplier', 'include' );
+
+		$this->assertCount( 1, $listItems );
+		$this->assertEquals( 'supplier', $listItems->first()->getDomain() );
+		$this->assertEquals( 'include', $listItems->first()->getType() );
+	}
+
+
+	public function testSearchWithSupplierExcludeListItems()
+	{
+		$search = $this->object->filter()->add( 'feed.label', '==', 'google-exclude' );
+		$items = $this->object->search( $search, ['supplier'] );
+
+		$this->assertEquals( 1, count( $items ) );
+
+		$item = $items->first();
+		$listItems = $item->getListItems( 'supplier', 'exclude' );
+
+		$this->assertCount( 1, $listItems );
+		$this->assertEquals( 'supplier', $listItems->first()->getDomain() );
+		$this->assertEquals( 'exclude', $listItems->first()->getType() );
+	}
+
+
 	public function testSearchAll()
 	{
 		$total = 0;

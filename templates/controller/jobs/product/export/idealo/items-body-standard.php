@@ -75,8 +75,8 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 		}
 
 		// supplier/brand: from supplier relation
-		$brand = $article->getRefItems( 'supplier', 'default', 'default' )->first()?->getName()
-			?: $item->getRefItems( 'supplier', 'default', 'default' )->first()?->getName();
+		$brand = $article->getRefItems( 'supplier', null, 'default' )->first()?->getName()
+			?: $item->getRefItems( 'supplier', null, 'default' )->first()?->getName();
 
 		// Product attributes and properties from articles and selection products
 		$map = map();

@@ -111,7 +111,7 @@ class Standard
 
 			$manager = \Aimeos\MShop::create( $this->context(), 'feed' );
 
-			$view->item = $manager->get( $id, ['catalog', 'product'] );
+			$view->item = $manager->get( $id, ['catalog', 'product', 'supplier'] );
 			$view->itemData = $this->toArray( $view->item, true );
 			$view->itemBody = parent::copy();
 		}
@@ -218,7 +218,7 @@ class Standard
 
 			$manager = \Aimeos\MShop::create( $this->context(), 'feed' );
 
-			$view->item = $manager->get( $id, ['catalog', 'product'] );
+			$view->item = $manager->get( $id, ['catalog', 'product', 'supplier'] );
 			$view->itemData = $this->toArray( $view->item );
 			$view->itemBody = parent::get();
 		}
@@ -456,7 +456,7 @@ class Standard
 		$manager = \Aimeos\MShop::create( $this->context(), 'feed' );
 
 		if( !empty( $data['feed.id'] ) ) {
-			$item = $manager->get( $data['feed.id'], ['catalog', 'product'] );
+			$item = $manager->get( $data['feed.id'], ['catalog', 'product', 'supplier'] );
 		} else {
 			$item = $manager->create();
 		}
@@ -476,6 +476,10 @@ class Standard
 		// Handle included and excluded products (product domain)
 		$this->fromArrayListItems( $item, 'product', array_values( $data['product']['include'] ?? [] ), 'include' );
 		$this->fromArrayListItems( $item, 'product', array_values( $data['product']['exclude'] ?? [] ), 'exclude' );
+
+		// Handle included and excluded suppliers (supplier domain)
+		$this->fromArrayListItems( $item, 'supplier', array_values( $data['supplier']['include'] ?? [] ), 'include' );
+		$this->fromArrayListItems( $item, 'supplier', array_values( $data['supplier']['exclude'] ?? [] ), 'exclude' );
 
 		return $item;
 	}
@@ -590,10 +594,38 @@ class Standard
 			}
 		}
 
+		// Build supplier list data (included and excluded)
+		$includeSuppliers = [];
+		$excludeSuppliers = [];
+
+		foreach( $item->getListItems( 'supplier' ) as $listItem )
+		{
+			if( ( $refItem = $listItem->getRefItem() ) === null ) {
+				continue;
+			}
+
+			$entry = [
+				'feed.lists.id'     => $copy ? '' : $listItem->getId(),
+				'feed.lists.type'   => $listItem->getType(),
+				'feed.lists.siteid' => $copy ? $siteId : $listItem->getSiteId(),
+				'supplier.id'       => $refItem->getId(),
+				'supplier.label'    => $refItem->getLabel() . ' (' . $refItem->getCode() . ')',
+				'supplier.code'     => $refItem->getCode(),
+			];
+
+			if( $listItem->getType() === 'include' ) {
+				$includeSuppliers[] = $entry;
+			} else {
+				$excludeSuppliers[] = $entry;
+			}
+		}
+
 		$data['category']['include'] = $includeCategories;
 		$data['category']['exclude'] = $excludeCategories;
 		$data['product']['include'] = $includeProducts;
 		$data['product']['exclude'] = $excludeProducts;
+		$data['supplier']['include'] = $includeSuppliers;
+		$data['supplier']['exclude'] = $excludeSuppliers;
 
 		if( $copy === true )
 		{

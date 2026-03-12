@@ -36,6 +36,11 @@ return [
 					'feed.lists.domain' => 'product',
 					'ref' => 'ABCD/16 discs',
 				]],
+				'supplier' => [[
+					'feed.lists.type' => 'exclude',
+					'feed.lists.domain' => 'supplier',
+					'ref' => 'Unit Supplier 002',
+				]],
 			],
 		],
 		[
@@ -61,6 +66,11 @@ return [
 					'feed.lists.type' => 'include',
 					'feed.lists.domain' => 'product',
 					'ref' => 'ABCD/16 discs',
+				]],
+				'supplier' => [[
+					'feed.lists.type' => 'include',
+					'feed.lists.domain' => 'supplier',
+					'ref' => 'Unit Supplier 001',
 				]],
 			],
 		],
@@ -92,6 +102,11 @@ return [
 					'feed.lists.domain' => 'product',
 					'ref' => 'ABCD/16 discs',
 				]],
+				'supplier' => [[
+					'feed.lists.type' => 'exclude',
+					'feed.lists.domain' => 'supplier',
+					'ref' => 'Unit Supplier 002',
+				]],
 			],
 		],
 		[
@@ -117,6 +132,11 @@ return [
 					'feed.lists.type' => 'include',
 					'feed.lists.domain' => 'product',
 					'ref' => 'ABCD/16 discs',
+				]],
+				'supplier' => [[
+					'feed.lists.type' => 'include',
+					'feed.lists.domain' => 'supplier',
+					'ref' => 'Unit Supplier 001',
 				]],
 			],
 		],

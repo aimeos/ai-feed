@@ -25,9 +25,12 @@ $includeCatData  = $data['category']['include'] ?? [];
 $excludeCatData  = $data['category']['exclude'] ?? [];
 $includeProdData = $data['product']['include'] ?? [];
 $excludeProdData = $data['product']['exclude'] ?? [];
+$includeSuppData = $data['supplier']['include'] ?? [];
+$excludeSuppData = $data['supplier']['exclude'] ?? [];
 
 $catKeys  = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'catalog.label', 'catalog.code', 'catalog.id'];
 $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.label', 'product.code', 'product.id'];
+$suppKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'supplier.label', 'supplier.code', 'supplier.id'];
 
 ?>
 <?php $this->block()->start( 'jqadm_content' ) ?>
@@ -74,9 +77,15 @@ $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.l
 							<?= $enc->html( $this->translate( 'admin', 'Products' ) ) ?>
 						</a>
 					</li>
+					<li class="nav-item supplier">
+						<a class="nav-link" href="#supplier" v-on:click="url(`supplier`)"
+							data-bs-toggle="tab" role="tab" tabindex="4">
+							<?= $enc->html( $this->translate( 'admin', 'Suppliers' ) ) ?>
+						</a>
+					</li>
 					<li class="nav-item attributes">
 						<a class="nav-link" href="#attributes" v-on:click="url(`attributes`)"
-							data-bs-toggle="tab" role="tab" tabindex="4">
+							data-bs-toggle="tab" role="tab" tabindex="5">
 							<?= $enc->html( $this->translate( 'admin', 'Attributes' ) ) ?>
 						</a>
 					</li>
@@ -84,7 +93,7 @@ $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.l
 					<?php foreach( array_values( $this->get( 'itemSubparts', [] ) ) as $idx => $subpart ) : ?>
 						<li class="nav-item <?= $enc->attr( $subpart ) ?>">
 							<a class="nav-link" href="#<?= $enc->attr( $subpart ) ?>" v-on:click="url(`<?= $enc->js( $subpart ) ?>`)"
-								data-bs-toggle="tab" role="tab" tabindex="<?= $idx + 5 ?>">
+								data-bs-toggle="tab" role="tab" tabindex="<?= $idx + 6 ?>">
 								<?= $enc->html( $this->translate( 'admin', $subpart ) ) ?>
 							</a>
 						</li>
@@ -535,6 +544,167 @@ $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.l
 												value-prop="product.id"
 												track-by="product.id"
 												label="product.label"
+												@open="function(select) {return select.refreshOptions()}"
+												@input="use(idx, $event)"
+												:value="item"
+												:title="title(idx)"
+												:disabled="!can('change', idx)"
+												:options="async function(query) {return await fetch(query, idx)}"
+												:resolve-on-load="false"
+												:filter-results="false"
+												:can-deselect="false"
+												:allow-absent="true"
+												:searchable="true"
+												:can-clear="false"
+												:required="true"
+												:min-chars="1"
+												:object="true"
+												:delay="300"
+											></Multiselect>
+										</td>
+										<td class="actions">
+											<div v-if="can('delete', idx)" class="btn act-delete icon" tabindex="<?= $this->get( 'tabindex', 1 ) ?>"
+												title="<?= $enc->attr( $this->translate( 'admin', 'Delete this entry' ) ) ?>"
+												v-on:click.stop="remove(idx)">
+											</div>
+										</td>
+									</tr>
+
+								</tbody>
+
+							</table>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Suppliers tab -->
+			<div id="supplier" class="item-supplier tab-pane fade" role="tabpanel" aria-labelledby="supplier">
+				<div class="row">
+
+					<!-- Included suppliers -->
+					<div id="feed-supplier-include" class="col-xl-6 supplier"
+						data-data="<?= $enc->attr( array_values( $includeSuppData ) ) ?>"
+						data-keys="<?= $enc->attr( $suppKeys ) ?>"
+						data-siteid="<?= $this->site()->siteid() ?>"
+						data-listtype="include">
+
+						<div class="box">
+							<table class="supplier-list table table-default">
+
+								<thead>
+									<tr>
+										<th>
+											<?= $enc->html( $this->translate( 'admin', 'Included suppliers' ) ) ?>
+										</th>
+										<th class="actions">
+											<div class="btn act-add icon" tabindex="<?= $this->get( 'tabindex', 1 ) ?>"
+												title="<?= $enc->attr( $this->translate( 'admin', 'Insert new entry (Ctrl+I)' ) ) ?>"
+												v-on:click="add()">
+											</div>
+										</th>
+									</tr>
+								</thead>
+
+								<tbody>
+
+									<tr v-for="(item, idx) in items" v-bind:key="idx" v-bind:class="{'mismatch': !can('match', idx)}">
+										<td v-bind:class="item['css'] || ''">
+											<input class="item-listtype" type="hidden" v-model="item['feed.lists.type']"
+												v-bind:name="`<?= $enc->js( $this->formparam( ['item', 'supplier', 'include', '_idx_', 'feed.lists.type'] ) ) ?>`.replace( '_idx_', idx )">
+
+											<input class="item-listid" type="hidden" v-model="item['feed.lists.id']"
+												v-bind:name="`<?= $enc->js( $this->formparam( ['item', 'supplier', 'include', '_idx_', 'feed.lists.id'] ) ) ?>`.replace( '_idx_', idx )">
+
+											<input class="item-id" type="hidden" v-model="item['supplier.id']"
+												v-bind:name="`<?= $enc->js( $this->formparam( ['item', 'supplier', 'include', '_idx_', 'supplier.id'] ) ) ?>`.replace( '_idx_', idx )">
+
+											<input class="item-label" type="hidden" v-model="item['supplier.label']"
+												v-bind:name="`<?= $enc->js( $this->formparam( ['item', 'supplier', 'include', '_idx_', 'supplier.label'] ) ) ?>`.replace( '_idx_', idx )">
+
+											<Multiselect class="item-id form-control"
+												placeholder="<?= $enc->attr( $this->translate( 'admin', 'Enter supplier ID, code or label' ) ) ?>"
+												value-prop="supplier.id"
+												track-by="supplier.id"
+												label="supplier.label"
+												@open="function(select) {return select.refreshOptions()}"
+												@input="use(idx, $event)"
+												:value="item"
+												:title="title(idx)"
+												:disabled="!can('change', idx)"
+												:options="async function(query) {return await fetch(query, idx)}"
+												:resolve-on-load="false"
+												:filter-results="false"
+												:can-deselect="false"
+												:allow-absent="true"
+												:searchable="true"
+												:can-clear="false"
+												:required="true"
+												:min-chars="1"
+												:object="true"
+												:delay="300"
+											></Multiselect>
+										</td>
+										<td class="actions">
+											<div v-if="can('delete', idx)" class="btn act-delete icon" tabindex="<?= $this->get( 'tabindex', 1 ) ?>"
+												title="<?= $enc->attr( $this->translate( 'admin', 'Delete this entry' ) ) ?>"
+												v-on:click.stop="remove(idx)">
+											</div>
+										</td>
+									</tr>
+
+								</tbody>
+
+							</table>
+						</div>
+					</div>
+
+					<!-- Excluded suppliers -->
+					<div id="feed-supplier-exclude" class="col-xl-6 supplier"
+						data-data="<?= $enc->attr( array_values( $excludeSuppData ) ) ?>"
+						data-keys="<?= $enc->attr( $suppKeys ) ?>"
+						data-siteid="<?= $this->site()->siteid() ?>"
+						data-listtype="exclude">
+
+						<div class="box">
+							<table class="supplier-list table table-default">
+
+								<thead>
+									<tr>
+										<th>
+											<?= $enc->html( $this->translate( 'admin', 'Excluded suppliers' ) ) ?>
+										</th>
+										<th class="actions">
+											<div class="btn act-add icon" tabindex="<?= $this->get( 'tabindex', 1 ) ?>"
+												title="<?= $enc->attr( $this->translate( 'admin', 'Insert new entry (Ctrl+I)' ) ) ?>"
+												v-on:click="add()">
+											</div>
+										</th>
+									</tr>
+								</thead>
+
+								<tbody>
+
+									<tr v-for="(item, idx) in items" v-bind:key="idx" v-bind:class="{'mismatch': !can('match', idx)}">
+										<td v-bind:class="item['css'] || ''">
+											<input class="item-listtype" type="hidden" v-model="item['feed.lists.type']"
+												v-bind:name="`<?= $enc->js( $this->formparam( ['item', 'supplier', 'exclude', '_idx_', 'feed.lists.type'] ) ) ?>`.replace( '_idx_', idx )">
+
+											<input class="item-listid" type="hidden" v-model="item['feed.lists.id']"
+												v-bind:name="`<?= $enc->js( $this->formparam( ['item', 'supplier', 'exclude', '_idx_', 'feed.lists.id'] ) ) ?>`.replace( '_idx_', idx )">
+
+											<input class="item-id" type="hidden" v-model="item['supplier.id']"
+												v-bind:name="`<?= $enc->js( $this->formparam( ['item', 'supplier', 'exclude', '_idx_', 'supplier.id'] ) ) ?>`.replace( '_idx_', idx )">
+
+											<input class="item-label" type="hidden" v-model="item['supplier.label']"
+												v-bind:name="`<?= $enc->js( $this->formparam( ['item', 'supplier', 'exclude', '_idx_', 'supplier.label'] ) ) ?>`.replace( '_idx_', idx )">
+
+											<Multiselect class="item-id form-control"
+												placeholder="<?= $enc->attr( $this->translate( 'admin', 'Enter supplier ID, code or label' ) ) ?>"
+												value-prop="supplier.id"
+												track-by="supplier.id"
+												label="supplier.label"
 												@open="function(select) {return select.refreshOptions()}"
 												@input="use(idx, $event)"
 												:value="item"

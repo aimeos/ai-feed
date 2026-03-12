@@ -69,6 +69,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 			$this->assertStringContainsString( 'ABCD/16 discs', $incontent );
 			$this->assertStringContainsString( 'CNC', $incontent );
 			$this->assertStringContainsString( 'CNE', $incontent );
+			$this->assertStringContainsString( 'Test supplier', $incontent );
 			$this->assertEquals( 4, count( explode( "\n", trim( $incontent ) ) ) );
 		}
 		finally
