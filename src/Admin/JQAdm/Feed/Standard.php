@@ -461,6 +461,7 @@ class Standard
 			$item = $manager->create();
 		}
 
+		$data['feed.stock'] = $data['feed.stock'] ?? '0';
 		$item->fromArray( $data, true );
 
 		// Build attribute mapping and store it in config['attributes']
