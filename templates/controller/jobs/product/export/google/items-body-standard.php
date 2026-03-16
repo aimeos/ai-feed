@@ -32,7 +32,7 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 	$url = $this->url( $item->getTarget() ?: $urlTarget, $urlCntl, $urlAction, array_diff_key( $params, $urlFilter ), [], $urlConfig );
 
 	// Google product category from catalog item config key 'google', fallback to category name
-	$catItem = $item->getRefItems( 'catalog', 'default', 'default' )->first();
+	$catItem = $item->getRefItems( 'catalog', null, 'default' )->first();
 
 	$articles = $item->getType() === 'select' ? $item->getRefItems( 'product', null, 'default' ) : map();
 	$articles->push( $item, $item->getId() ); // include main product

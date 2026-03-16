@@ -32,7 +32,7 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 	$url = $this->url( $item->getTarget() ?: $urlTarget, $urlCntl, $urlAction, array_diff_key( $params, $urlFilter ), [], $urlConfig );
 
 	// Category path
-	$catItem = $item->getRefItems( 'catalog', 'default', 'default' )->first();
+	$catItem = $item->getRefItems( 'catalog', null, 'default' )->first();
 	$catPath = $catItem?->getConfigValue( 'idealo' ) ?: $catItem?->getName();
 
 	$articles = $item->getType() === 'select' ? $item->getRefItems( 'product', null, 'default' ) : map( [$item] );
