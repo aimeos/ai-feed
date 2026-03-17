@@ -468,7 +468,22 @@ class Standard
 		$attrData = (array) ( $data['config']['attributes'] ?? [] );
 		$attributes = array_column( $attrData, 'val', 'key' );
 		$attributes = array_filter( array_map( fn( $v ) => trim( (string) $v ), $attributes ) );
-		$item->setConfig( ['attributes' => $attributes] );
+
+		// Build attribute excludes and store in config['attribute_excludes']
+		$exclData = (array) ( $data['config']['attribute_excludes'] ?? [] );
+		$excludes = [];
+
+		foreach( $exclData as $entry )
+		{
+			$type = trim( (string) ( $entry['attribute.type'] ?? '' ) );
+			$id = trim( (string) ( $entry['attribute.id'] ?? '' ) );
+
+			if( $type !== '' && $id !== '' ) {
+				$excludes[] = ['type' => $type, 'id' => $id];
+			}
+		}
+
+		$item->setConfig( ['attributes' => $attributes, 'attribute_excludes' => $excludes] );
 
 		// Handle included and excluded categories (catalog domain)
 		$this->fromArrayListItems( $item, 'catalog', array_values( $data['category']['include'] ?? [] ), 'include' );
@@ -541,7 +556,32 @@ class Standard
 		$data = $item->toArray( true );
 
 		// Flatten attribute mapping for the config-table Vue component
-		$data['config'] = ['attributes' => $this->flatten( $item->getConfig()['attributes'] ?? [] )];
+		$config = $item->getConfig();
+		$data['config'] = ['attributes' => $this->flatten( $config['attributes'] ?? [] )];
+
+		// Flatten attribute excludes for the Vue component, resolve attribute labels
+		$excludes = [];
+		$attrIds = array_filter( array_column( $config['attribute_excludes'] ?? [], 'id' ) );
+
+		if( !empty( $attrIds ) )
+		{
+			$attrManager = \Aimeos\MShop::create( $this->context(), 'attribute' );
+			$filter = $attrManager->filter()->add( 'attribute.id', '==', $attrIds )->slice( 0, count( $attrIds ) );
+			$attrItems = $attrManager->search( $filter );
+		}
+
+		foreach( $config['attribute_excludes'] ?? [] as $entry )
+		{
+			$id = $entry['id'] ?? '';
+			$label = isset( $attrItems ) && ( $ref = $attrItems->get( $id ) ) ? $ref->getLabel() : '';
+
+			$excludes[] = [
+				'attribute.type' => $entry['type'] ?? '',
+				'attribute.id' => $id,
+				'attribute.label' => $label,
+			];
+		}
+		$data['config']['attribute_excludes'] = $excludes;
 
 		// Build category list data (included and excluded)
 		$includeCategories = [];

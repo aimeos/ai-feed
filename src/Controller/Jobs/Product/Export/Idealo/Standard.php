@@ -255,7 +255,7 @@ class Standard
 
 			rewind( $fh );
 
-			$filename = sprintf( $this->call( 'filename' ), $feedItem->getLabel() );
+			$filename = sprintf( $this->call( 'filename' ), $locale->getSiteCode(), $feedItem->getLabel() );
 			$this->fs()->writes( $filename, $fh );
 		}
 		finally
@@ -268,7 +268,7 @@ class Standard
 	/**
 	 * Returns the file name template for the exported feed file
 	 *
-	 * @return string File name template with one %s placeholder for the feed label
+	 * @return string File name template with two placeholder for the site code and feed label
 	 */
 	protected function filename() : string
 	{
@@ -276,14 +276,15 @@ class Standard
 		 * Template for the generated file names
 		 *
 		 * The generated export files will be named according to the given
-		 * string which can contain one place holder: The feed label of the exported feed.
+		 * string which can contain two place holders: The site code and the
+		 * feed label of the exported feed.
 		 *
 		 * @param string File name template
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/idealo/max-items
 		 * @see controller/jobs/product/export/idealo/domains
 		 */
-		return $this->context()->config()->get( 'controller/jobs/product/export/idealo/filename', '%s.csv' );
+		return $this->context()->config()->get( 'controller/jobs/product/export/idealo/filename', '%1$s-%2$s.csv' );
 	}
 
 
@@ -322,6 +323,12 @@ class Standard
 			$includes[] = $filter->is( 'index.supplier.id', '==', $ids );
 		}
 
+		$attrExclIds = array_filter( array_column( $item->getConfig()['attribute_excludes'] ?? [], 'id' ) );
+
+		if( !empty( $attrExclIds ) ) {
+			$excludes[] = $filter->is( 'index.attribute.id', '!=', $attrExclIds );
+		}
+
 		return $filter->add( $filter->and( [
 			$filter->and( $excludes ),
 			$filter->or( $includes )
@@ -336,7 +343,7 @@ class Standard
 	 */
 	protected function fs() : \Aimeos\Base\Filesystem\Iface
 	{
-		return $this->context()->fs( 'fs-export' );
+		return $this->context()->fs( 'fs' );
 	}
 
 

@@ -27,6 +27,7 @@ $includeProdData = $data['product']['include'] ?? [];
 $excludeProdData = $data['product']['exclude'] ?? [];
 $includeSuppData = $data['supplier']['include'] ?? [];
 $excludeSuppData = $data['supplier']['exclude'] ?? [];
+$attrExclData    = $data['config']['attribute_excludes'] ?? [];
 
 $catKeys  = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'catalog.label', 'catalog.code', 'catalog.id'];
 $prodKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'product.label', 'product.code', 'product.id'];
@@ -744,7 +745,9 @@ $suppKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'supplier.
 			<div id="attributes" class="item-attributes tab-pane fade" role="tabpanel" aria-labelledby="attributes"
 				data-data="<?= $enc->attr( $this->get( 'itemData', new stdClass() ) ) ?>"
 				data-attrtypes="<?= $enc->attr( $attrTypes ) ?>"
+				data-excludes="<?= $enc->attr( $attrExclData ) ?>"
 				data-siteid="<?= $enc->attr( $this->site()->siteid() ) ?>">
+
 				<div class="box <?= $this->site()->mismatch( $this->get( 'itemData/feed.siteid' ) ) ?>">
 					<div class="row">
 						<div class="col-xl-12 block">
@@ -775,6 +778,94 @@ $suppKeys = ['feed.lists.id', 'feed.lists.siteid', 'feed.lists.type', 'supplier.
 
 						</div>
 					</div>
+				</div>
+
+				<div class="box <?= $this->site()->mismatch( $this->get( 'itemData/feed.siteid' ) ) ?>">
+					<table class="attribute-excludes-list table table-default">
+
+						<thead>
+							<tr>
+								<th>
+									<?= $enc->html( $this->translate( 'admin', 'Excluded attribute type' ) ) ?>
+								</th>
+								<th>
+									<?= $enc->html( $this->translate( 'admin', 'Excluded attribute' ) ) ?>
+								</th>
+								<th class="actions">
+									<div class="btn act-add icon" tabindex="<?= $this->get( 'tabindex', 1 ) ?>"
+										title="<?= $enc->attr( $this->translate( 'admin', 'Insert new entry (Ctrl+I)' ) ) ?>"
+										v-on:click="add()">
+									</div>
+								</th>
+							</tr>
+						</thead>
+
+						<tbody>
+
+							<tr v-for="(entry, idx) in excludeItems" v-bind:key="idx">
+								<td>
+									<input type="hidden" v-model="entry['attribute.type']"
+										v-bind:name="`<?= $enc->js( $this->formparam( ['item', 'config', 'attribute_excludes', '_idx_', 'attribute.type'] ) ) ?>`.replace( '_idx_', idx )">
+
+									<Multiselect class="item-type form-control"
+										placeholder="<?= $enc->attr( $this->translate( 'admin', 'Enter attribute type ID, code or label' ) ) ?>"
+										value-prop="attribute.type"
+										track-by="attribute.type"
+										label="attribute.type"
+										@open="function(select) {return select.refreshOptions()}"
+										@input="useType(idx, $event)"
+										:value="entry"
+										:disabled="!can('change')"
+										:options="async function(query) {return await attrTypes(query)}"
+										:resolve-on-load="false"
+										:filter-results="false"
+										:can-deselect="false"
+										:allow-absent="true"
+										:searchable="true"
+										:can-clear="false"
+										:required="true"
+										:min-chars="1"
+										:object="true"
+										:delay="300"
+									></Multiselect>
+								</td>
+								<td>
+									<input type="hidden" v-model="entry['attribute.id']"
+										v-bind:name="`<?= $enc->js( $this->formparam( ['item', 'config', 'attribute_excludes', '_idx_', 'attribute.id'] ) ) ?>`.replace( '_idx_', idx )">
+
+									<Multiselect v-if="entry['attribute.type']" class="item-refid form-control"
+										placeholder="<?= $enc->attr( $this->translate( 'admin', 'Enter attribute ID, code or label' ) ) ?>"
+										value-prop="attribute.id"
+										track-by="attribute.id"
+										label="attribute.label"
+										@open="function(select) {return select.refreshOptions()}"
+										@input="use(idx, $event)"
+										:value="entry"
+										:disabled="!can('change')"
+										:options="async function(query) {return await attr(query, idx)}"
+										:resolve-on-load="false"
+										:filter-results="false"
+										:can-deselect="false"
+										:allow-absent="true"
+										:searchable="true"
+										:can-clear="false"
+										:required="true"
+										:min-chars="1"
+										:object="true"
+										:delay="300"
+									></Multiselect>
+								</td>
+								<td class="actions">
+									<div v-if="can('change')" class="btn act-delete icon" tabindex="<?= $this->get( 'tabindex', 1 ) ?>"
+										title="<?= $enc->attr( $this->translate( 'admin', 'Delete this entry' ) ) ?>"
+										v-on:click.stop="remove(idx)">
+									</div>
+								</td>
+							</tr>
+
+						</tbody>
+
+					</table>
 				</div>
 			</div>
 
