@@ -303,9 +303,7 @@ class Standard
 	{
 		$excludes = $includes = [];
 
-		$filter->add( 'index.catalog.id', '!=', null )
-			->order( 'product.id' )
-			->slice( 0, $this->max() );
+		$filter->add( 'index.catalog.id', '!=', null )->slice( 0, $this->max() );
 
 		if( $item->getStock() ) {
 			$filter->add( 'product.instock', '>', 0 );
