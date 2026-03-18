@@ -5,7 +5,7 @@
  * @copyright Aimeos (aimeos.org), 2026
  */
 
-$typeMap = $this->config( 'controller/jobs/product/export/idealo/types', [] );
+$typeMap = $this->get( 'exportConfig/attributes', [] );
 
 $urlTarget = $this->get( 'urlConfig/target' );
 $urlCntl = $this->get( 'urlConfig/controller' );
@@ -87,12 +87,8 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 				continue;
 			}
 
-			$props = $article->getProperties( $type )
-				->merge( $articles->getProperties( $type )->flat( 1 ) );
-
-			$attrs = $article->getRefItems( 'attribute', $type, 'default' )
-				->merge( $articles->getRefItems( 'attribute', $type, 'default' )->flat( 1 ) )
-				->getCode();
+			$props = $article->getProperties( $type );
+			$attrs = $article->getRefItems( 'attribute', $type )->getCode();
 
 			$map[$idealoType] = $props->merge( $attrs );
 		}

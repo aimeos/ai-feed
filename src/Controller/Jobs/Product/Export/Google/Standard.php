@@ -228,6 +228,7 @@ class Standard
 		$filter = $this->filter( $manager->filter( true ), $feedItem );
 		$excludeCats = $feedItem->getListItems( 'catalog', 'exclude' )->getRefId();
 		$excludeSupps = $feedItem->getListItems( 'supplier', 'exclude' )->getRefId();
+		$excludeAttrs = array_filter( array_column( $feedItem->getConfigValue( 'attribute_excludes', [] ), 'id' ) );
 
 		$cursor = $manager->cursor( $filter );
 		$domains = $this->domains();
@@ -246,9 +247,10 @@ class Standard
 			{
 				$items = $items->filter( fn( $item ) => $item->getListItems( 'catalog' )->getRefId()->intersect( $excludeCats )->isEmpty() );
 				$items = $items->filter( fn( $item ) => $item->getListItems( 'supplier' )->getRefId()->intersect( $excludeSupps )->isEmpty() );
+				$items = $items->filter( fn( $item ) => $item->getListItems( 'attribute' )->getRefId()->intersect( $excludeAttrs )->isEmpty() );
 				$items = $this->call( 'hydrate', $items );
 
-				if( fwrite( $fh, $this->render( $items ) ) === false ) {
+				if( fwrite( $fh, $this->render( $items, $feedItem ) ) === false ) {
 					throw new \Aimeos\Controller\Jobs\Exception( sprintf( 'Unable to write products for Google shopping export to temporary file' ) );
 				}
 			}
@@ -257,6 +259,10 @@ class Standard
 
 			$filename = sprintf( $this->call( 'filename' ), $locale->getSiteId(), $feedItem->getLabel() );
 			$this->fs()->writes( $filename, $fh );
+		}
+		catch( \Throwable $t )
+		{
+			throw $t;
 		}
 		finally
 		{
@@ -321,12 +327,6 @@ class Standard
 
 		if( !( $ids = $item->getListItems( 'supplier', 'include' )->getRefId()->values() )->isEmpty() ) {
 			$includes[] = $filter->is( 'index.supplier.id', '==', $ids );
-		}
-
-		$attrExclIds = array_filter( array_column( $item->getConfig()['attribute_excludes'] ?? [], 'id' ) );
-
-		if( !empty( $attrExclIds ) ) {
-			$excludes[] = $filter->is( 'index.attribute.id', '!=', $attrExclIds );
 		}
 
 		return $filter->add( $filter->and( [
@@ -438,9 +438,10 @@ class Standard
 	 * Renders the output for the given items
 	 *
 	 * @param \Aimeos\Map $items List of product items implementing \Aimeos\MShop\Product\Item\Iface
+	 * @param \Aimeos\MShop\Feed\Item\Iface $feedItem Product feed item
 	 * @return string Rendered content
 	 */
-	protected function render( \Aimeos\Map $items ) : string
+	protected function render( \Aimeos\Map $items, \Aimeos\MShop\Feed\Item\Iface $feedItem ) : string
 	{
 		/** controller/jobs/product/export/google/template-items
 		 * Relative path to the CSV items template of the product export job controller.
@@ -470,6 +471,7 @@ class Standard
 		$view = $context->view();
 
 		$view->urlConfig = $context->config()->get( 'client/html/catalog/detail/url', [] );
+		$view->exportConfig = $feedItem->getConfig();
 		$view->exportItems = $items;
 
 		return $view->render( $context->config()->get( $tplconf, $default ) );

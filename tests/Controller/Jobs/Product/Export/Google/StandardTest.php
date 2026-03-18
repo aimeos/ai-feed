@@ -48,8 +48,10 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 
 	public function testRun()
 	{
-		$exfile = 'tmp' . DIRECTORY_SEPARATOR . 'google-exclude.csv';
-		$infile = 'tmp' . DIRECTORY_SEPARATOR . 'google-include.csv';
+		$siteId = $this->context->locale()->getSiteId();
+		$dir = 'tmp' . DIRECTORY_SEPARATOR . $siteId . 'd';
+		$exfile = $dir . DIRECTORY_SEPARATOR . 'google-exclude.csv';
+		$infile = $dir . DIRECTORY_SEPARATOR . 'google-include.csv';
 
 		try
 		{
@@ -76,6 +78,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		{
 			unlink( $exfile );
 			unlink( $infile );
+			@rmdir( $dir );
 		}
 	}
 }

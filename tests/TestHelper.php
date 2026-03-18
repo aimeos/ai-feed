@@ -161,6 +161,7 @@ class TestHelper
 		$local = [
 			'resource' => [
 				'fs' => ['adapter' => 'Standard', 'basedir' => __DIR__ . '/tmp'],
+				'fs-media' => ['adapter' => 'Standard', 'basedir' => __DIR__ . '/tmp'],
 				'fs-export' => ['adapter' => 'Standard', 'basedir' => __DIR__ . '/tmp'],
 			],
 		];

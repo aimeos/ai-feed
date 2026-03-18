@@ -248,7 +248,7 @@ class Standard
 				$items = $items->filter( fn( $item ) => $item->getListItems( 'supplier' )->getRefId()->intersect( $excludeSupps )->isEmpty() );
 				$items = $this->call( 'hydrate', $items );
 
-				if( fwrite( $fh, $this->render( $items ) ) === false ) {
+				if( fwrite( $fh, $this->render( $items, $feedItem ) ) === false ) {
 					throw new \Aimeos\Controller\Jobs\Exception( sprintf( 'Unable to write products for Idealo export to temporary file' ) );
 				}
 			}
@@ -257,6 +257,10 @@ class Standard
 
 			$filename = sprintf( $this->call( 'filename' ), $locale->getSiteId(), $feedItem->getLabel() );
 			$this->fs()->writes( $filename, $fh );
+		}
+		catch( \Throwable $t )
+		{
+			throw $t;
 		}
 		finally
 		{
@@ -438,9 +442,10 @@ class Standard
 	 * Renders the output for the given items
 	 *
 	 * @param \Aimeos\Map $items List of product items implementing \Aimeos\MShop\Product\Item\Iface
+	 * @param \Aimeos\MShop\Feed\Item\Iface $feedItem Product feed item
 	 * @return string Rendered content
 	 */
-	protected function render( \Aimeos\Map $items ) : string
+	protected function render( \Aimeos\Map $items, \Aimeos\MShop\Feed\Item\Iface $feedItem ) : string
 	{
 		/** controller/jobs/product/export/idealo/template-items
 		 * Relative path to the CSV items template of the product export job controller.
@@ -470,6 +475,7 @@ class Standard
 		$view = $context->view();
 
 		$view->urlConfig = $context->config()->get( 'client/html/catalog/detail/url', [] );
+		$view->exportConfig = $feedItem->getConfig();
 		$view->exportItems = $items;
 
 		return $view->render( $context->config()->get( $tplconf, $default ) );
