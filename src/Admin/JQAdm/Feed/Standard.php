@@ -111,7 +111,7 @@ class Standard
 
 			$manager = \Aimeos\MShop::create( $this->context(), 'feed' );
 
-			$view->item = $manager->get( $id, ['catalog', 'product'] );
+			$view->item = $manager->get( $id, ['catalog', 'product', 'supplier'] );
 			$view->itemData = $this->toArray( $view->item, true );
 			$view->itemBody = parent::copy();
 		}
@@ -218,7 +218,7 @@ class Standard
 
 			$manager = \Aimeos\MShop::create( $this->context(), 'feed' );
 
-			$view->item = $manager->get( $id, ['catalog', 'product'] );
+			$view->item = $manager->get( $id, ['catalog', 'product', 'supplier'] );
 			$view->itemData = $this->toArray( $view->item );
 			$view->itemBody = parent::get();
 		}
@@ -456,18 +456,34 @@ class Standard
 		$manager = \Aimeos\MShop::create( $this->context(), 'feed' );
 
 		if( !empty( $data['feed.id'] ) ) {
-			$item = $manager->get( $data['feed.id'], ['catalog', 'product'] );
+			$item = $manager->get( $data['feed.id'], ['catalog', 'product', 'supplier'] );
 		} else {
 			$item = $manager->create();
 		}
 
+		$data['feed.stock'] = $data['feed.stock'] ?? '0';
 		$item->fromArray( $data, true );
 
 		// Build attribute mapping and store it in config['attributes']
 		$attrData = (array) ( $data['config']['attributes'] ?? [] );
 		$attributes = array_column( $attrData, 'val', 'key' );
 		$attributes = array_filter( array_map( fn( $v ) => trim( (string) $v ), $attributes ) );
-		$item->setConfig( ['attributes' => $attributes] );
+
+		// Build attribute excludes and store in config['attribute_excludes']
+		$exclData = (array) ( $data['config']['attribute_excludes'] ?? [] );
+		$excludes = [];
+
+		foreach( $exclData as $entry )
+		{
+			$type = trim( (string) ( $entry['attribute.type'] ?? '' ) );
+			$id = trim( (string) ( $entry['attribute.id'] ?? '' ) );
+
+			if( $type !== '' && $id !== '' ) {
+				$excludes[] = ['type' => $type, 'id' => $id];
+			}
+		}
+
+		$item->setConfig( ['attributes' => $attributes, 'attribute_excludes' => $excludes] );
 
 		// Handle included and excluded categories (catalog domain)
 		$this->fromArrayListItems( $item, 'catalog', array_values( $data['category']['include'] ?? [] ), 'include' );
@@ -476,6 +492,10 @@ class Standard
 		// Handle included and excluded products (product domain)
 		$this->fromArrayListItems( $item, 'product', array_values( $data['product']['include'] ?? [] ), 'include' );
 		$this->fromArrayListItems( $item, 'product', array_values( $data['product']['exclude'] ?? [] ), 'exclude' );
+
+		// Handle included and excluded suppliers (supplier domain)
+		$this->fromArrayListItems( $item, 'supplier', array_values( $data['supplier']['include'] ?? [] ), 'include' );
+		$this->fromArrayListItems( $item, 'supplier', array_values( $data['supplier']['exclude'] ?? [] ), 'exclude' );
 
 		return $item;
 	}
@@ -536,7 +556,32 @@ class Standard
 		$data = $item->toArray( true );
 
 		// Flatten attribute mapping for the config-table Vue component
-		$data['config'] = ['attributes' => $this->flatten( $item->getConfig()['attributes'] ?? [] )];
+		$config = $item->getConfig();
+		$data['config'] = ['attributes' => $this->flatten( $config['attributes'] ?? [] )];
+
+		// Flatten attribute excludes for the Vue component, resolve attribute labels
+		$excludes = [];
+		$attrIds = array_filter( array_column( $config['attribute_excludes'] ?? [], 'id' ) );
+
+		if( !empty( $attrIds ) )
+		{
+			$attrManager = \Aimeos\MShop::create( $this->context(), 'attribute' );
+			$filter = $attrManager->filter()->add( 'attribute.id', '==', $attrIds )->slice( 0, count( $attrIds ) );
+			$attrItems = $attrManager->search( $filter );
+		}
+
+		foreach( $config['attribute_excludes'] ?? [] as $entry )
+		{
+			$id = $entry['id'] ?? '';
+			$label = isset( $attrItems ) && ( $ref = $attrItems->get( $id ) ) ? $ref->getLabel() : '';
+
+			$excludes[] = [
+				'attribute.type' => $entry['type'] ?? '',
+				'attribute.id' => $id,
+				'attribute.label' => $label,
+			];
+		}
+		$data['config']['attribute_excludes'] = $excludes;
 
 		// Build category list data (included and excluded)
 		$includeCategories = [];
@@ -590,10 +635,38 @@ class Standard
 			}
 		}
 
+		// Build supplier list data (included and excluded)
+		$includeSuppliers = [];
+		$excludeSuppliers = [];
+
+		foreach( $item->getListItems( 'supplier' ) as $listItem )
+		{
+			if( ( $refItem = $listItem->getRefItem() ) === null ) {
+				continue;
+			}
+
+			$entry = [
+				'feed.lists.id'     => $copy ? '' : $listItem->getId(),
+				'feed.lists.type'   => $listItem->getType(),
+				'feed.lists.siteid' => $copy ? $siteId : $listItem->getSiteId(),
+				'supplier.id'       => $refItem->getId(),
+				'supplier.label'    => $refItem->getLabel() . ' (' . $refItem->getCode() . ')',
+				'supplier.code'     => $refItem->getCode(),
+			];
+
+			if( $listItem->getType() === 'include' ) {
+				$includeSuppliers[] = $entry;
+			} else {
+				$excludeSuppliers[] = $entry;
+			}
+		}
+
 		$data['category']['include'] = $includeCategories;
 		$data['category']['exclude'] = $excludeCategories;
 		$data['product']['include'] = $includeProducts;
 		$data['product']['exclude'] = $excludeProducts;
+		$data['supplier']['include'] = $includeSuppliers;
+		$data['supplier']['exclude'] = $excludeSuppliers;
 
 		if( $copy === true )
 		{

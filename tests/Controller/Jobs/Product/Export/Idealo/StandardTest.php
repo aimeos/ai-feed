@@ -48,8 +48,10 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 
 	public function testRun()
 	{
-		$exfile = 'tmp' . DIRECTORY_SEPARATOR . 'idealo-exclude.csv';
-		$infile = 'tmp' . DIRECTORY_SEPARATOR . 'idealo-include.csv';
+		$siteId = $this->context->locale()->getSiteId();
+		$dir = 'tmp' . DIRECTORY_SEPARATOR . $siteId . 'd';
+		$exfile = $dir . DIRECTORY_SEPARATOR . 'idealo-exclude.csv';
+		$infile = $dir . DIRECTORY_SEPARATOR . 'idealo-include.csv';
 
 		try
 		{
@@ -69,12 +71,14 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 			$this->assertStringContainsString( 'ABCD/16 discs', $incontent );
 			$this->assertStringContainsString( 'CNC', $incontent );
 			$this->assertStringContainsString( 'CNE', $incontent );
+			$this->assertStringContainsString( 'Test supplier', $incontent );
 			$this->assertEquals( 4, count( explode( "\n", trim( $incontent ) ) ) );
 		}
 		finally
 		{
 			unlink( $exfile );
 			unlink( $infile );
+			@rmdir( $dir );
 		}
 	}
 }

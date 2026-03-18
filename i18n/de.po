@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:15+0100\n"
+"POT-Creation-Date: 2026-03-03 15:16+0100\n"
 "PO-Revision-Date: 2026-03-03 13:26+0000\n"
 "Last-Translator: Aimeos, 2026\n"
 "Language-Team: German (https://app.transifex.com/aimeos/teams/39015/de/)\n"
@@ -106,10 +106,10 @@ msgid "Exports products for Idealo"
 msgstr "Exportiert Produkte für Idealo"
 
 msgid "Feed"
-msgstr "Futter"
+msgstr "Feed"
 
 msgid "Feed field"
-msgstr "Futterfeld"
+msgstr "Exportfeld"
 
 msgid "Feeds"
 msgstr "Feeds"
@@ -241,7 +241,7 @@ msgstr "Ja"
 
 #, php-format
 msgid "feed"
-msgstr "Futter"
+msgstr "Feed"
 
 msgid "selected"
 msgstr "ausgewählt"

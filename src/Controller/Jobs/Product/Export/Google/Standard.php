@@ -170,7 +170,7 @@ class Standard
 			->add( 'feed.type', '==', 'google' )
 			->order( 'feed.id' );
 
-		$items = $manager->search( $filter, ['catalog', 'product'] );
+		$items = $manager->search( $filter, ['catalog', 'product', 'supplier'] );
 
 		foreach( $items as $item )
 		{
@@ -208,7 +208,7 @@ class Standard
 		 * @see controller/jobs/product/export/google/filename
 		 * @see controller/jobs/product/export/google/max-items
 		 */
-		$default = ['attribute', 'catalog', 'media', 'price', 'product', 'text'];
+		$default = ['attribute', 'catalog', 'media', 'price', 'product', 'supplier', 'text'];
 
 		return $this->context()->config()->get( 'controller/jobs/product/export/google/domains', $default );
 	}
@@ -226,7 +226,9 @@ class Standard
 		$context = ( clone $this->context() )->setLocale( $locale );
 		$manager = \Aimeos\MShop::create( $context, 'index' );
 		$filter = $this->filter( $manager->filter( true ), $feedItem );
-		$excludes = $feedItem->getListItems( 'catalog', 'exclude' )->getRefId();
+		$excludeCats = $feedItem->getListItems( 'catalog', 'exclude' )->getRefId();
+		$excludeSupps = $feedItem->getListItems( 'supplier', 'exclude' )->getRefId();
+		$excludeAttrs = array_filter( array_column( $feedItem->getConfigValue( 'attribute_excludes', [] ), 'id' ) );
 
 		$cursor = $manager->cursor( $filter );
 		$domains = $this->domains();
@@ -243,18 +245,24 @@ class Standard
 
 			while( $items = $manager->iterate( $cursor, $domains ) )
 			{
-				$items = $items->filter( fn( $item ) => $item->getListItems( 'catalog' )->getRefId()->intersect( $excludes )->isEmpty() );
+				$items = $items->filter( fn( $item ) => $item->getListItems( 'catalog' )->getRefId()->intersect( $excludeCats )->isEmpty() );
+				$items = $items->filter( fn( $item ) => $item->getListItems( 'supplier' )->getRefId()->intersect( $excludeSupps )->isEmpty() );
+				$items = $items->filter( fn( $item ) => $item->getListItems( 'attribute' )->getRefId()->intersect( $excludeAttrs )->isEmpty() );
 				$items = $this->call( 'hydrate', $items );
 
-				if( fwrite( $fh, $this->render( $items ) ) === false ) {
+				if( fwrite( $fh, $this->render( $items, $feedItem ) ) === false ) {
 					throw new \Aimeos\Controller\Jobs\Exception( sprintf( 'Unable to write products for Google shopping export to temporary file' ) );
 				}
 			}
 
 			rewind( $fh );
 
-			$filename = sprintf( $this->call( 'filename' ), $feedItem->getLabel() );
+			$filename = sprintf( $this->call( 'filename' ), $locale->getSiteId(), $feedItem->getLabel() );
 			$this->fs()->writes( $filename, $fh );
+		}
+		catch( \Throwable $t )
+		{
+			throw $t;
 		}
 		finally
 		{
@@ -266,7 +274,7 @@ class Standard
 	/**
 	 * Returns the file name template for the exported feed file
 	 *
-	 * @return string File name template with one %s placeholder for the feed label
+	 * @return string File name template with two placeholders for the site ID and feed label
 	 */
 	protected function filename() : string
 	{
@@ -274,14 +282,15 @@ class Standard
 		 * Template for the generated file names
 		 *
 		 * The generated export files will be named according to the given
-		 * string which can contain one place holder: The feed label of the exported feed.
+		 * string which can contain two placeholders: The site ID and the
+		 * feed label of the exported feed.
 		 *
 		 * @param string File name template
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/google/max-items
 		 * @see controller/jobs/product/export/google/domains
 		 */
-		return $this->context()->config()->get( 'controller/jobs/product/export/google/filename', '%s.csv' );
+		return $this->context()->config()->get( 'controller/jobs/product/export/google/filename', '%1$sd/%2$s.csv' );
 	}
 
 
@@ -316,6 +325,10 @@ class Standard
 			$includes[] = $filter->is( 'product.id', '==', $ids );
 		}
 
+		if( !( $ids = $item->getListItems( 'supplier', 'include' )->getRefId()->values() )->isEmpty() ) {
+			$includes[] = $filter->is( 'index.supplier.id', '==', $ids );
+		}
+
 		return $filter->add( $filter->and( [
 			$filter->and( $excludes ),
 			$filter->or( $includes )
@@ -330,7 +343,7 @@ class Standard
 	 */
 	protected function fs() : \Aimeos\Base\Filesystem\Iface
 	{
-		return $this->context()->fs( 'fs-export' );
+		return $this->context()->fs( 'fs-media' );
 	}
 
 
@@ -425,9 +438,10 @@ class Standard
 	 * Renders the output for the given items
 	 *
 	 * @param \Aimeos\Map $items List of product items implementing \Aimeos\MShop\Product\Item\Iface
+	 * @param \Aimeos\MShop\Feed\Item\Iface $feedItem Product feed item
 	 * @return string Rendered content
 	 */
-	protected function render( \Aimeos\Map $items ) : string
+	protected function render( \Aimeos\Map $items, \Aimeos\MShop\Feed\Item\Iface $feedItem ) : string
 	{
 		/** controller/jobs/product/export/google/template-items
 		 * Relative path to the CSV items template of the product export job controller.
@@ -457,6 +471,7 @@ class Standard
 		$view = $context->view();
 
 		$view->urlConfig = $context->config()->get( 'client/html/catalog/detail/url', [] );
+		$view->exportConfig = $feedItem->getConfig();
 		$view->exportItems = $items;
 
 		return $view->render( $context->config()->get( $tplconf, $default ) );

@@ -190,6 +190,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 					'exclude' => [],
 				],
 				'product' => ['include' => [], 'exclude' => []],
+				'supplier' => ['include' => [], 'exclude' => []],
 			],
 		];
 
@@ -198,7 +199,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 
 		$result = $this->object->save();
 
-		$saved = $this->getItem( 'test-jqadm-categories', ['catalog', 'product'] );
+		$saved = $this->getItem( 'test-jqadm-categories', ['catalog', 'product', 'supplier'] );
 		$manager->delete( $saved->getId() );
 
 		$this->assertNull( $result );
@@ -240,6 +241,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 						['feed.lists.id' => '', 'feed.lists.type' => 'exclude', 'product.id' => $prodItem->getId(), 'product.label' => $prodItem->getLabel()],
 					],
 				],
+				'supplier' => ['include' => [], 'exclude' => []],
 			],
 		];
 
@@ -248,7 +250,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 
 		$result = $this->object->save();
 
-		$saved = $this->getItem( 'test-jqadm-products', ['catalog', 'product'] );
+		$saved = $this->getItem( 'test-jqadm-products', ['catalog', 'product', 'supplier'] );
 		$manager->delete( $saved->getId() );
 
 		$this->assertNull( $result );
@@ -257,6 +259,57 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		$listItems = $saved->getListItems( 'product', 'exclude' );
 		$this->assertCount( 1, $listItems );
 		$this->assertEquals( $prodItem->getId(), $listItems->first()->getRefId() );
+	}
+
+
+	public function testSaveWithSuppliers()
+	{
+		$manager = \Aimeos\MShop::create( $this->context, 'feed' );
+
+		$suppManager = \Aimeos\MShop::create( $this->context, 'supplier' );
+		$suppSearch = $suppManager->filter()->add( ['supplier.code' => 'unitSupplier001'] )->slice( 0, 1 );
+		$suppItems = $suppManager->search( $suppSearch );
+
+		if( $suppItems->isEmpty() ) {
+			$this->markTestSkipped( 'No supplier item with code "unitSupplier001" found' );
+		}
+
+		$suppItem = $suppItems->first();
+
+		$param = [
+			'site' => 'unittest',
+			'item' => [
+				'feed.id'         => '',
+				'feed.type'       => 'google',
+				'feed.label'      => 'test-jqadm-suppliers',
+				'feed.languageid' => 'en',
+				'feed.currencyid' => 'EUR',
+				'feed.status'     => '1',
+				'category' => ['include' => [], 'exclude' => []],
+				'product' => ['include' => [], 'exclude' => []],
+				'supplier' => [
+					'include' => [
+						['feed.lists.id' => '', 'feed.lists.type' => 'include', 'supplier.id' => $suppItem->getId(), 'supplier.label' => $suppItem->getLabel()],
+					],
+					'exclude' => [],
+				],
+			],
+		];
+
+		$helper = new \Aimeos\Base\View\Helper\Param\Standard( $this->view, $param );
+		$this->view->addHelper( 'param', $helper );
+
+		$result = $this->object->save();
+
+		$saved = $this->getItem( 'test-jqadm-suppliers', ['catalog', 'product', 'supplier'] );
+		$manager->delete( $saved->getId() );
+
+		$this->assertNull( $result );
+		$this->assertEmpty( $this->view->get( 'errors' ) );
+
+		$listItems = $saved->getListItems( 'supplier', 'include' );
+		$this->assertCount( 1, $listItems );
+		$this->assertEquals( $suppItem->getId(), $listItems->first()->getRefId() );
 	}
 
 

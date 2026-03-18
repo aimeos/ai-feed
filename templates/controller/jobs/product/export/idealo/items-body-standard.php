@@ -5,7 +5,7 @@
  * @copyright Aimeos (aimeos.org), 2026
  */
 
-$typeMap = $this->config( 'controller/jobs/product/export/idealo/types', [] );
+$typeMap = $this->get( 'exportConfig/attributes', [] );
 
 $urlTarget = $this->get( 'urlConfig/target' );
 $urlCntl = $this->get( 'urlConfig/controller' );
@@ -32,7 +32,7 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 	$url = $this->url( $item->getTarget() ?: $urlTarget, $urlCntl, $urlAction, array_diff_key( $params, $urlFilter ), [], $urlConfig );
 
 	// Category path
-	$catItem = $item->getRefItems( 'catalog', 'default', 'default' )->first();
+	$catItem = $item->getRefItems( 'catalog', null, 'default' )->first();
 	$catPath = $catItem?->getConfigValue( 'idealo' ) ?: $catItem?->getName();
 
 	$articles = $item->getType() === 'select' ? $item->getRefItems( 'product', null, 'default' ) : map( [$item] );
@@ -75,8 +75,8 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 		}
 
 		// supplier/brand: from supplier relation
-		$brand = $article->getRefItems( 'supplier', 'default', 'default' )->first()?->getName()
-			?: $item->getRefItems( 'supplier', 'default', 'default' )->first()?->getName();
+		$brand = $article->getRefItems( 'supplier', null, 'default' )->first()?->getName()
+			?: $item->getRefItems( 'supplier', null, 'default' )->first()?->getName();
 
 		// Product attributes and properties from articles and selection products
 		$map = map();
@@ -87,12 +87,8 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 				continue;
 			}
 
-			$props = $article->getProperties( $type )
-				->merge( $articles->getProperties( $type )->flat( 1 ) );
-
-			$attrs = $article->getRefItems( 'attribute', $type, 'default' )
-				->merge( $articles->getRefItems( 'attribute', $type, 'default' )->flat( 1 ) )
-				->getCode();
+			$props = $article->getProperties( $type );
+			$attrs = $article->getRefItems( 'attribute', $type )->getCode();
 
 			$map[$idealoType] = $props->merge( $attrs );
 		}

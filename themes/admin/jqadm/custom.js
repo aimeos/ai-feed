@@ -45,6 +45,14 @@ Aimeos.Feed = {
 			})
 		}
 
+		for(entry of document.querySelectorAll('.item-feed .item-supplier .supplier')) {
+			components.push({
+				name: entry.id.replace(/-/, '/'),
+				el: '#' + entry.id,
+				mixins: [Aimeos.Feed.Supplier.mixins()]
+			})
+		}
+
 		for(const component of components) {
 			const node = document.querySelector(component.el);
 
@@ -99,16 +107,19 @@ Aimeos.Feed.Attributes = {
 			props: {
 				data: {type: String, required: true},
 				attrtypes: {type: String, default: '{}'},
+				excludes: {type: String, default: '[]'},
 				siteid: {type: String, required: true}
 			},
 			data() {
 				return {
 					item: {},
+					excludeItems: [],
 				}
 			},
 			beforeMount() {
 				this.Aimeos = Aimeos;
 				this.item = JSON.parse(this.data);
+				this.excludeItems = JSON.parse(this.excludes);
 			},
 			mounted() {
 				document.addEventListener('feed-type-change', (ev) => {
@@ -124,8 +135,97 @@ Aimeos.Feed.Attributes = {
 				});
 			},
 			methods: {
+				add() {
+					this.excludeItems.push({'attribute.type': '', 'attribute.id': '', 'attribute.label': ''});
+				},
+
+
+				attr(input, idx) {
+					const filter = {
+						'&&': [
+							{'==': {'attribute.type': this.excludeItems[idx]['attribute.type']}},
+							{'>': {'attribute.status': 0}}
+						]
+					}
+
+					if(input) {
+						filter['&&'].push({
+							'||': [
+								{'=~': {'attribute.label': input}},
+								{'=~': {'attribute.code': input}},
+								{'==': {'attribute.id': input}}
+							]
+						});
+					}
+
+					return Aimeos.graphql(`query {
+						searchAttributes(filter: ` + JSON.stringify(JSON.stringify(filter)) + `, sort: ["attribute.label"]) {
+							items {
+								id
+								label
+							}
+						}
+					  }
+					`).then(result => {
+						return (result?.searchAttributes?.items || []).map(item => {
+							return {'attribute.id': item.id, 'attribute.label': item.label}
+						})
+					})
+				},
+
+
+				attrTypes(input) {
+					const filter = {
+						'&&': [
+							{'>': {'attribute.type.status': 0}}
+						]
+					}
+
+					if(input) {
+						filter['&&'].push({
+							'||': [
+								{'=~': {'attribute.type.label': input}},
+								{'=~': {'attribute.type.code': input}},
+								{'==': {'attribute.type.id': input}}
+							]
+						});
+					}
+
+					return Aimeos.graphql(`query {
+						searchAttributeTypes(filter: ` + JSON.stringify(JSON.stringify(filter)) + `, sort: ["attribute.type.code"]) {
+							items {
+								code
+							}
+						}
+					  }
+					`).then(result => {
+						return (result?.searchAttributeTypes?.items || []).map(item => {
+							return {'attribute.type': item.code}
+						})
+					})
+				},
+
+
 				can(action) {
 					return Aimeos.can(action, this.item['feed.siteid'] || null, this.siteid)
+				},
+
+
+				remove(idx) {
+					this.excludeItems.splice(idx, 1);
+				},
+
+
+				use(idx, ev) {
+					this.excludeItems[idx]['attribute.label'] = ev['attribute.label'];
+					this.excludeItems[idx]['attribute.id'] = ev['attribute.id'];
+				},
+
+
+				useType(idx, ev) {
+					this.excludeItems[idx]['attribute.type'] = ev['attribute.type'];
+					this.excludeItems[idx]['attribute.id'] = '';
+					this.excludeItems[idx]['attribute.label'] = '';
 				}
 			}
 		}
@@ -326,6 +426,106 @@ Aimeos.Feed.Product = {
 				use(idx, ev) {
 					this.items[idx]['product.label'] = ev['product.label'];
 					this.items[idx]['product.id'] = ev['product.id'];
+				},
+			}
+		};
+	}
+};
+
+
+
+Aimeos.Feed.Supplier = {
+
+	mixins() {
+		return {
+			props: {
+				data: {type: String, required: true},
+				keys: {type: String, required: true},
+				siteid: {type: String, required: true},
+				listtype: {type: String, required: true}
+			},
+			data() {
+				return {
+					items: [],
+				}
+			},
+			beforeMount() {
+				this.Aimeos = Aimeos;
+				this.items = JSON.parse(this.data);
+			},
+			methods: {
+				add(data) {
+
+					const idx = (this.items || []).length;
+					this.items[idx] = {};
+
+					for(const key of (JSON.parse(this.keys) || [])) {
+						this.items[idx][key] = (data && data[key] || '');
+					}
+
+					this.items[idx]['feed.lists.siteid'] = this.siteid;
+					this.items[idx]['feed.lists.type'] = this.listtype;
+				},
+
+
+				can(action, idx) {
+					return Aimeos.can(action, this.items[idx]['feed.lists.siteid'] || null, this.siteid)
+				},
+
+
+				fetch(input, idx) {
+					const filter = {
+						'&&': [
+							{'>': {'supplier.status': 0}}
+						]
+					}
+
+					if(input) {
+						filter['&&'].push({
+							'||': [
+								{'=~': {'supplier.label': input}},
+								{'=~': {'supplier.code': input}},
+								{'==': {'supplier.id': input}}
+							]
+						});
+					}
+
+					return Aimeos.graphql(`query {
+						searchSuppliers(filter: ` + JSON.stringify(JSON.stringify(filter)) + `, sort: ["supplier.label"]) {
+							items {
+								id
+								code
+								label
+							}
+						}
+					  }
+					`).then(result => {
+						return (result?.searchSuppliers?.items || []).map(item => {
+							return {'supplier.id': item.id, 'supplier.label': item.label + ' (' + item.code + ')'}
+						})
+					})
+				},
+
+
+				remove(idx) {
+					this.items.splice(idx, 1);
+				},
+
+
+				title(idx) {
+					if(this.items[idx]['feed.lists.ctime']) {
+						return 'Site ID: ' + this.items[idx]['feed.lists.siteid'] + "\n"
+							+ 'Editor: ' + this.items[idx]['feed.lists.editor'] + "\n"
+							+ 'Created: ' + this.items[idx]['feed.lists.ctime'] + "\n"
+							+ 'Modified: ' + this.items[idx]['feed.lists.mtime'];
+					}
+					return ''
+				},
+
+
+				use(idx, ev) {
+					this.items[idx]['supplier.label'] = ev['supplier.label'];
+					this.items[idx]['supplier.id'] = ev['supplier.id'];
 				},
 			}
 		};

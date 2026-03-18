@@ -5,7 +5,7 @@
  * @copyright Aimeos (aimeos.org), 2026
  */
 
-$typeMap = $this->config( 'controller/jobs/product/export/google/types', [] );
+$typeMap = $this->get( 'exportConfig/attributes', [] );
 
 $urlTarget = $this->get( 'urlConfig/target' );
 $urlCntl = $this->get( 'urlConfig/controller' );
@@ -32,7 +32,7 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 	$url = $this->url( $item->getTarget() ?: $urlTarget, $urlCntl, $urlAction, array_diff_key( $params, $urlFilter ), [], $urlConfig );
 
 	// Google product category from catalog item config key 'google', fallback to category name
-	$catItem = $item->getRefItems( 'catalog', 'default', 'default' )->first();
+	$catItem = $item->getRefItems( 'catalog', null, 'default' )->first();
 
 	$articles = $item->getType() === 'select' ? $item->getRefItems( 'product', null, 'default' ) : map();
 	$articles->push( $item, $item->getId() ); // include main product
@@ -91,8 +91,8 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 		}
 
 		// supplier/brand: from supplier relation
-		$brand = $article->getRefItems( 'supplier', 'default', 'default' )->first()?->getName()
-			?: $item->getRefItems( 'supplier', 'default', 'default' )->first()?->getName();
+		$brand = $article->getRefItems( 'supplier', null, 'default' )->first()?->getName()
+			?: $item->getRefItems( 'supplier', null, 'default' )->first()?->getName();
 
 		// Product attributes and properties from product and its sub-articles
 		$map = map( [] );
@@ -103,12 +103,8 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 				continue;
 			}
 
-			$props = $article->getProperties( $type )
-				->merge( $articles->getProperties( $type )->flat( 1 ) );
-
-			$attrs = $article->getRefItems( 'attribute', $type, 'default' )
-				->merge( $articles->getRefItems( 'attribute', $type, 'default' )->flat( 1 ) )
-				->getCode();
+			$props = $article->getProperties( $type );
+			$attrs = $article->getRefItems( 'attribute', $type )->getCode();
 
 			$map[$googleType] = $props->merge( $attrs );
 		}
@@ -143,7 +139,7 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 			$csv( $map->get( 'certification' )?->join( ',' ) ),
 			$csv( $map->get( 'energy_efficiency_class' )?->first() ),
 			$csv( $map->get( 'age_group' )?->first() ),
-			$csv( $map->get( 'color' )?->join( ',' ) ),
+			$csv( $map->get( 'colour' )?->join( ',' ) ),
 			$csv( $map->get( 'gender' )?->join( ',' ) ),
 			$csv( $map->get( 'material' )?->join( ',' ) ),
 			$csv( $map->get( 'pattern' )?->join( ',' ) ),
@@ -155,7 +151,7 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 			$csv( $map->get( 'product_width' )?->first() ),
 			$csv( $map->get( 'product_height' )?->first() ),
 			$csv( $map->get( 'product_weight' )?->first() ),
-			$csv( $article->getName( 'highlight' ) ?: $item->getName( 'highlight' ) ),
+			$csv( $article->getRefItems( 'text', 'highlight', 'default' )->getContent()->first() ?: $item->getRefItems( 'text', 'highlight', 'default' )->getContent()->first() ),
 		] ) . "\n";
 	}
 }
