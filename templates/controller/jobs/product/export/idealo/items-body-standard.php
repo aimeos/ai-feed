@@ -88,7 +88,7 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 			}
 
 			$props = $article->getProperties( $type );
-			$attrs = $article->getRefItems( 'attribute', $type )->getCode();
+			$attrs = $article->getRefItems( 'attribute', $type )->getLabel();
 
 			$map[$idealoType] = $props->merge( $attrs );
 		}

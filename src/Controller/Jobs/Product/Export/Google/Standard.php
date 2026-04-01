@@ -228,8 +228,6 @@ class Standard
 		$filter = $this->filter( $manager->filter( true ), $feedItem );
 		$excludeCats = $feedItem->getListItems( 'catalog', 'exclude' )->getRefId();
 		$excludeSupps = $feedItem->getListItems( 'supplier', 'exclude' )->getRefId();
-		$excludeAttrs = array_filter( array_column( $feedItem->getConfigValue( 'attribute_excludes', [] ), 'id' ) );
-
 		$cursor = $manager->cursor( $filter );
 		$domains = $this->domains();
 
@@ -247,7 +245,6 @@ class Standard
 			{
 				$items = $items->filter( fn( $item ) => $item->getListItems( 'catalog' )->getRefId()->intersect( $excludeCats )->isEmpty() );
 				$items = $items->filter( fn( $item ) => $item->getListItems( 'supplier' )->getRefId()->intersect( $excludeSupps )->isEmpty() );
-				$items = $items->filter( fn( $item ) => $item->getListItems( 'attribute' )->getRefId()->intersect( $excludeAttrs )->isEmpty() );
 				$items = $this->call( 'hydrate', $items );
 
 				if( fwrite( $fh, $this->render( $items, $feedItem ) ) === false ) {
@@ -325,6 +322,12 @@ class Standard
 
 		if( !( $ids = $item->getListItems( 'supplier', 'include' )->getRefId()->values() )->isEmpty() ) {
 			$includes[] = $filter->is( 'index.supplier.id', '==', $ids );
+		}
+
+		$attrExclIds = array_filter( array_column( $item->getConfigValue( 'attribute_excludes', [] ), 'id' ) );
+
+		if( !empty( $attrExclIds ) ) {
+			$excludes[] = $filter->is( 'index.attribute.id', '!=', $attrExclIds );
 		}
 
 		return $filter->add( $filter->and( [
