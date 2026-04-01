@@ -35,7 +35,10 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 	$catItem = $item->getRefItems( 'catalog', null, 'default' )->first();
 
 	$articles = $item->getType() === 'select' ? $item->getRefItems( 'product', null, 'default' ) : map();
-	$articles->push( $item, $item->getId() ); // include main product
+
+	if( $item->getType() !== 'select' || !$item->getRefItems( 'price', 'default', 'default' )->isEmpty() ) {
+		$articles->push( $item, $item->getId() );
+	}
 
 	foreach( $articles as $article )
 	{
