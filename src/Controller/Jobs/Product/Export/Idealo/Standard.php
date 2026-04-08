@@ -327,7 +327,7 @@ class Standard
 		$filter->add( 'index.catalog.id', '!=', null )->slice( 0, $this->max() );
 
 		if( $item->getStock() ) {
-			$filter->add( 'product.instock', '>', 0 );
+			$filter->add( 'product.instock', '!=', 0 );
 		}
 
 		if( !( $ids = $item->getListItems( 'catalog', 'include' )->getRefId()->values() )->isEmpty() ) {
