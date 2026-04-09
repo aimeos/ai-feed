@@ -106,7 +106,6 @@ foreach( $this->get( 'exportItems', [] ) as $id => $item )
 			$csv( $price ),
 			$csv( $formerPrice ),
 			$csv( $delivery ), // shipping costs
-			$csv( $map->get( 'delivery' )?->first() ), // delivery time
 			$csv( $map->get( 'eans' )?->first() ),
 			$csv( $map->get( 'size' )?->first() ),
 			$csv( $map->get( 'colour' )?->join( '/' ) ),
