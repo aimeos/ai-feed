@@ -66,7 +66,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 			$this->assertStringNotContainsString( 'ABCD/16 discs', $excontent );
 			$this->assertStringNotContainsString( 'CNC', $excontent );
 			$this->assertStringNotContainsString( 'CNE', $excontent );
-			$this->assertEquals( 5, count( explode( "\n", trim( $excontent ) ) ) );
+			$this->assertEquals( 11, count( explode( "\n", trim( $excontent ) ) ) );
 
 			$this->assertStringContainsString( 'ABCD/16 discs', $incontent );
 			$this->assertStringContainsString( 'CNC', $incontent );
