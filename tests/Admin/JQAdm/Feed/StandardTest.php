@@ -80,7 +80,9 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 
 	public function testDelete()
 	{
-		$this->assertNull( $this->getClientMock( ['redirect'], false )->delete() );
+		$object = $this->getClientMock( ['redirect'], false );
+		$object->expects( $this->once() )->method( 'redirect' );
+		$this->assertNull( $object->delete() );
 	}
 
 
@@ -403,10 +405,7 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 
 	protected function getViewNoRender( $real = true )
 	{
-		$view = $this->getMockBuilder( \Aimeos\Base\View\Standard::class )
-			->setConstructorArgs( [[]] )
-			->onlyMethods( ['render'] )
-			->getMock();
+		$view = new FeedViewNoRender( [] );
 
 		$param = ['site' => 'unittest', 'id' => $real ? $this->getItem()->getId() : -1];
 		$helper = new \Aimeos\Base\View\Helper\Param\Standard( $view, $param );
@@ -431,5 +430,14 @@ class StandardTest extends \PHPUnit\Framework\TestCase
 		);
 
 		return $manager->get( $id, $domains );
+	}
+}
+
+
+class FeedViewNoRender extends \Aimeos\Base\View\Standard
+{
+	public function render( $filenames ) : string
+	{
+		return '';
 	}
 }
