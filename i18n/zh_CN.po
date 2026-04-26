@@ -2,24 +2,25 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Aimeos, 2026
 # Stone Ma <mshp_2007@126.com>, 2026
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:15+0100\n"
+"POT-Creation-Date: 2026-04-24 11:00+0200\n"
 "PO-Revision-Date: 2026-03-03 13:26+0000\n"
 "Last-Translator: Stone Ma <mshp_2007@126.com>, 2026\n"
-"Language-Team: Chinese (China) (https://app.transifex.com/aimeos/teams/39015/zh_CN/)\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/aimeos/teams/39015/"
+"zh_CN/)\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Add"
@@ -76,16 +77,34 @@ msgstr ""
 msgid "Editor"
 msgstr ""
 
+msgid "Enter attribute ID, code or label"
+msgstr ""
+
+msgid "Enter attribute type ID, code or label"
+msgstr ""
+
 msgid "Enter category ID, code or label"
 msgstr ""
 
 msgid "Enter product ID, code or label"
 msgstr ""
 
+msgid "Enter supplier ID, code or label"
+msgstr ""
+
+msgid "Excluded attribute"
+msgstr ""
+
+msgid "Excluded attribute type"
+msgstr ""
+
 msgid "Excluded categories"
 msgstr ""
 
 msgid "Excluded products"
+msgstr ""
+
+msgid "Excluded suppliers"
 msgstr ""
 
 msgid "Export"
@@ -134,6 +153,9 @@ msgid "Included categories"
 msgstr ""
 
 msgid "Included products"
+msgstr ""
+
+msgid "Included suppliers"
 msgstr ""
 
 msgid "Insert new entry (Ctrl+I)"
@@ -188,6 +210,9 @@ msgid "Show search form"
 msgstr ""
 
 msgid "Status"
+msgstr ""
+
+msgid "Suppliers"
 msgstr ""
 
 msgid "The export format used to generate this product feed"

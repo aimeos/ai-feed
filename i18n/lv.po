@@ -1,25 +1,17 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Aimeos, 2026
-# 
 #, fuzzy
 msgid ""
 msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: lv\n"
+"Language-Team: Latvian (https://app.transifex.com/aimeos/teams/39015/lv/)\n"
+"Last-Translator: Aimeos, 2026\n"
+"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:15+0100\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"Last-Translator: Aimeos, 2026\n"
-"Language-Team: Latvian (https://app.transifex.com/aimeos/teams/39015/lv/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: lv\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
 msgid "Add"
 msgstr "Pievienot"
@@ -75,17 +67,35 @@ msgstr "Rediģēt"
 msgid "Editor"
 msgstr "Redaktors"
 
+msgid "Enter attribute ID, code or label"
+msgstr "Ievadiet atribūta ID, kodu vai nosaukumu"
+
+msgid "Enter attribute type ID, code or label"
+msgstr "Ievadiet atribūta tipa identifikatoru, kodu vai nosaukumu"
+
 msgid "Enter category ID, code or label"
 msgstr "Ievadiet kategorijas ID, kodu vai etiķeti"
 
 msgid "Enter product ID, code or label"
 msgstr "Ievadiet produkta identifikācijas numuru, kodu vai etiķeti"
 
+msgid "Enter supplier ID, code or label"
+msgstr "Ievadiet piegādātāja identifikācijas numuru, kodu vai etiķeti"
+
+msgid "Excluded attribute"
+msgstr "Izslēgtais atribūts"
+
+msgid "Excluded attribute type"
+msgstr "Izslēgtais atribūta tips"
+
 msgid "Excluded categories"
 msgstr "Izslēgtās kategorijas"
 
 msgid "Excluded products"
 msgstr "Izslēgtie produkti"
+
+msgid "Excluded suppliers"
+msgstr "Izslēgtie piegādātāji"
 
 msgid "Export"
 msgstr "Eksports"
@@ -135,6 +145,9 @@ msgstr "Iekļautās kategorijas"
 msgid "Included products"
 msgstr "Iekļautie produkti"
 
+msgid "Included suppliers"
+msgstr "Iekļautie piegādātāji"
+
 msgid "Insert new entry (Ctrl+I)"
 msgstr "Ievietot jaunu ierakstu (Ctrl+I)"
 
@@ -150,12 +163,8 @@ msgstr "Valoda"
 msgid "Language of the product data to be exported in this feed"
 msgstr "Šajā plūsmā eksportējamo produktu datu valoda"
 
-msgid ""
-"Map a feed field name to the Aimeos product attribute type containing the "
-"value"
-msgstr ""
-"Saistiet barošanas lauka nosaukumu ar Aimeos produkta atribūta tipu, kas "
-"satur vērtību"
+msgid "Map a feed field name to the Aimeos product attribute type containing the value"
+msgstr "Saistiet barošanas lauka nosaukumu ar Aimeos produkta atribūta tipu, kas satur vērtību"
 
 msgid "Menu"
 msgstr "Izvēlne"
@@ -191,6 +200,9 @@ msgstr "Rādīt meklēšanas veidlapu"
 msgid "Status"
 msgstr "Statuss"
 
+msgid "Suppliers"
+msgstr "Piegādātāji"
+
 msgid "The export format used to generate this product feed"
 msgstr "Eksporta formāts, kas izmantots šī produkta plūsmas ģenerēšanai"
 
@@ -207,8 +219,7 @@ msgstr "Nav iespējams izveidot pagaidu failu Idealo eksportam"
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr ""
-"Nav iespējams rakstīt galvenes Google iepirkšanās eksportam uz pagaidu failu"
+msgstr "Nav iespējams rakstīt galvenes Google iepirkšanās eksportam uz pagaidu failu"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
@@ -216,19 +227,14 @@ msgstr "Nav iespējams rakstīt galvenes Idealo eksportam uz pagaidu failu"
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr ""
-"Nav iespējams rakstīt produktus Google iepirkšanās eksportam uz pagaidu "
-"failu"
+msgstr "Nav iespējams rakstīt produktus Google iepirkšanās eksportam uz pagaidu failu"
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Nevar rakstīt produktus Idealo eksportam uz pagaidu failu"
 
-msgid ""
-"When enabled, only products with available stock are included in the feed"
-msgstr ""
-"Ja šī funkcija ir ieslēgta, plūsmā tiek iekļauti tikai produkti, kas ir "
-"pieejami noliktavā."
+msgid "When enabled, only products with available stock are included in the feed"
+msgstr "Ja šī funkcija ir ieslēgta, plūsmā tiek iekļauti tikai produkti, kas ir pieejami noliktavā."
 
 msgid "Yes"
 msgstr "Jā"

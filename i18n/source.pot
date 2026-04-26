@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:16+0100\n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,16 +71,34 @@ msgstr ""
 msgid "Editor"
 msgstr ""
 
+msgid "Enter attribute ID, code or label"
+msgstr ""
+
+msgid "Enter attribute type ID, code or label"
+msgstr ""
+
 msgid "Enter category ID, code or label"
 msgstr ""
 
 msgid "Enter product ID, code or label"
 msgstr ""
 
+msgid "Enter supplier ID, code or label"
+msgstr ""
+
+msgid "Excluded attribute"
+msgstr ""
+
+msgid "Excluded attribute type"
+msgstr ""
+
 msgid "Excluded categories"
 msgstr ""
 
 msgid "Excluded products"
+msgstr ""
+
+msgid "Excluded suppliers"
 msgstr ""
 
 msgid "Export"
@@ -129,6 +147,9 @@ msgid "Included categories"
 msgstr ""
 
 msgid "Included products"
+msgstr ""
+
+msgid "Included suppliers"
 msgstr ""
 
 msgid "Insert new entry (Ctrl+I)"
@@ -183,6 +204,9 @@ msgid "Show search form"
 msgstr ""
 
 msgid "Status"
+msgstr ""
+
+msgid "Suppliers"
 msgstr ""
 
 msgid "The export format used to generate this product feed"

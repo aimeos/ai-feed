@@ -1,25 +1,17 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Aimeos, 2026
-# 
 #, fuzzy
 msgid ""
 msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+"Language-Team: Korean (https://app.transifex.com/aimeos/teams/39015/ko/)\n"
+"Last-Translator: Aimeos, 2026\n"
+"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:15+0100\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"Last-Translator: Aimeos, 2026\n"
-"Language-Team: Korean (https://app.transifex.com/aimeos/teams/39015/ko/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: ko\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Add"
 msgstr "추가"
@@ -75,17 +67,35 @@ msgstr "편집"
 msgid "Editor"
 msgstr "편집기"
 
+msgid "Enter attribute ID, code or label"
+msgstr "속성 ID, 코드 또는 레이블을 입력하세요"
+
+msgid "Enter attribute type ID, code or label"
+msgstr "속성 유형 ID, 코드 또는 레이블을 입력하세요"
+
 msgid "Enter category ID, code or label"
 msgstr "카테고리 ID, 코드 또는 레이블을 입력하세요"
 
 msgid "Enter product ID, code or label"
 msgstr "제품 ID, 코드 또는 라벨을 입력하세요"
 
+msgid "Enter supplier ID, code or label"
+msgstr "공급업체 ID, 코드 또는 라벨을 입력하세요"
+
+msgid "Excluded attribute"
+msgstr "제외된 속성"
+
+msgid "Excluded attribute type"
+msgstr "제외된 속성 유형"
+
 msgid "Excluded categories"
 msgstr "제외된 범주"
 
 msgid "Excluded products"
 msgstr "제외된 제품"
+
+msgid "Excluded suppliers"
+msgstr "제외된 공급업체"
 
 msgid "Export"
 msgstr "수출"
@@ -135,6 +145,9 @@ msgstr "포함된 카테고리"
 msgid "Included products"
 msgstr "포함된 제품"
 
+msgid "Included suppliers"
+msgstr "포함된 공급업체"
+
 msgid "Insert new entry (Ctrl+I)"
 msgstr "새 항목 삽입(Ctrl+I)"
 
@@ -150,9 +163,7 @@ msgstr "언어"
 msgid "Language of the product data to be exported in this feed"
 msgstr "이 피드에서 내보낼 제품 데이터의 언어"
 
-msgid ""
-"Map a feed field name to the Aimeos product attribute type containing the "
-"value"
+msgid "Map a feed field name to the Aimeos product attribute type containing the value"
 msgstr "피드 필드 이름을 해당 값을 포함하는 Aimeos 제품 속성 유형에 매핑합니다."
 
 msgid "Menu"
@@ -189,6 +200,9 @@ msgstr "검색 양식 표시"
 msgid "Status"
 msgstr "상태"
 
+msgid "Suppliers"
+msgstr "공급업체"
+
 msgid "The export format used to generate this product feed"
 msgstr "이 제품 피드를 생성하는 데 사용된 내보내기 형식"
 
@@ -219,8 +233,7 @@ msgstr "Google 쇼핑 내보내기를 위한 상품 데이터를 임시 파일�
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Idealo 수출용 제품 데이터를 임시 파일에 작성할 수 없습니다"
 
-msgid ""
-"When enabled, only products with available stock are included in the feed"
+msgid "When enabled, only products with available stock are included in the feed"
 msgstr "활성화 시 재고가 있는 제품만 피드에 포함됩니다"
 
 msgid "Yes"

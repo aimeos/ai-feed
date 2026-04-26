@@ -1,26 +1,17 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Maurice Lourens <mlourens@gmail.com>, 2026
-# Aimeos, 2026
-# 
 #, fuzzy
 msgid ""
 msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: nl\n"
+"Language-Team: Dutch (https://app.transifex.com/aimeos/teams/39015/nl/)\n"
+"Last-Translator: Aimeos, 2026\n"
+"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:15+0100\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"Last-Translator: Aimeos, 2026\n"
-"Language-Team: Dutch (https://app.transifex.com/aimeos/teams/39015/nl/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Add"
 msgstr "Voeg  toe"
@@ -76,17 +67,35 @@ msgstr "Bewerk"
 msgid "Editor"
 msgstr "Editor"
 
+msgid "Enter attribute ID, code or label"
+msgstr "Voer de attribuut-ID, code of het label in"
+
+msgid "Enter attribute type ID, code or label"
+msgstr "Voer de ID, code of het label van het attribuuttype in"
+
 msgid "Enter category ID, code or label"
 msgstr "Voer categorie-ID, code of label in"
 
 msgid "Enter product ID, code or label"
 msgstr "Voer product-ID, code of label in"
 
+msgid "Enter supplier ID, code or label"
+msgstr "Voer leveranciers-ID, code of label in"
+
+msgid "Excluded attribute"
+msgstr "Uitgesloten kenmerk"
+
+msgid "Excluded attribute type"
+msgstr "Uitgesloten attribuuttype"
+
 msgid "Excluded categories"
 msgstr "Uitgesloten categorieën"
 
 msgid "Excluded products"
 msgstr "Uitgesloten producten"
+
+msgid "Excluded suppliers"
+msgstr "Uitgesloten leveranciers"
 
 msgid "Export"
 msgstr "Exporteren"
@@ -136,6 +145,9 @@ msgstr "Inbegrepen categorieën"
 msgid "Included products"
 msgstr "Inbegrepen producten"
 
+msgid "Included suppliers"
+msgstr "Meegeleverde leveranciers"
+
 msgid "Insert new entry (Ctrl+I)"
 msgstr "Nieuwe aanmaken (Ctrl+I)"
 
@@ -149,15 +161,10 @@ msgid "Language"
 msgstr "Taal"
 
 msgid "Language of the product data to be exported in this feed"
-msgstr ""
-"Taal van de productgegevens die in deze feed moeten worden geëxporteerd"
+msgstr "Taal van de productgegevens die in deze feed moeten worden geëxporteerd"
 
-msgid ""
-"Map a feed field name to the Aimeos product attribute type containing the "
-"value"
-msgstr ""
-"Koppel een feedveldnaam aan het Aimeos-productattribuuttype dat de waarde "
-"bevat."
+msgid "Map a feed field name to the Aimeos product attribute type containing the value"
+msgstr "Koppel een feedveldnaam aan het Aimeos-productattribuuttype dat de waarde bevat."
 
 msgid "Menu"
 msgstr "Menu"
@@ -193,6 +200,9 @@ msgstr "Zoekformulier tonen"
 msgid "Status"
 msgstr "Status"
 
+msgid "Suppliers"
+msgstr "Leveranciers"
+
 msgid "The export format used to generate this product feed"
 msgstr "Het exportformaat dat is gebruikt om deze productfeed te genereren"
 
@@ -209,8 +219,7 @@ msgstr "Kan geen tijdelijk bestand aanmaken voor Idealo-export"
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr ""
-"Kan geen header schrijven voor Google Shopping-export naar tijdelijk bestand"
+msgstr "Kan geen header schrijven voor Google Shopping-export naar tijdelijk bestand"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
@@ -218,20 +227,14 @@ msgstr "Kan geen header schrijven voor Idealo-export naar tijdelijk bestand"
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr ""
-"Kan geen producten schrijven voor Google Shopping-export naar tijdelijk "
-"bestand"
+msgstr "Kan geen producten schrijven voor Google Shopping-export naar tijdelijk bestand"
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
-msgstr ""
-"Kan geen producten schrijven voor Idealo-export naar tijdelijk bestand"
+msgstr "Kan geen producten schrijven voor Idealo-export naar tijdelijk bestand"
 
-msgid ""
-"When enabled, only products with available stock are included in the feed"
-msgstr ""
-"Wanneer deze optie is ingeschakeld, worden alleen producten met beschikbare "
-"voorraad opgenomen in de feed."
+msgid "When enabled, only products with available stock are included in the feed"
+msgstr "Wanneer deze optie is ingeschakeld, worden alleen producten met beschikbare voorraad opgenomen in de feed."
 
 msgid "Yes"
 msgstr "Ja"

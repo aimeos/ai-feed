@@ -1,26 +1,17 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# hasan hojjati <hojjati64@gmail.com>, 2026
-# Aimeos, 2026
-# 
 #, fuzzy
 msgid ""
 msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fa\n"
+"Language-Team: Persian (https://app.transifex.com/aimeos/teams/39015/fa/)\n"
+"Last-Translator: Aimeos, 2026\n"
+"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:15+0100\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"Last-Translator: Aimeos, 2026\n"
-"Language-Team: Persian (https://app.transifex.com/aimeos/teams/39015/fa/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: fa\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Add"
 msgstr "افزودن"
@@ -76,17 +67,35 @@ msgstr "ویرایش"
 msgid "Editor"
 msgstr "ویرایشگر"
 
+msgid "Enter attribute ID, code or label"
+msgstr "شناسه، کد یا برچسب را وارد کنید"
+
+msgid "Enter attribute type ID, code or label"
+msgstr "شناسهٔ نوع ویژگی، کد یا برچسب را وارد کنید."
+
 msgid "Enter category ID, code or label"
 msgstr "شناسهٔ دسته‌بندی، کد یا برچسب را وارد کنید"
 
 msgid "Enter product ID, code or label"
 msgstr "شناسه محصول، کد یا برچسب را وارد کنید"
 
+msgid "Enter supplier ID, code or label"
+msgstr "شناسه، کد یا برچسب تأمین‌کننده را وارد کنید"
+
+msgid "Excluded attribute"
+msgstr "ویژگی حذف‌شده"
+
+msgid "Excluded attribute type"
+msgstr "نوع ویژگی مستثنی"
+
 msgid "Excluded categories"
 msgstr "دسته‌بندی‌های مستثنی"
 
 msgid "Excluded products"
 msgstr "محصولات مستثنی"
+
+msgid "Excluded suppliers"
+msgstr "تأمین‌کنندگان مستثنی"
 
 msgid "Export"
 msgstr "صادرات"
@@ -136,6 +145,9 @@ msgstr "دسته‌بندی‌های گنجانده‌شده"
 msgid "Included products"
 msgstr "محصولات گنجانده‌شده"
 
+msgid "Included suppliers"
+msgstr "تأمین‌کنندگان گنجانده‌شده"
+
 msgid "Insert new entry (Ctrl+I)"
 msgstr "قرار دادن ورودی جدید (Ctrl+I)"
 
@@ -151,11 +163,8 @@ msgstr "زبان"
 msgid "Language of the product data to be exported in this feed"
 msgstr "زبان داده‌های محصولی که در این فید صادر می‌شوند"
 
-msgid ""
-"Map a feed field name to the Aimeos product attribute type containing the "
-"value"
-msgstr ""
-"نام فیلد فید را به نوع ویژگی محصول Aimeos که حاوی مقدار است، نگاشت کنید."
+msgid "Map a feed field name to the Aimeos product attribute type containing the value"
+msgstr "نام فیلد فید را به نوع ویژگی محصول Aimeos که حاوی مقدار است، نگاشت کنید."
 
 msgid "Menu"
 msgstr "منو"
@@ -191,6 +200,9 @@ msgstr "نمایش فرم جستجو"
 msgid "Status"
 msgstr "وضعیت"
 
+msgid "Suppliers"
+msgstr "تأمین‌کنندگان"
+
 msgid "The export format used to generate this product feed"
 msgstr "فرمت صادراتی مورد استفاده برای تولید این فید محصول"
 
@@ -221,8 +233,7 @@ msgstr "نمی‌توان محصولات را برای صادرات به گوگ�
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "نمی‌توان محصولات را برای خروجی Idealo به فایل موقت نوشت."
 
-msgid ""
-"When enabled, only products with available stock are included in the feed"
+msgid "When enabled, only products with available stock are included in the feed"
 msgstr "وقتی فعال باشد، تنها محصولاتی که موجودی دارند در فید گنجانده می‌شوند."
 
 msgid "Yes"

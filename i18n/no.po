@@ -1,230 +1,246 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 #, fuzzy
 msgid ""
 msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: no\n"
+"Language-Team: Norwegian (https://app.transifex.com/aimeos/teams/39015/no/)\n"
+"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"POT-Creation-Date: 2026-04-24 11:00+0200\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:15+0100\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"Language-Team: Norwegian (https://app.transifex.com/aimeos/teams/39015/no/)\n"
-"Language: no\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Add"
-msgstr ""
+msgstr "Legg til"
 
 msgid "Attribute type"
-msgstr ""
+msgstr "Attributt-type"
 
 msgid "Attributes"
-msgstr ""
+msgstr "Egenskaper"
 
 msgid "Basic"
-msgstr ""
+msgstr "Grunnleggende"
 
 msgid "Bulk edit"
-msgstr ""
+msgstr "Masseendring"
 
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 msgid "Close"
-msgstr ""
+msgstr "Lukk"
 
 msgid "Columns"
-msgstr ""
+msgstr "Kolonner"
 
 msgid "Copy"
-msgstr ""
+msgstr "Kopier"
 
 msgid "Copy this entry"
-msgstr ""
+msgstr "Kopier denne oppføringen"
 
 msgid "Created"
-msgstr ""
+msgstr "Opprettet"
 
 msgid "Currency"
-msgstr ""
+msgstr "Valuta"
 
 msgid "Currency of the prices to be exported in this feed"
-msgstr ""
+msgstr "Valutaen for prisene som skal eksporteres i denne feeden"
 
 msgid "Delete"
-msgstr ""
+msgstr "Slett"
 
 msgid "Delete this entry"
-msgstr ""
+msgstr "Slett denne oppføringen"
 
 msgid "Descriptive name for this feed configuration"
-msgstr ""
+msgstr "Beskrivende navn for denne feedkonfigurasjonen"
 
 msgid "Edit"
-msgstr ""
+msgstr "Rediger"
 
 msgid "Editor"
-msgstr ""
+msgstr "Redaktør"
+
+msgid "Enter attribute ID, code or label"
+msgstr "Skriv inn attributt-ID, kode eller etikett"
+
+msgid "Enter attribute type ID, code or label"
+msgstr "Skriv inn attributtets type-ID, kode eller etikett"
 
 msgid "Enter category ID, code or label"
-msgstr ""
+msgstr "Skriv inn kategori-ID, kode eller etikett"
 
 msgid "Enter product ID, code or label"
-msgstr ""
+msgstr "Skriv inn produkt-ID, kode eller etikett"
+
+msgid "Enter supplier ID, code or label"
+msgstr "Skriv inn leverandør-ID, kode eller etikett"
+
+msgid "Excluded attribute"
+msgstr "Utelatt attributt"
+
+msgid "Excluded attribute type"
+msgstr "Utelatt attributt-type"
 
 msgid "Excluded categories"
-msgstr ""
+msgstr "Utelukkede kategorier"
 
 msgid "Excluded products"
-msgstr ""
+msgstr "Produkter som ikke er inkludert"
+
+msgid "Excluded suppliers"
+msgstr "Utelukkede leverandører"
 
 msgid "Export"
-msgstr ""
+msgstr "Eksport"
 
 msgid "Export field"
-msgstr ""
+msgstr "Eksportfelt"
 
 msgid "Export only in-stock products"
-msgstr ""
+msgstr "Vis kun produkter som er på lager"
 
 msgid "Exports"
-msgstr ""
+msgstr "Eksport"
 
 msgid "Exports products for Google Shopping"
-msgstr ""
+msgstr "Eksporterer produkter til Google Shopping"
 
 msgid "Exports products for Idealo"
-msgstr ""
+msgstr "Eksporterer produkter til Idealo"
 
 msgid "Feed"
-msgstr ""
+msgstr "Fôr"
 
 msgid "Feed field"
-msgstr ""
+msgstr "Innmatingsfelt"
 
 msgid "Feeds"
-msgstr ""
+msgstr "Feeder"
 
 msgid "Google shopping export"
-msgstr ""
+msgstr "Eksport til Google Shopping"
 
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgid "Idealo product export"
-msgstr ""
+msgstr "Eksport av produkter fra Idealo"
 
 msgid "In-stock"
-msgstr ""
+msgstr "På lager"
 
 msgid "In-stock only"
-msgstr ""
+msgstr "Kun varer på lager"
 
 msgid "Included categories"
-msgstr ""
+msgstr "Inkluderte kategorier"
 
 msgid "Included products"
-msgstr ""
+msgstr "Inkluderte produkter"
+
+msgid "Included suppliers"
+msgstr "Inkluderte leverandører"
 
 msgid "Insert new entry (Ctrl+I)"
-msgstr ""
+msgstr "Legg inn ny oppføring (Ctrl+I)"
 
 msgid "Internal name (required)"
-msgstr ""
+msgstr "Internt navn (påkrevd)"
 
 msgid "Label"
-msgstr ""
+msgstr "Etikett"
 
 msgid "Language"
-msgstr ""
+msgstr "Språk"
 
 msgid "Language of the product data to be exported in this feed"
-msgstr ""
+msgstr "Språket i produktdataene som skal eksporteres i denne feeden"
 
-msgid ""
-"Map a feed field name to the Aimeos product attribute type containing the "
-"value"
-msgstr ""
+msgid "Map a feed field name to the Aimeos product attribute type containing the value"
+msgstr "Knytt navnet på et felt i feeden til den Aimeos-produktattributt-typen som inneholder verdien"
 
 msgid "Menu"
-msgstr ""
+msgstr "Meny"
 
 msgid "Modified"
-msgstr ""
+msgstr "Endret"
 
 msgid "New"
-msgstr ""
+msgstr "Nytt"
 
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 msgid "No entries found"
-msgstr ""
+msgstr "Ingen treff"
 
 msgid "Please select"
-msgstr ""
+msgstr "Vennligst velg"
 
 msgid "Products"
-msgstr ""
+msgstr "Produkter"
 
 #, php-format
 msgid "Required parameter \"%1$s\" is missing"
-msgstr ""
+msgstr "Den obligatoriske parameteren «%1$s» mangler"
 
 msgid "Save"
-msgstr ""
+msgstr "Lagre"
 
 msgid "Show search form"
-msgstr ""
+msgstr "Vis søkeskjema"
 
 msgid "Status"
-msgstr ""
+msgstr "Status"
+
+msgid "Suppliers"
+msgstr "Leverandører"
 
 msgid "The export format used to generate this product feed"
-msgstr ""
+msgstr "Eksportformatet som ble brukt til å generere denne produktfeeden"
 
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #, php-format
 msgid "Unable to create temporary file for Google shopping export"
-msgstr ""
+msgstr "Det går ikke an å opprette en midlertidig fil for eksport til Google Shopping"
 
 #, php-format
 msgid "Unable to create temporary file for Idealo export"
-msgstr ""
+msgstr "Det er ikke mulig å opprette en midlertidig fil for Idealo-eksport"
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr ""
+msgstr "Det går ikke an å skrive overskriften for Google Shopping-eksporten til en midlertidig fil"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
-msgstr ""
+msgstr "Det går ikke an å skrive overskriften for Idealo-eksporten til en midlertidig fil"
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr ""
+msgstr "Det går ikke an å lagre produkter for eksport til Google Shopping i en midlertidig fil"
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
-msgstr ""
+msgstr "Kan ikke skrive produkter for Idealo-eksport til midlertidig fil"
 
-msgid ""
-"When enabled, only products with available stock are included in the feed"
-msgstr ""
+msgid "When enabled, only products with available stock are included in the feed"
+msgstr "Når denne funksjonen er aktivert, inkluderes kun produkter med tilgjengelig lagerbeholdning i feedet"
 
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #, php-format
 msgid "feed"
-msgstr ""
+msgstr "feed"
 
 msgid "selected"
 msgstr ""
@@ -233,10 +249,10 @@ msgid "status:-1"
 msgstr ""
 
 msgid "status:-2"
-msgstr ""
+msgstr "status:-2"
 
 msgid "status:0"
-msgstr ""
+msgstr "status:0"
 
 msgid "status:1"
-msgstr ""
+msgstr "status:1"

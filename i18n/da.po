@@ -1,25 +1,17 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Aimeos, 2026
-# 
 #, fuzzy
 msgid ""
 msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: da\n"
+"Language-Team: Danish (https://app.transifex.com/aimeos/teams/39015/da/)\n"
+"Last-Translator: Aimeos, 2026\n"
+"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:15+0100\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"Last-Translator: Aimeos, 2026\n"
-"Language-Team: Danish (https://app.transifex.com/aimeos/teams/39015/da/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: da\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Add"
 msgstr "Tilføj"
@@ -75,17 +67,35 @@ msgstr "Rediger"
 msgid "Editor"
 msgstr "Redaktør"
 
+msgid "Enter attribute ID, code or label"
+msgstr "Indtast attribut-ID, kode eller betegnelse"
+
+msgid "Enter attribute type ID, code or label"
+msgstr "Indtast attributtypens ID, kode eller betegnelse"
+
 msgid "Enter category ID, code or label"
 msgstr "Indtast kategori-ID, kode eller etiket"
 
 msgid "Enter product ID, code or label"
 msgstr "Indtast produkt-ID, kode eller etiket"
 
+msgid "Enter supplier ID, code or label"
+msgstr "Indtast leverandør-ID, kode eller etiket"
+
+msgid "Excluded attribute"
+msgstr "Udeladt attribut"
+
+msgid "Excluded attribute type"
+msgstr "Udelukket attributtype"
+
 msgid "Excluded categories"
 msgstr "Undtagede kategorier"
 
 msgid "Excluded products"
 msgstr "Undtagelser"
+
+msgid "Excluded suppliers"
+msgstr "Udelukkede leverandører"
 
 msgid "Export"
 msgstr "Eksport"
@@ -135,6 +145,9 @@ msgstr "Inkluderede kategorier"
 msgid "Included products"
 msgstr "Inkluderede produkter"
 
+msgid "Included suppliers"
+msgstr "Medvirkende leverandører"
+
 msgid "Insert new entry (Ctrl+I)"
 msgstr "Indsæt ny post (Ctrl+I)"
 
@@ -150,12 +163,8 @@ msgstr "Sprog"
 msgid "Language of the product data to be exported in this feed"
 msgstr "Sproget for de produktdata, der skal eksporteres i dette feed"
 
-msgid ""
-"Map a feed field name to the Aimeos product attribute type containing the "
-"value"
-msgstr ""
-"Kortlæg et feedfeltnavn til Aimeos-produktattributtypen, der indeholder "
-"værdien"
+msgid "Map a feed field name to the Aimeos product attribute type containing the value"
+msgstr "Kortlæg et feedfeltnavn til Aimeos-produktattributtypen, der indeholder værdien"
 
 msgid "Menu"
 msgstr "Menu"
@@ -191,6 +200,9 @@ msgstr "Vis søgeformular"
 msgid "Status"
 msgstr "Status"
 
+msgid "Suppliers"
+msgstr "Leverandører"
+
 msgid "The export format used to generate this product feed"
 msgstr "Det eksportformat, der er brugt til at generere dette produktfeed"
 
@@ -207,8 +219,7 @@ msgstr "Kan ikke oprette midlertidig fil til Idealo-eksport"
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr ""
-"Kan ikke skrive header til Google Shopping-eksport til midlertidig fil"
+msgstr "Kan ikke skrive header til Google Shopping-eksport til midlertidig fil"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
@@ -216,18 +227,14 @@ msgstr "Kan ikke skrive header til Idealo-eksport til midlertidig fil"
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr ""
-"Kan ikke skrive produkter til Google Shopping-eksport til midlertidig fil"
+msgstr "Kan ikke skrive produkter til Google Shopping-eksport til midlertidig fil"
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Kan ikke skrive produkter til Idealo-eksport til midlertidig fil"
 
-msgid ""
-"When enabled, only products with available stock are included in the feed"
-msgstr ""
-"Når denne funktion er aktiveret, inkluderes kun produkter med tilgængeligt "
-"lager i feedet."
+msgid "When enabled, only products with available stock are included in the feed"
+msgstr "Når denne funktion er aktiveret, inkluderes kun produkter med tilgængeligt lager i feedet."
 
 msgid "Yes"
 msgstr "Ja"

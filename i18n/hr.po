@@ -1,26 +1,17 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Miro Sertić <miro.sertic0606@gmail.com>, 2026
-# Aimeos, 2026
-# 
 #, fuzzy
 msgid ""
 msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: hr\n"
+"Language-Team: Croatian (https://app.transifex.com/aimeos/teams/39015/hr/)\n"
+"Last-Translator: Aimeos, 2026\n"
+"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:15+0100\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"Last-Translator: Aimeos, 2026\n"
-"Language-Team: Croatian (https://app.transifex.com/aimeos/teams/39015/hr/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: hr\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 msgid "Add"
 msgstr "Dodaj"
@@ -76,17 +67,35 @@ msgstr "Uredi"
 msgid "Editor"
 msgstr "Urednik"
 
+msgid "Enter attribute ID, code or label"
+msgstr "Unesite ID atributa, kod ili oznaku"
+
+msgid "Enter attribute type ID, code or label"
+msgstr "Unesite ID, kod ili oznaku tipa atributa"
+
 msgid "Enter category ID, code or label"
 msgstr "Unesite ID kategorije, kod ili oznaku"
 
 msgid "Enter product ID, code or label"
 msgstr "Unesite ID proizvoda, šifru ili oznaku"
 
+msgid "Enter supplier ID, code or label"
+msgstr "Unesite ID, šifru ili oznaku dobavljača"
+
+msgid "Excluded attribute"
+msgstr "Isključena osobina"
+
+msgid "Excluded attribute type"
+msgstr "Isključeni tip atributa"
+
 msgid "Excluded categories"
 msgstr "Isključene kategorije"
 
 msgid "Excluded products"
 msgstr "Isključeni proizvodi"
+
+msgid "Excluded suppliers"
+msgstr "Isključeni dobavljači"
 
 msgid "Export"
 msgstr "Izvoz"
@@ -136,6 +145,9 @@ msgstr "Uključene kategorije"
 msgid "Included products"
 msgstr "Uključeni proizvodi"
 
+msgid "Included suppliers"
+msgstr "Uključeni dobavljači"
+
 msgid "Insert new entry (Ctrl+I)"
 msgstr "Dodajte novi zapis (Ctrl+I)"
 
@@ -151,12 +163,8 @@ msgstr "Jezik"
 msgid "Language of the product data to be exported in this feed"
 msgstr "Jezik podataka o proizvodu koji se izvoze u ovom feedu"
 
-msgid ""
-"Map a feed field name to the Aimeos product attribute type containing the "
-"value"
-msgstr ""
-"Mapirajte naziv polja za feed na tip atributa Aimeos proizvoda koji sadrži "
-"vrijednost"
+msgid "Map a feed field name to the Aimeos product attribute type containing the value"
+msgstr "Mapirajte naziv polja za feed na tip atributa Aimeos proizvoda koji sadrži vrijednost"
 
 msgid "Menu"
 msgstr "Izbornik"
@@ -192,6 +200,9 @@ msgstr "Prikaži obrazac za pretraživanje"
 msgid "Status"
 msgstr "Status"
 
+msgid "Suppliers"
+msgstr "Dobavljači"
+
 msgid "The export format used to generate this product feed"
 msgstr "Izvozni format koji se koristi za generiranje ovog proizvoda"
 
@@ -208,8 +219,7 @@ msgstr "Nije moguće stvoriti privremenu datoteku za Idealo izvoz"
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr ""
-"Ne može se napisati zaglavlje za izvoz u Google Shopping privremenu datoteku"
+msgstr "Ne može se napisati zaglavlje za izvoz u Google Shopping privremenu datoteku"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
@@ -217,19 +227,14 @@ msgstr "Ne može se napisati zaglavlje za Idealo izvoz u privremenu datoteku"
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr ""
-"Ne može se zapisati proizvode za izvoz u Google Shopping u privremenu "
-"datoteku"
+msgstr "Ne može se zapisati proizvode za izvoz u Google Shopping u privremenu datoteku"
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Ne može se zapisati proizvode za Idealo izvoz u privremenu datoteku"
 
-msgid ""
-"When enabled, only products with available stock are included in the feed"
-msgstr ""
-"Kada je omogućeno, u feed se uključuju samo proizvodi s raspoloživom "
-"zalihom."
+msgid "When enabled, only products with available stock are included in the feed"
+msgstr "Kada je omogućeno, u feed se uključuju samo proizvodi s raspoloživom zalihom."
 
 msgid "Yes"
 msgstr "Da"

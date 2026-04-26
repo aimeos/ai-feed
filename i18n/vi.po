@@ -1,25 +1,17 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Aimeos, 2026
-# 
 #, fuzzy
 msgid ""
 msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: vi\n"
+"Language-Team: Vietnamese (https://app.transifex.com/aimeos/teams/39015/vi/)\n"
+"Last-Translator: Aimeos, 2026\n"
+"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-03 15:15+0100\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"Last-Translator: Aimeos, 2026\n"
-"Language-Team: Vietnamese (https://app.transifex.com/aimeos/teams/39015/vi/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: vi\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Add"
 msgstr "Thêm"
@@ -75,17 +67,35 @@ msgstr "Chỉnh sửa"
 msgid "Editor"
 msgstr "Biên tập viên"
 
+msgid "Enter attribute ID, code or label"
+msgstr "Nhập ID, mã hoặc nhãn thuộc tính"
+
+msgid "Enter attribute type ID, code or label"
+msgstr "Nhập ID, mã hoặc nhãn của loại thuộc tính"
+
 msgid "Enter category ID, code or label"
 msgstr "Nhập ID danh mục, mã hoặc nhãn"
 
 msgid "Enter product ID, code or label"
 msgstr "Nhập mã sản phẩm, mã hoặc nhãn."
 
+msgid "Enter supplier ID, code or label"
+msgstr "Nhập mã nhà cung cấp, mã sản phẩm hoặc nhãn"
+
+msgid "Excluded attribute"
+msgstr "Thuộc tính bị loại trừ"
+
+msgid "Excluded attribute type"
+msgstr "Loại thuộc tính bị loại trừ"
+
 msgid "Excluded categories"
 msgstr "Các danh mục bị loại trừ"
 
 msgid "Excluded products"
 msgstr "Sản phẩm bị loại trừ"
+
+msgid "Excluded suppliers"
+msgstr "Các nhà cung cấp bị loại trừ"
 
 msgid "Export"
 msgstr "Xuất khẩu"
@@ -135,6 +145,9 @@ msgstr "Các danh mục được bao gồm"
 msgid "Included products"
 msgstr "Các sản phẩm được bao gồm"
 
+msgid "Included suppliers"
+msgstr "Các nhà cung cấp được liệt kê"
+
 msgid "Insert new entry (Ctrl+I)"
 msgstr "Thêm mục mới (Ctrl+I)"
 
@@ -148,15 +161,10 @@ msgid "Language"
 msgstr "Ngôn ngữ"
 
 msgid "Language of the product data to be exported in this feed"
-msgstr ""
-"Ngôn ngữ của dữ liệu sản phẩm sẽ được xuất trong nguồn cấp dữ liệu này."
+msgstr "Ngôn ngữ của dữ liệu sản phẩm sẽ được xuất trong nguồn cấp dữ liệu này."
 
-msgid ""
-"Map a feed field name to the Aimeos product attribute type containing the "
-"value"
-msgstr ""
-"Gán tên trường dữ liệu nguồn với loại thuộc tính sản phẩm Aimeos chứa giá "
-"trị."
+msgid "Map a feed field name to the Aimeos product attribute type containing the value"
+msgstr "Gán tên trường dữ liệu nguồn với loại thuộc tính sản phẩm Aimeos chứa giá trị."
 
 msgid "Menu"
 msgstr "Thực đơn"
@@ -192,9 +200,11 @@ msgstr "Hiển thị biểu mẫu tìm kiếm"
 msgid "Status"
 msgstr "Trạng thái"
 
+msgid "Suppliers"
+msgstr "Nhà cung cấp"
+
 msgid "The export format used to generate this product feed"
-msgstr ""
-"Định dạng xuất khẩu được sử dụng để tạo ra nguồn cấp dữ liệu sản phẩm này."
+msgstr "Định dạng xuất khẩu được sử dụng để tạo ra nguồn cấp dữ liệu sản phẩm này."
 
 msgid "Type"
 msgstr "Loại"
@@ -217,18 +227,14 @@ msgstr "Không thể ghi tiêu đề cho tệp xuất Idealo vào tệp tạm th
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr ""
-"Không thể ghi sản phẩm cho việc xuất khẩu Google Shopping vào tệp tạm thời."
+msgstr "Không thể ghi sản phẩm cho việc xuất khẩu Google Shopping vào tệp tạm thời."
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Không thể ghi sản phẩm cho việc xuất sang tệp tạm thời của Idealo."
 
-msgid ""
-"When enabled, only products with available stock are included in the feed"
-msgstr ""
-"Khi được kích hoạt, chỉ các sản phẩm có sẵn hàng sẽ được bao gồm trong nguồn"
-" cấp dữ liệu."
+msgid "When enabled, only products with available stock are included in the feed"
+msgstr "Khi được kích hoạt, chỉ các sản phẩm có sẵn hàng sẽ được bao gồm trong nguồn cấp dữ liệu."
 
 msgid "Yes"
 msgstr "Có"
