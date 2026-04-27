@@ -1,17 +1,26 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Kevin Purwito, 2026
+# Aimeos, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: id\n"
-"Language-Team: Indonesian (https://app.transifex.com/aimeos/teams/39015/id/)\n"
-"Last-Translator: Aimeos, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Indonesian (https://app.transifex.com/aimeos/teams/39015/id/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Add"
 msgstr "Tambah"
@@ -50,7 +59,8 @@ msgid "Currency"
 msgstr "Mata uang"
 
 msgid "Currency of the prices to be exported in this feed"
-msgstr "Mata uang yang digunakan untuk harga yang akan diekspor dalam feed ini"
+msgstr ""
+"Mata uang yang digunakan untuk harga yang akan diekspor dalam feed ini"
 
 msgid "Delete"
 msgstr "Menghapus"
@@ -163,8 +173,12 @@ msgstr "Bahasa"
 msgid "Language of the product data to be exported in this feed"
 msgstr "Bahasa data produk yang akan diekspor dalam feed ini"
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
-msgstr "Mapping nama bidang feed ke tipe atribut produk Aimeos yang berisi nilai tersebut."
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Mapping nama bidang feed ke tipe atribut produk Aimeos yang berisi nilai "
+"tersebut."
 
 msgid "Menu"
 msgstr "Menu"
@@ -219,7 +233,8 @@ msgstr "Tidak dapat membuat file sementara untuk ekspor Idealo."
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr "Tidak dapat menulis header untuk ekspor Google Shopping ke file sementara."
+msgstr ""
+"Tidak dapat menulis header untuk ekspor Google Shopping ke file sementara."
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
@@ -227,14 +242,18 @@ msgstr "Tidak dapat menulis header untuk ekspor Idealo ke file sementara."
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr "Tidak dapat menulis produk untuk ekspor Google Shopping ke file sementara."
+msgstr ""
+"Tidak dapat menulis produk untuk ekspor Google Shopping ke file sementara."
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Tidak dapat menulis produk untuk ekspor Idealo ke file sementara."
 
-msgid "When enabled, only products with available stock are included in the feed"
-msgstr "Ketika diaktifkan, hanya produk yang memiliki stok tersedia yang akan dimasukkan ke dalam feed."
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Ketika diaktifkan, hanya produk yang memiliki stok tersedia yang akan "
+"dimasukkan ke dalam feed."
 
 msgid "Yes"
 msgstr "Ya"

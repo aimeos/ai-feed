@@ -1,17 +1,26 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Chiarra, 2026
+# Aimeos, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: bg\n"
-"Language-Team: Bulgarian (https://app.transifex.com/aimeos/teams/39015/bg/)\n"
-"Last-Translator: Aimeos, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Bulgarian (https://app.transifex.com/aimeos/teams/39015/bg/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Add"
 msgstr "Добавяне на"
@@ -163,8 +172,12 @@ msgstr "Език"
 msgid "Language of the product data to be exported in this feed"
 msgstr "Език на данните за продукта, които ще бъдат експортирани в този фийд"
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
-msgstr "Съпоставяйте името на полето на фида с типа атрибут на продукта Aimeos, съдържащ стойността."
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Съпоставяйте името на полето на фида с типа атрибут на продукта Aimeos, "
+"съдържащ стойността."
 
 msgid "Menu"
 msgstr "Меню"
@@ -204,14 +217,16 @@ msgid "Suppliers"
 msgstr "Доставчици"
 
 msgid "The export format used to generate this product feed"
-msgstr "Форматът за експортиране, използван за генериране на този продуктов фийд"
+msgstr ""
+"Форматът за експортиране, използван за генериране на този продуктов фийд"
 
 msgid "Type"
 msgstr "Тип"
 
 #, php-format
 msgid "Unable to create temporary file for Google shopping export"
-msgstr "Не е възможно да се създаде временен файл за експортиране на Google Shopping"
+msgstr ""
+"Не е възможно да се създаде временен файл за експортиране на Google Shopping"
 
 #, php-format
 msgid "Unable to create temporary file for Idealo export"
@@ -219,22 +234,31 @@ msgstr "Не е възможно да се създаде временен фа�
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr "Не е възможно да се запише заглавието за експортиране на Google Shopping във временен файл"
+msgstr ""
+"Не е възможно да се запише заглавието за експортиране на Google Shopping във"
+" временен файл"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
-msgstr "Не е възможно да се запише заглавието за износ от Idealo във временен файл"
+msgstr ""
+"Не е възможно да се запише заглавието за износ от Idealo във временен файл"
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr "Не е възможно да се запишат продукти за износ от Google Shopping във временен файл"
+msgstr ""
+"Не е възможно да се запишат продукти за износ от Google Shopping във "
+"временен файл"
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
-msgstr "Не е възможно да се запишат продукти за износ от Idealo във временен файл"
+msgstr ""
+"Не е възможно да се запишат продукти за износ от Idealo във временен файл"
 
-msgid "When enabled, only products with available stock are included in the feed"
-msgstr "Когато е активирана, в емисията се включват само продукти с налични количества."
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Когато е активирана, в емисията се включват само продукти с налични "
+"количества."
 
 msgid "Yes"
 msgstr "Да"

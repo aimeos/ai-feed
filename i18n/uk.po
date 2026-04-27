@@ -1,17 +1,26 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Федір Вільгота <fredy31415@gmail.com>, 2026
+# Aimeos, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: uk\n"
-"Language-Team: Ukrainian (https://app.transifex.com/aimeos/teams/39015/uk/)\n"
-"Last-Translator: Aimeos, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Ukrainian (https://app.transifex.com/aimeos/teams/39015/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 msgid "Add"
 msgstr "Додати"
@@ -163,8 +172,12 @@ msgstr "Мова"
 msgid "Language of the product data to be exported in this feed"
 msgstr "Мова даних про продукт, які будуть експортовані в цьому каналі"
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
-msgstr "Прив'яжіть ім'я поля каналу до типу атрибута продукту Aimeos, що містить значення"
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Прив'яжіть ім'я поля каналу до типу атрибута продукту Aimeos, що містить "
+"значення"
 
 msgid "Menu"
 msgstr "Меню"
@@ -219,7 +232,8 @@ msgstr "Неможливо створити тимчасовий файл для
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr "Неможливо записати заголовок для експорту Google Shopping у тимчасовий файл"
+msgstr ""
+"Неможливо записати заголовок для експорту Google Shopping у тимчасовий файл"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
@@ -227,14 +241,17 @@ msgstr "Неможливо записати заголовок для експо
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr "Неможливо записати продукти для експорту в Google Shopping у тимчасовий файл"
+msgstr ""
+"Неможливо записати продукти для експорту в Google Shopping у тимчасовий файл"
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Неможливо записати продукти для експорту Idealo у тимчасовий файл"
 
-msgid "When enabled, only products with available stock are included in the feed"
-msgstr "Якщо ця опція увімкнена, у фід включені лише товари, які є в наявності."
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Якщо ця опція увімкнена, у фід включені лише товари, які є в наявності."
 
 msgid "Yes"
 msgstr "Так"

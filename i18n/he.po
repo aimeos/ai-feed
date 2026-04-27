@@ -1,17 +1,25 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: he\n"
-"Language-Team: Hebrew (https://app.transifex.com/aimeos/teams/39015/he/)\n"
-"Last-Translator: Aimeos, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Hebrew (https://app.transifex.com/aimeos/teams/39015/he/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
+"Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;\n"
 
 msgid "Add"
 msgstr "הוסף"
@@ -163,7 +171,9 @@ msgstr "שפה"
 msgid "Language of the product data to be exported in this feed"
 msgstr "שפת נתוני המוצר שיוצאו בפיד זה"
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
 msgstr "מפה שם שדה פיד לסוג תכונת המוצר Aimeos המכיל את הערך"
 
 msgid "Menu"
@@ -233,7 +243,8 @@ msgstr "לא ניתן לכתוב מוצרים לייצוא Google Shopping לק�
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "לא ניתן לכתוב מוצרים לייצוא Idealo לקובץ זמני"
 
-msgid "When enabled, only products with available stock are included in the feed"
+msgid ""
+"When enabled, only products with available stock are included in the feed"
 msgstr "כאשר אפשרות זו מופעלת, רק מוצרים עם מלאי זמין נכללים בפיד."
 
 msgid "Yes"

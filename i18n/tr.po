@@ -1,17 +1,26 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# Metal <meteoramic@yahoo.com>, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: tr\n"
-"Language-Team: Turkish (https://app.transifex.com/aimeos/teams/39015/tr/)\n"
-"Last-Translator: Metal <meteoramic@yahoo.com>, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Metal <meteoramic@yahoo.com>, 2026\n"
+"Language-Team: Turkish (https://app.transifex.com/aimeos/teams/39015/tr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Add"
 msgstr "Ekle"
@@ -68,10 +77,10 @@ msgid "Editor"
 msgstr "Editör"
 
 msgid "Enter attribute ID, code or label"
-msgstr "Özellik kimliğini, kodunu veya etiketini girin"
+msgstr "Nitelik kimliğini, kodunu veya etiketini girin"
 
 msgid "Enter attribute type ID, code or label"
-msgstr "Özellik türü kimliğini, kodunu veya etiketini girin"
+msgstr "Nitelik türü kimliğini, kodunu veya etiketini girin"
 
 msgid "Enter category ID, code or label"
 msgstr "Kategori kimliğini, kodunu veya etiketini girin"
@@ -83,10 +92,10 @@ msgid "Enter supplier ID, code or label"
 msgstr "Tedarikçi kimliğini, kodunu veya etiketini girin"
 
 msgid "Excluded attribute"
-msgstr "Hariç tutulan öznitelik"
+msgstr "Hariç tutulan nitelik"
 
 msgid "Excluded attribute type"
-msgstr "Hariç tutulan öznitelik türü"
+msgstr "Hariç tutulan nitelik türü"
 
 msgid "Excluded categories"
 msgstr "Hariç tutulan kategoriler"
@@ -163,8 +172,11 @@ msgstr "Dil"
 msgid "Language of the product data to be exported in this feed"
 msgstr "Bu beslemede dışa aktarılacak ürün verilerinin dili"
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
-msgstr "Bir besleme alanı adını, değeri içeren Aimeos ürün nitelik türüne eşleştirin"
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Bir besleme alanı adını, değeri içeren Aimeos ürün nitelik türüne eşleştirin"
 
 msgid "Menu"
 msgstr "Menü"
@@ -233,8 +245,11 @@ msgstr "Google alışveriş dışa aktarımı için geçici dosyaya ürün yazı
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Idealo dışa aktarımı için geçici dosyaya ürün yazılamıyor"
 
-msgid "When enabled, only products with available stock are included in the feed"
-msgstr "Etkinleştirildiğinde, yalnızca stokta mevcut olan ürünler beslemeye dahil edilir"
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Etkinleştirildiğinde, yalnızca stokta mevcut olan ürünler beslemeye dahil "
+"edilir"
 
 msgid "Yes"
 msgstr "Evet"

@@ -1,17 +1,25 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: ja\n"
-"Language-Team: Japanese (https://app.transifex.com/aimeos/teams/39015/ja/)\n"
-"Last-Translator: Aimeos, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Japanese (https://app.transifex.com/aimeos/teams/39015/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Add"
 msgstr "追加"
@@ -163,7 +171,9 @@ msgstr "言語"
 msgid "Language of the product data to be exported in this feed"
 msgstr "このフィードでエクスポートされる製品データの言語"
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
 msgstr "フィードフィールド名を、値を含むAimeos製品属性タイプにマッピングする"
 
 msgid "Menu"
@@ -233,7 +243,8 @@ msgstr "Googleショッピングエクスポート用の商品を一時ファイ
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Idealoエクスポート用の商品を一時ファイルに書き込めません"
 
-msgid "When enabled, only products with available stock are included in the feed"
+msgid ""
+"When enabled, only products with available stock are included in the feed"
 msgstr "有効にすると、在庫がある商品のみがフィードに含まれます"
 
 msgid "Yes"

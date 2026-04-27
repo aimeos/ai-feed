@@ -1,17 +1,25 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: vi\n"
-"Language-Team: Vietnamese (https://app.transifex.com/aimeos/teams/39015/vi/)\n"
-"Last-Translator: Aimeos, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Vietnamese (https://app.transifex.com/aimeos/teams/39015/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Add"
 msgstr "Thêm"
@@ -161,10 +169,15 @@ msgid "Language"
 msgstr "Ngôn ngữ"
 
 msgid "Language of the product data to be exported in this feed"
-msgstr "Ngôn ngữ của dữ liệu sản phẩm sẽ được xuất trong nguồn cấp dữ liệu này."
+msgstr ""
+"Ngôn ngữ của dữ liệu sản phẩm sẽ được xuất trong nguồn cấp dữ liệu này."
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
-msgstr "Gán tên trường dữ liệu nguồn với loại thuộc tính sản phẩm Aimeos chứa giá trị."
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Gán tên trường dữ liệu nguồn với loại thuộc tính sản phẩm Aimeos chứa giá "
+"trị."
 
 msgid "Menu"
 msgstr "Thực đơn"
@@ -204,7 +217,8 @@ msgid "Suppliers"
 msgstr "Nhà cung cấp"
 
 msgid "The export format used to generate this product feed"
-msgstr "Định dạng xuất khẩu được sử dụng để tạo ra nguồn cấp dữ liệu sản phẩm này."
+msgstr ""
+"Định dạng xuất khẩu được sử dụng để tạo ra nguồn cấp dữ liệu sản phẩm này."
 
 msgid "Type"
 msgstr "Loại"
@@ -227,14 +241,18 @@ msgstr "Không thể ghi tiêu đề cho tệp xuất Idealo vào tệp tạm th
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr "Không thể ghi sản phẩm cho việc xuất khẩu Google Shopping vào tệp tạm thời."
+msgstr ""
+"Không thể ghi sản phẩm cho việc xuất khẩu Google Shopping vào tệp tạm thời."
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Không thể ghi sản phẩm cho việc xuất sang tệp tạm thời của Idealo."
 
-msgid "When enabled, only products with available stock are included in the feed"
-msgstr "Khi được kích hoạt, chỉ các sản phẩm có sẵn hàng sẽ được bao gồm trong nguồn cấp dữ liệu."
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Khi được kích hoạt, chỉ các sản phẩm có sẵn hàng sẽ được bao gồm trong nguồn"
+" cấp dữ liệu."
 
 msgid "Yes"
 msgstr "Có"

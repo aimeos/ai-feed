@@ -1,17 +1,25 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Aimeos, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: sk\n"
-"Language-Team: Slovak (https://app.transifex.com/aimeos/teams/39015/sk/)\n"
-"Last-Translator: Aimeos, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Slovak (https://app.transifex.com/aimeos/teams/39015/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 msgid "Add"
 msgstr "Pridať"
@@ -163,8 +171,12 @@ msgstr "Jazyk"
 msgid "Language of the product data to be exported in this feed"
 msgstr "Jazyk údajov o produkte, ktoré sa majú exportovať v tomto kanáli"
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
-msgstr "Priraďte názov poľa zdroja k typu atribútu produktu Aimeos, ktorý obsahuje hodnotu."
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Priraďte názov poľa zdroja k typu atribútu produktu Aimeos, ktorý obsahuje "
+"hodnotu."
 
 msgid "Menu"
 msgstr "Ponuka"
@@ -219,7 +231,8 @@ msgstr "Nie je možné vytvoriť dočasný súbor pre export Idealo"
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr "Nie je možné zapísať hlavičku pre export Google Shopping do dočasného súboru"
+msgstr ""
+"Nie je možné zapísať hlavičku pre export Google Shopping do dočasného súboru"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
@@ -227,14 +240,19 @@ msgstr "Nie je možné zapísať hlavičku pre export Idealo do dočasného súb
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr "Nie je možné zapísať produkty pre export do Google Shopping do dočasného súboru."
+msgstr ""
+"Nie je možné zapísať produkty pre export do Google Shopping do dočasného "
+"súboru."
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Nie je možné zapísať produkty pre export Idealo do dočasného súboru"
 
-msgid "When enabled, only products with available stock are included in the feed"
-msgstr "Ak je táto funkcia povolená, do zdroja sa zahrnú len produkty, ktoré sú na sklade."
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Ak je táto funkcia povolená, do zdroja sa zahrnú len produkty, ktoré sú na "
+"sklade."
 
 msgid "Yes"
 msgstr "Áno"

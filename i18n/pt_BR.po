@@ -1,17 +1,26 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Keite Clembet, 2026
+# Aimeos, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: pt_BR\n"
-"Language-Team: Portuguese (Brazil) (https://app.transifex.com/aimeos/teams/39015/pt_BR/)\n"
-"Last-Translator: Aimeos, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Portuguese (Brazil) (https://app.transifex.com/aimeos/teams/39015/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 msgid "Add"
 msgstr "Adicionar"
@@ -163,8 +172,12 @@ msgstr "Idioma"
 msgid "Language of the product data to be exported in this feed"
 msgstr "Idioma dos dados do produto a serem exportados neste feed"
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
-msgstr "Mapeie um nome de campo de feed para o tipo de atributo do produto Aimeos que contém o valor"
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Mapeie um nome de campo de feed para o tipo de atributo do produto Aimeos "
+"que contém o valor"
 
 msgid "Menu"
 msgstr "Menu"
@@ -211,7 +224,9 @@ msgstr "Tipo"
 
 #, php-format
 msgid "Unable to create temporary file for Google shopping export"
-msgstr "Não é possível criar um arquivo temporário para exportação do Google Shopping"
+msgstr ""
+"Não é possível criar um arquivo temporário para exportação do Google "
+"Shopping"
 
 #, php-format
 msgid "Unable to create temporary file for Idealo export"
@@ -219,22 +234,33 @@ msgstr "Não é possível criar um arquivo temporário para exportação do Idea
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr "Não é possível gravar o cabeçalho para exportação do Google Shopping para um arquivo temporário"
+msgstr ""
+"Não é possível gravar o cabeçalho para exportação do Google Shopping para um"
+" arquivo temporário"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
-msgstr "Não é possível gravar o cabeçalho para exportação do Idealo para um arquivo temporário"
+msgstr ""
+"Não é possível gravar o cabeçalho para exportação do Idealo para um arquivo "
+"temporário"
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr "Não é possível gravar produtos para exportação do Google Shopping para um arquivo temporário"
+msgstr ""
+"Não é possível gravar produtos para exportação do Google Shopping para um "
+"arquivo temporário"
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
-msgstr "Não é possível gravar produtos para exportação do Idealo para um arquivo temporário"
+msgstr ""
+"Não é possível gravar produtos para exportação do Idealo para um arquivo "
+"temporário"
 
-msgid "When enabled, only products with available stock are included in the feed"
-msgstr "Quando ativado, apenas os produtos com estoque disponível são incluídos no feed."
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Quando ativado, apenas os produtos com estoque disponível são incluídos no "
+"feed."
 
 msgid "Yes"
 msgstr "Sim"

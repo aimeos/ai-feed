@@ -1,17 +1,27 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Enrico Porceddu <porceddu_enrico@yahoo.com>, 2026
+# Pasquale Saccone <pasquale.saccone@gmail.com>, 2026
+# Aimeos, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: it\n"
-"Language-Team: Italian (https://app.transifex.com/aimeos/teams/39015/it/)\n"
-"Last-Translator: Aimeos, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Italian (https://app.transifex.com/aimeos/teams/39015/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 msgid "Add"
 msgstr "Aggiungi"
@@ -163,8 +173,12 @@ msgstr "Lingua"
 msgid "Language of the product data to be exported in this feed"
 msgstr "Lingua dei dati del prodotto da esportare in questo feed"
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
-msgstr "Mappa il nome di un campo feed al tipo di attributo del prodotto Aimeos contenente il valore."
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Mappa il nome di un campo feed al tipo di attributo del prodotto Aimeos "
+"contenente il valore."
 
 msgid "Menu"
 msgstr "Menu"
@@ -204,14 +218,16 @@ msgid "Suppliers"
 msgstr "Fornitori"
 
 msgid "The export format used to generate this product feed"
-msgstr "Il formato di esportazione utilizzato per generare questo feed di prodotto"
+msgstr ""
+"Il formato di esportazione utilizzato per generare questo feed di prodotto"
 
 msgid "Type"
 msgstr "Tipo"
 
 #, php-format
 msgid "Unable to create temporary file for Google shopping export"
-msgstr "Impossibile creare file temporaneo per l'esportazione di Google Shopping"
+msgstr ""
+"Impossibile creare file temporaneo per l'esportazione di Google Shopping"
 
 #, php-format
 msgid "Unable to create temporary file for Idealo export"
@@ -219,22 +235,33 @@ msgstr "Impossibile creare file temporaneo per esportazione Idealo"
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr "Impossibile scrivere l'intestazione per l'esportazione di Google Shopping in un file temporaneo"
+msgstr ""
+"Impossibile scrivere l'intestazione per l'esportazione di Google Shopping in"
+" un file temporaneo"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
-msgstr "Impossibile scrivere l'intestazione per l'esportazione Idealo nel file temporaneo"
+msgstr ""
+"Impossibile scrivere l'intestazione per l'esportazione Idealo nel file "
+"temporaneo"
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr "Impossibile scrivere prodotti per l'esportazione di Google Shopping in un file temporaneo"
+msgstr ""
+"Impossibile scrivere prodotti per l'esportazione di Google Shopping in un "
+"file temporaneo"
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
-msgstr "Impossibile scrivere i prodotti per l'esportazione Idealo in un file temporaneo"
+msgstr ""
+"Impossibile scrivere i prodotti per l'esportazione Idealo in un file "
+"temporaneo"
 
-msgid "When enabled, only products with available stock are included in the feed"
-msgstr "Quando è abilitata, nel feed vengono inclusi solo i prodotti con stock disponibile."
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Quando è abilitata, nel feed vengono inclusi solo i prodotti con stock "
+"disponibile."
 
 msgid "Yes"
 msgstr "Sì"

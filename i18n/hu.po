@@ -1,17 +1,26 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Patrik Szakos <szakos0208@gmail.com>, 2026
+# Aimeos, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: hu\n"
-"Language-Team: Hungarian (https://app.transifex.com/aimeos/teams/39015/hu/)\n"
-"Last-Translator: Aimeos, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Hungarian (https://app.transifex.com/aimeos/teams/39015/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Add"
 msgstr "Hozzáad"
@@ -163,8 +172,12 @@ msgstr "Nyelv"
 msgid "Language of the product data to be exported in this feed"
 msgstr "A feedben exportálandó termékadatok nyelve"
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
-msgstr "Térképezze fel a feed mező nevét az Aimeos termékattribútum típusra, amely tartalmazza az értéket."
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Térképezze fel a feed mező nevét az Aimeos termékattribútum típusra, amely "
+"tartalmazza az értéket."
 
 msgid "Menu"
 msgstr "Menü"
@@ -211,7 +224,8 @@ msgstr "Típus"
 
 #, php-format
 msgid "Unable to create temporary file for Google shopping export"
-msgstr "Nem lehet ideiglenes fájlt létrehozni a Google Shopping exportálásához"
+msgstr ""
+"Nem lehet ideiglenes fájlt létrehozni a Google Shopping exportálásához"
 
 #, php-format
 msgid "Unable to create temporary file for Idealo export"
@@ -219,7 +233,8 @@ msgstr "Idealo exportáláshoz ideiglenes fájl létrehozása nem lehetséges"
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr "Nem lehet fejléceket írni a Google Shopping export ideiglenes fájljába"
+msgstr ""
+"Nem lehet fejléceket írni a Google Shopping export ideiglenes fájljába"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
@@ -227,14 +242,18 @@ msgstr "Nem lehet fejléceket írni az Idealo export ideiglenes fájlba"
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr "Nem lehet termékeket írni a Google Shopping exportjához ideiglenes fájlba"
+msgstr ""
+"Nem lehet termékeket írni a Google Shopping exportjához ideiglenes fájlba"
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Nem lehet termékeket írni az Idealo exportálásához ideiglenes fájlba"
 
-msgid "When enabled, only products with available stock are included in the feed"
-msgstr "Ha engedélyezve van, csak a rendelkezésre álló készletű termékek kerülnek be a feedbe."
+msgid ""
+"When enabled, only products with available stock are included in the feed"
+msgstr ""
+"Ha engedélyezve van, csak a rendelkezésre álló készletű termékek kerülnek be"
+" a feedbe."
 
 msgid "Yes"
 msgstr "Igen"

@@ -1,17 +1,26 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Роман Андрейчук, 2026
+# Aimeos, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Content-Transfer-Encoding: 8bit\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language: ru\n"
-"Language-Team: Russian (https://app.transifex.com/aimeos/teams/39015/ru/)\n"
-"Last-Translator: Aimeos, 2026\n"
-"MIME-Version: 1.0\n"
-"PO-Revision-Date: 2026-03-03 13:26+0000\n"
-"POT-Creation-Date: 2026-04-25 11:24+0200\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-25 11:24+0200\n"
+"PO-Revision-Date: 2026-03-03 13:26+0000\n"
+"Last-Translator: Aimeos, 2026\n"
+"Language-Team: Russian (https://app.transifex.com/aimeos/teams/39015/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 msgid "Add"
 msgstr "Добавить"
@@ -163,8 +172,12 @@ msgstr "Язык"
 msgid "Language of the product data to be exported in this feed"
 msgstr "Язык данных о продукте, которые будут экспортированы в этом фиде"
 
-msgid "Map a feed field name to the Aimeos product attribute type containing the value"
-msgstr "Сопоставьте имя поля фида с типом атрибута продукта Aimeos, содержащим значение"
+msgid ""
+"Map a feed field name to the Aimeos product attribute type containing the "
+"value"
+msgstr ""
+"Сопоставьте имя поля фида с типом атрибута продукта Aimeos, содержащим "
+"значение"
 
 msgid "Menu"
 msgstr "Меню"
@@ -219,7 +232,8 @@ msgstr "Невозможно создать временный файл для �
 
 #, php-format
 msgid "Unable to write header for Google shopping export to temporary file"
-msgstr "Невозможно записать заголовок для экспорта Google Shopping во временный файл"
+msgstr ""
+"Невозможно записать заголовок для экспорта Google Shopping во временный файл"
 
 #, php-format
 msgid "Unable to write header for Idealo export to temporary file"
@@ -227,13 +241,16 @@ msgstr "Невозможно записать заголовок для эксп
 
 #, php-format
 msgid "Unable to write products for Google shopping export to temporary file"
-msgstr "Невозможно записать продукты для экспорта в Google Shopping во временный файл"
+msgstr ""
+"Невозможно записать продукты для экспорта в Google Shopping во временный "
+"файл"
 
 #, php-format
 msgid "Unable to write products for Idealo export to temporary file"
 msgstr "Невозможно записать продукты для экспорта Idealo во временный файл"
 
-msgid "When enabled, only products with available stock are included in the feed"
+msgid ""
+"When enabled, only products with available stock are included in the feed"
 msgstr "При включении в фид включаются только продукты, имеющиеся в наличии."
 
 msgid "Yes"
