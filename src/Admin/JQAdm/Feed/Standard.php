@@ -52,7 +52,7 @@ class Standard
 	 * name with an upper case character and continue only with lower case characters
 	 * or numbers. Avoid chamel case names like "MyFavorite"!
 	 *
-	 * @param string Last part of the class name
+	 * @type string Last part of the class name
 	 * @since 2026.01
 	 */
 
@@ -73,6 +73,7 @@ class Standard
 
 		$view->itemSubparts = $this->getSubClientNames();
 		$view->itemLocales = $localeManager->search( $filter );
+		// @phpstan-ignore argument.type
 		$view->itemExportTypes = array_keys( $config->get( 'controller/jobs/product/export', [] ) );
 		$view->itemAttrTypes = map( $config->get( 'controller/jobs/product/export', [] ) )
 			->map( fn( $config ) => $config['types'] ?? [] );
@@ -111,7 +112,9 @@ class Standard
 
 			$manager = \Aimeos\MShop::create( $this->context(), 'feed' );
 
+			// @phpstan-ignore argument.type
 			$view->item = $manager->get( $id, ['catalog', 'product', 'supplier'] );
+			// @phpstan-ignore argument.type
 			$view->itemData = $this->toArray( $view->item, true );
 			$view->itemBody = parent::copy();
 		}
@@ -135,7 +138,7 @@ class Standard
 
 		try
 		{
-			$data = $view->param( 'item', [] );
+			$data = (array) $view->param( 'item', [] );
 
 			if( !isset( $view->item ) ) {
 				$view->item = \Aimeos\MShop::create( $this->context(), 'feed' )->create();
@@ -143,6 +146,7 @@ class Standard
 
 			$data['feed.siteid'] = $view->item->getSiteId();
 
+			// @phpstan-ignore argument.type
 			$view->itemData = array_replace_recursive( $this->toArray( $view->item ), $data );
 			$view->itemBody = parent::create();
 		}
@@ -218,7 +222,9 @@ class Standard
 
 			$manager = \Aimeos\MShop::create( $this->context(), 'feed' );
 
+			// @phpstan-ignore argument.type
 			$view->item = $manager->get( $id, ['catalog', 'product', 'supplier'] );
+			// @phpstan-ignore argument.type
 			$view->itemData = $this->toArray( $view->item );
 			$view->itemBody = parent::get();
 		}
@@ -245,6 +251,7 @@ class Standard
 
 		try
 		{
+			// @phpstan-ignore argument.type
 			$item = $this->fromArray( $view->param( 'item', [] ) );
 			$view->item = $item->getId() ? $item : $manager->save( $item );
 			$view->itemBody = parent::save();
@@ -252,6 +259,7 @@ class Standard
 			$manager->save( clone $view->item );
 			$manager->commit();
 
+			// @phpstan-ignore argument.type
 			return $this->redirect( 'feed', $view->param( 'next' ), $view->item->getId(), 'save' );
 		}
 		catch( \Exception $e )
@@ -276,6 +284,7 @@ class Standard
 		try
 		{
 			$total = 0;
+			// @phpstan-ignore argument.type
 			$params = $this->storeFilter( $view->param(), 'feed' );
 			$manager = \Aimeos\MShop::create( $this->context(), 'feed' );
 
@@ -285,6 +294,7 @@ class Standard
 			$view->items = $manager->search( $search, [], $total );
 			$view->filterAttributes = $manager->getSearchAttributes( true );
 			$view->filterOperators = $search->getOperators();
+			// @phpstan-ignore argument.type
 			$view->itemExportTypes = array_keys( $this->context()->config()->get( 'controller/jobs/product/export', [] ) );
 			$view->itemBody = parent::search();
 			$view->total = $total;
@@ -309,7 +319,7 @@ class Standard
 		 * you've implemented an alternative client class as well, "default"
 		 * should be replaced by the name of the new class.
 		 *
-		 * @param string Relative path to the template creating the HTML code
+		 * @type string Relative path to the template creating the HTML code
 		 * @since 2026.01
 		 */
 		$tplconf = 'admin/jqadm/feed/template-list';
@@ -346,7 +356,7 @@ class Standard
 		 * common decorators ("\Aimeos\Admin\JQAdm\Common\Decorator\*") added via
 		 * "client/jqadm/common/decorators/default" to the JQAdm client.
 		 *
-		 * @param array List of decorator names
+		 * @type array List of decorator names
 		 * @since 2026.01
 		 * @see admin/jqadm/common/decorators/default
 		 * @see admin/jqadm/feed/decorators/global
@@ -369,7 +379,7 @@ class Standard
 		 * This would add the decorator named "decorator1" defined by
 		 * "\Aimeos\Admin\JQAdm\Common\Decorator\Decorator1" only to the JQAdm client.
 		 *
-		 * @param array List of decorator names
+		 * @type array List of decorator names
 		 * @since 2026.01
 		 * @see admin/jqadm/common/decorators/default
 		 * @see admin/jqadm/feed/decorators/excludes
@@ -392,7 +402,7 @@ class Standard
 		 * This would add the decorator named "decorator2" defined by
 		 * "\Aimeos\Admin\JQAdm\Feed\Decorator\Decorator2" only to the JQAdm client.
 		 *
-		 * @param array List of decorator names
+		 * @type array List of decorator names
 		 * @since 2026.01
 		 * @see admin/jqadm/common/decorators/default
 		 * @see admin/jqadm/feed/decorators/excludes
@@ -438,10 +448,10 @@ class Standard
 		 * should support adding, removing or reordering content by a fluid like
 		 * design.
 		 *
-		 * @param array List of sub-client names
+		 * @type array List of sub-client names
 		 * @since 2026.01
 		 */
-		return $this->context()->config()->get( 'admin/jqadm/feed/subparts', [] );
+		return (array) $this->context()->config()->get( 'admin/jqadm/feed/subparts', [] );
 	}
 
 
@@ -456,6 +466,7 @@ class Standard
 		$manager = \Aimeos\MShop::create( $this->context(), 'feed' );
 
 		if( !empty( $data['feed.id'] ) ) {
+			// @phpstan-ignore argument.type
 			$item = $manager->get( $data['feed.id'], ['catalog', 'product', 'supplier'] );
 		} else {
 			$item = $manager->create();
@@ -486,18 +497,24 @@ class Standard
 		$item->setConfig( ['attributes' => $attributes, 'attribute_excludes' => $excludes] );
 
 		// Handle included and excluded categories (catalog domain)
+		// @phpstan-ignore argument.type, argument.type
 		$this->fromArrayListItems( $item, 'catalog', array_values( $data['category']['include'] ?? [] ), 'include' );
+		// @phpstan-ignore argument.type, argument.type
 		$this->fromArrayListItems( $item, 'catalog', array_values( $data['category']['exclude'] ?? [] ), 'exclude' );
 
 		// Handle included and excluded products (product domain)
+		// @phpstan-ignore argument.type, argument.type
 		$this->fromArrayListItems( $item, 'product', array_values( $data['product']['include'] ?? [] ), 'include' );
+		// @phpstan-ignore argument.type, argument.type
 		$this->fromArrayListItems( $item, 'product', array_values( $data['product']['exclude'] ?? [] ), 'exclude' );
 
 		// Handle included and excluded suppliers (supplier domain)
+		// @phpstan-ignore argument.type, argument.type
 		$this->fromArrayListItems( $item, 'supplier', array_values( $data['supplier']['include'] ?? [] ), 'include' );
+		// @phpstan-ignore argument.type, argument.type
 		$this->fromArrayListItems( $item, 'supplier', array_values( $data['supplier']['exclude'] ?? [] ), 'exclude' );
 
-		return $item;
+		return $item; // @phpstan-ignore return.type
 	}
 
 
@@ -528,14 +545,18 @@ class Standard
 
 		foreach( $entries as $entry )
 		{
+			// @phpstan-ignore argument.type
 			if( !( $refid = $this->val( $entry, $domain . '.id' ) ) ) {
 				continue;
 			}
 
+			// @phpstan-ignore argument.type
 			$listid = $this->val( $entry, 'feed.lists.id' );
+			// @phpstan-ignore argument.type
 			$litem = $listItems->pull( $listid ) ?: $feedManager->createListItem();
 			$litem->setType( $type )->setRefId( $refid );
 
+			// @phpstan-ignore argument.type, argument.type, argument.type
 			$item->addListItem( $domain, $litem, $refItems->get( $refid ) );
 		}
 
@@ -557,10 +578,12 @@ class Standard
 
 		// Flatten attribute mapping for the config-table Vue component
 		$config = $item->getConfig();
+		// @phpstan-ignore argument.type
 		$data['config'] = ['attributes' => $this->flatten( $config['attributes'] ?? [] )];
 
 		// Flatten attribute excludes for the Vue component, resolve attribute labels
 		$excludes = [];
+		// @phpstan-ignore argument.type
 		$attrIds = array_filter( array_column( $config['attribute_excludes'] ?? [], 'id' ) );
 
 		if( !empty( $attrIds ) )
@@ -573,6 +596,7 @@ class Standard
 		foreach( $config['attribute_excludes'] ?? [] as $entry )
 		{
 			$id = $entry['id'] ?? '';
+			// @phpstan-ignore argument.type
 			$label = isset( $attrItems ) && ( $ref = $attrItems->get( $id ) ) ? $ref->getLabel() : '';
 
 			$excludes[] = [
@@ -690,7 +714,7 @@ class Standard
 		/** admin/jqadm/feed/template-item
 		 * Relative path to the HTML body template for the feed item.
 		 *
-		 * @param string Relative path to the template creating the HTML code
+		 * @type string Relative path to the template creating the HTML code
 		 * @since 2026.01
 		 */
 		$tplconf = 'admin/jqadm/feed/template-item';

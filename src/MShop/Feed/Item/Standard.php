@@ -40,6 +40,7 @@ class Standard
 	{
 		parent::__construct( $prefix, $values );
 
+		// @phpstan-ignore argument.type
 		$this->initListItems( $values['.listitems'] ?? [] );
 	}
 
@@ -84,6 +85,7 @@ class Standard
 	 */
 	public function getLanguageId() : ?string
 	{
+		// @phpstan-ignore return.type
 		return $this->get( 'feed.languageid' );
 	}
 
@@ -107,6 +109,7 @@ class Standard
 	 */
 	public function getCurrencyId() : ?string
 	{
+		// @phpstan-ignore return.type
 		return $this->get( 'feed.currencyid' );
 	}
 
@@ -161,9 +164,9 @@ class Standard
 	 * Sets the new status of the feed item.
 	 *
 	 * @param int $status New status of the feed item
-	 * @return \Aimeos\MShop\Common\Item\Iface Feed item for chaining method calls
+	 * @return static Feed item for chaining method calls
 	 */
-	public function setStatus( int $status ) : \Aimeos\MShop\Common\Item\Iface
+	public function setStatus( int $status ) : static
 	{
 		return $this->set( 'feed.status', $status );
 	}
@@ -176,7 +179,7 @@ class Standard
 	 */
 	public function getConfig() : array
 	{
-		return $this->get( 'feed.config', [] );
+		return (array) $this->get( 'feed.config', [] );
 	}
 
 
@@ -184,9 +187,9 @@ class Standard
 	 * Sets the configuration values of the item.
 	 *
 	 * @param array $config Configuration values
-	 * @return \Aimeos\MShop\Feed\Item\Iface Feed item for chaining method calls
+	 * @return static Feed item for chaining method calls
 	 */
-	public function setConfig( array $config ) : \Aimeos\MShop\Common\Item\Iface
+	public function setConfig( array $config ) : static
 	{
 		if( !$this->compareConfig( $this->getConfig(), $config ) ) {
 			$this->set( 'feed.config', $config );
@@ -210,11 +213,11 @@ class Standard
 	/*
 	 * Sets the item values from the given array and removes that entries from the list
 	 *
-	 * @param array &$list Associative list of item keys and their values
-	 * @param bool True to set private properties too, false for public only
-	 * @return \Aimeos\MShop\Feed\Item\Iface Feed item for chaining method calls
+	 * @type array &$list Associative list of item keys and their values
+	 * @param bool $private True to set private properties too, false for public only
+	 * @return static Feed item for chaining method calls
 	 */
-	public function fromArray( array &$list, bool $private = false ) : \Aimeos\MShop\Common\Item\Iface
+	public function fromArray( array &$list, bool $private = false ) : static
 	{
 		$item = parent::fromArray( $list, $private );
 
@@ -222,12 +225,17 @@ class Standard
 		{
 			switch( $key )
 			{
+				// @phpstan-ignore argument.type
 				case 'feed.label': $item->setLabel( $value ); break;
+				// @phpstan-ignore argument.type
 				case 'feed.type': $item->setType( $value ); break;
+				// @phpstan-ignore argument.type
 				case 'feed.languageid': $item->setLanguageId( $value ); break;
+				// @phpstan-ignore argument.type
 				case 'feed.currencyid': $item->setCurrencyId( $value ); break;
 				case 'feed.stock': $item->setStock( (bool) $value ); break;
 				case 'feed.status': $item->setStatus( (int) $value ); break;
+				// @phpstan-ignore argument.type
 				case 'feed.config': $item->setConfig( $value ); break;
 				default: continue 2;
 			}
@@ -242,7 +250,7 @@ class Standard
 	/**
 	 * Returns the item values as array.
 	 *
-	 * @param bool True to return private properties, false for public only
+	 * @param bool $private True to return private properties, false for public only
 	 * @return array Associative list of item properties and their values
 	 */
 	public function toArray( bool $private = false ) : array

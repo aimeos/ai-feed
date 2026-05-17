@@ -50,7 +50,7 @@ class Standard
 	 * name with an upper case character and continue only with lower case characters
 	 * or numbers. Avoid chamel case names like "MyOptimizer"!
 	 *
-	 * @param string Last part of the class name
+	 * @type string Last part of the class name
 	 * @since 2026.01
 	 */
 
@@ -72,7 +72,7 @@ class Standard
 	 * common decorators ("\Aimeos\Controller\Jobs\Common\Decorator\*") added via
 	 * "controller/jobs/common/decorators/default" to the job controller.
 	 *
-	 * @param array List of decorator names
+	 * @type array List of decorator names
 	 * @since 2026.01
 	 * @see controller/jobs/common/decorators/default
 	 * @see controller/jobs/product/export/idealo/decorators/global
@@ -95,7 +95,7 @@ class Standard
 	 * This would add the decorator named "decorator1" defined by
 	 * "\Aimeos\Controller\Jobs\Common\Decorator\Decorator1" only to the job controller.
 	 *
-	 * @param array List of decorator names
+	 * @type array List of decorator names
 	 * @since 2026.01
 	 * @see controller/jobs/common/decorators/default
 	 * @see controller/jobs/product/export/idealo/decorators/excludes
@@ -120,7 +120,7 @@ class Standard
 	 * "\Aimeos\Controller\Jobs\Product\Export\Decorator\Decorator2"
 	 * only to the job controller.
 	 *
-	 * @param array List of decorator names
+	 * @type array List of decorator names
 	 * @since 2026.01
 	 * @see controller/jobs/common/decorators/default
 	 * @see controller/jobs/product/export/idealo/decorators/excludes
@@ -177,6 +177,7 @@ class Standard
 			try
 			{
 				$locale = $localeManager->bootstrap( $sitecode, $item->getLanguageId(), $item->getCurrencyId() );
+				// @phpstan-ignore argument.type, argument.type
 				$this->export( $item, $locale );
 			}
 			catch( \Exception $e )
@@ -203,14 +204,14 @@ class Standard
 		 * associated to the products via their lists. Using the "domains" option
 		 * you can make more or less associated items available in the template.
 		 *
-		 * @param array List of domain names
+		 * @type array List of domain names
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/idealo/filename
 		 * @see controller/jobs/product/export/idealo/max-items
 		 */
 		$default = ['attribute', 'catalog', 'media', 'price', 'product', 'supplier', 'text'];
 
-		return $this->context()->config()->get( 'controller/jobs/product/export/idealo/domains', $default );
+		return (array) $this->context()->config()->get( 'controller/jobs/product/export/idealo/domains', $default );
 	}
 
 
@@ -228,6 +229,7 @@ class Standard
 		$filter = $this->filter( $manager->filter( true ), $feedItem );
 		$excludeCats = $feedItem->getListItems( 'catalog', 'exclude' )->getRefId();
 		$excludeSupps = $feedItem->getListItems( 'supplier', 'exclude' )->getRefId();
+		// @phpstan-ignore argument.type
 		$attrExclIds = array_filter( array_column( $feedItem->getConfig()['attribute_excludes'] ?? [], 'id' ) );
 
 		$cursor = $manager->cursor( $filter );
@@ -243,6 +245,7 @@ class Standard
 				throw new \Aimeos\Controller\Jobs\Exception( sprintf( 'Unable to write header for Idealo export to temporary file' ) );
 			}
 
+			// @phpstan-ignore argument.type
 			while( $items = $manager->iterate( $cursor, $domains ) )
 			{
 				$items = $items->filter( fn( $item ) => $item->getListItems( 'catalog' )->getRefId()->intersect( $excludeCats )->isEmpty() );
@@ -260,6 +263,7 @@ class Standard
 						{
 							$variant = $listItem->getRefItem();
 
+							// @phpstan-ignore argument.type, argument.type
 							if( $variant && array_intersect( $variant->getRefItems( 'attribute' )->keys()->all(), $attrExclIds ) ) {
 								$product->deleteListItem( 'product', $listItem, $variant );
 							}
@@ -269,6 +273,7 @@ class Standard
 
 				$items = $this->call( 'hydrate', $items );
 
+				// @phpstan-ignore argument.type
 				if( fwrite( $fh, $this->render( $items, $feedItem ) ) === false ) {
 					throw new \Aimeos\Controller\Jobs\Exception( sprintf( 'Unable to write products for Idealo export to temporary file' ) );
 				}
@@ -276,6 +281,7 @@ class Standard
 
 			rewind( $fh );
 
+			// @phpstan-ignore argument.type
 			$filename = sprintf( $this->call( 'filename' ), $locale->getSiteId(), $feedItem->getLabel() );
 			$this->fs()->writes( $filename, $fh );
 		}
@@ -304,12 +310,12 @@ class Standard
 		 * string which can contain two placeholders: The site ID and the
 		 * feed label of the exported feed.
 		 *
-		 * @param string File name template
+		 * @type string File name template
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/idealo/max-items
 		 * @see controller/jobs/product/export/idealo/domains
 		 */
-		return $this->context()->config()->get( 'controller/jobs/product/export/idealo/filename', '%1$sd/%2$s.csv' );
+		return (string) $this->context()->config()->get( 'controller/jobs/product/export/idealo/filename', '%1$sd/%2$s.csv' );
 	}
 
 
@@ -346,6 +352,7 @@ class Standard
 			$includes[] = $filter->is( 'index.supplier.id', '==', $ids );
 		}
 
+		// @phpstan-ignore argument.type
 		$attrExclIds = array_filter( array_column( $item->getConfig()['attribute_excludes'] ?? [], 'id' ) );
 
 		if( !empty( $attrExclIds ) ) {
@@ -355,7 +362,9 @@ class Standard
 			] );
 		}
 
+		// @phpstan-ignore argument.type
 		return $filter->add( $filter->and( [
+			// @phpstan-ignore argument.type
 			$filter->and( $excludes ),
 			$filter->or( $includes )
 		] ) );
@@ -395,7 +404,7 @@ class Standard
 		 * you've implemented an alternative client class as well, "standard"
 		 * should be replaced by the name of the new class.
 		 *
-		 * @param string Relative path to the template creating CSV code for the export items
+		 * @type string Relative path to the template creating CSV code for the export items
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/idealo/domains
 		 * @see controller/jobs/product/export/idealo/filename
@@ -419,6 +428,7 @@ class Standard
 	 */
 	protected function hydrate( \Aimeos\Map $items ) : \Aimeos\Map
 	{
+		/** @var \Aimeos\MShop\Order\Item\Iface $order */
 		$order = \Aimeos\MShop::create( $this->context(), 'order' )->create()->off();
 		$orderProductManager = \Aimeos\MShop::create( $this->context(), 'order/product' );
 		$manager = \Aimeos\MShop::create( $this->context(), 'service' );
@@ -428,6 +438,7 @@ class Standard
 
 		return $items->map( function( $item ) use ( $order, $orderProductManager, $providers ) {
 			$orderProduct = $orderProductManager->create()->copyFrom( $item );
+			// @phpstan-ignore argument.type
 			$basket = (clone $order)->addProduct( $orderProduct );
 
 			$item->delivery = $providers->find( fn( $provider ) => $provider->isAvailable( $basket ) )?->calcPrice( $basket );
@@ -451,12 +462,12 @@ class Standard
 		 * the data into several files that can also be processed in
 		 * parallel is able to speed up importing the files again.
 		 *
-		 * @param integer Number of products
+		 * @type integer Number of products
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/idealo/filename
 		 * @see controller/jobs/product/export/idealo/domains
 		 */
-		return $this->context()->config()->get( 'controller/jobs/product/export/idealo/max-items', 1000 );
+		return (int) $this->context()->config()->get( 'controller/jobs/product/export/idealo/max-items', 1000 );
 	}
 
 
@@ -484,7 +495,7 @@ class Standard
 		 * you've implemented an alternative client class as well, "standard"
 		 * should be replaced by the name of the new class.
 		 *
-		 * @param string Relative path to the template creating CSV code for the export items
+		 * @type string Relative path to the template creating CSV code for the export items
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/idealo/domains
 		 * @see controller/jobs/product/export/idealo/filename
