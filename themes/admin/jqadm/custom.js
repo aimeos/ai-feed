@@ -170,7 +170,7 @@ Aimeos.Feed.Attributes = {
 						return (result?.searchAttributes?.items || []).map(item => {
 							return {'attribute.id': item.id, 'attribute.label': item.label}
 						})
-					})
+					}).catch(() => [])
 				},
 
 
@@ -202,7 +202,7 @@ Aimeos.Feed.Attributes = {
 						return (result?.searchAttributeTypes?.items || []).map(item => {
 							return {'attribute.type': item.code}
 						})
-					})
+					}).catch(() => [])
 				},
 
 
@@ -303,7 +303,7 @@ Aimeos.Feed.Catalog = {
 						return (result?.searchCatalogs?.items || []).map(item => {
 							return {'catalog.id': item.id, 'catalog.label': item.label + ' (' + item.code + ')'}
 						})
-					})
+					}).catch(() => [])
 				},
 
 
@@ -403,7 +403,7 @@ Aimeos.Feed.Product = {
 						return (result?.searchProducts?.items || []).map(item => {
 							return {'product.id': item.id, 'product.label': item.label + ' (' + item.code + ')'}
 						})
-					})
+					}).catch(() => [])
 				},
 
 
@@ -503,7 +503,7 @@ Aimeos.Feed.Supplier = {
 						return (result?.searchSuppliers?.items || []).map(item => {
 							return {'supplier.id': item.id, 'supplier.label': item.label + ' (' + item.code + ')'}
 						})
-					})
+					}).catch(() => [])
 				},
 
 
