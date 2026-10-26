@@ -50,7 +50,7 @@ class Standard
 	 * name with an upper case character and continue only with lower case characters
 	 * or numbers. Avoid chamel case names like "MyOptimizer"!
 	 *
-	 * @type string Last part of the class name
+	 * @param string Last part of the class name
 	 * @since 2026.01
 	 */
 
@@ -72,7 +72,7 @@ class Standard
 	 * common decorators ("\Aimeos\Controller\Jobs\Common\Decorator\*") added via
 	 * "controller/jobs/common/decorators/default" to the job controller.
 	 *
-	 * @type array List of decorator names
+	 * @param array List of decorator names
 	 * @since 2026.01
 	 * @see controller/jobs/common/decorators/default
 	 * @see controller/jobs/product/export/idealo/decorators/global
@@ -95,7 +95,7 @@ class Standard
 	 * This would add the decorator named "decorator1" defined by
 	 * "\Aimeos\Controller\Jobs\Common\Decorator\Decorator1" only to the job controller.
 	 *
-	 * @type array List of decorator names
+	 * @param array List of decorator names
 	 * @since 2026.01
 	 * @see controller/jobs/common/decorators/default
 	 * @see controller/jobs/product/export/idealo/decorators/excludes
@@ -120,7 +120,7 @@ class Standard
 	 * "\Aimeos\Controller\Jobs\Product\Export\Decorator\Decorator2"
 	 * only to the job controller.
 	 *
-	 * @type array List of decorator names
+	 * @param array List of decorator names
 	 * @since 2026.01
 	 * @see controller/jobs/common/decorators/default
 	 * @see controller/jobs/product/export/idealo/decorators/excludes
@@ -204,7 +204,7 @@ class Standard
 		 * associated to the products via their lists. Using the "domains" option
 		 * you can make more or less associated items available in the template.
 		 *
-		 * @type array List of domain names
+		 * @param array List of domain names
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/idealo/filename
 		 * @see controller/jobs/product/export/idealo/max-items
@@ -310,7 +310,7 @@ class Standard
 		 * string which can contain two placeholders: The site ID and the
 		 * feed label of the exported feed.
 		 *
-		 * @type string File name template
+		 * @param string File name template
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/idealo/max-items
 		 * @see controller/jobs/product/export/idealo/domains
@@ -404,7 +404,7 @@ class Standard
 		 * you've implemented an alternative client class as well, "standard"
 		 * should be replaced by the name of the new class.
 		 *
-		 * @type string Relative path to the template creating CSV code for the export items
+		 * @param string Relative path to the template creating CSV code for the export items
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/idealo/domains
 		 * @see controller/jobs/product/export/idealo/filename
@@ -462,7 +462,7 @@ class Standard
 		 * the data into several files that can also be processed in
 		 * parallel is able to speed up importing the files again.
 		 *
-		 * @type integer Number of products
+		 * @param integer Number of products
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/idealo/filename
 		 * @see controller/jobs/product/export/idealo/domains
@@ -495,7 +495,7 @@ class Standard
 		 * you've implemented an alternative client class as well, "standard"
 		 * should be replaced by the name of the new class.
 		 *
-		 * @type string Relative path to the template creating CSV code for the export items
+		 * @param string Relative path to the template creating CSV code for the export items
 		 * @since 2026.01
 		 * @see controller/jobs/product/export/idealo/domains
 		 * @see controller/jobs/product/export/idealo/filename
